@@ -14,6 +14,6 @@ include:
   - LICENSE
 exclude: []
 app: 
-  id: MaaHunZui
+  id: MaaHunZhui
   label: MHZ 
   icon: ./docs/imgs/hz_logo.png
