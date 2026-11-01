@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793463512357,
+            "lastSyncTime": 1793527304655,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\统合.json",
             "savedViewport": {
-                "x": -370,
-                "y": -76,
+                "x": -127,
+                "y": -3,
                 "zoom": 0.85
             },
             "filename": "统合",
@@ -19,72 +19,64 @@
     "$__mpe_external_事件逻辑_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1369,
-                "y": 759
+                "x": 1373,
+                "y": 778
             }
         }
     },
     "$__mpe_external_地图场景_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1415,
-                "y": 184
+                "x": 1409,
+                "y": 295
             }
         }
     },
     "$__mpe_external_奖励场景_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1410,
-                "y": 263
+                "x": 1391,
+                "y": 367
             }
         }
     },
     "$__mpe_external_战斗场景_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1419,
-                "y": 106
-            }
-        }
-    },
-    "$__mpe_external_未知事件_统合": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1376,
-                "y": 863
+                "x": 1413,
+                "y": 213
             }
         }
     },
     "$__mpe_external_游艺事件_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1403,
-                "y": 422
+                "x": 1397,
+                "y": 454
             }
         }
     },
     "$__mpe_external_移除卡牌_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1392,
-                "y": 510
+                "x": 1384,
+                "y": 538
             }
         }
     },
     "$__mpe_external_篝火场景_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1398,
-                "y": 337
+                "x": 1373,
+                "y": 685
             }
         }
     },
     "$__mpe_external_锻造场景_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1386,
-                "y": 643
+                "x": 1379,
+                "y": 610
             }
         }
     },
@@ -110,14 +102,13 @@
         "rate_limit": 0,
         "next": [
             "战斗场景",
-            "篝火场景",
             "地图场景",
+            "奖励场景",
+            "游艺事件",
             "移除卡牌",
             "锻造场景",
-            "事件逻辑",
-            "未知事件",
-            "奖励场景",
-            "游艺事件"
+            "篝火场景",
+            "事件逻辑"
         ],
         "$__mpe_code": {
             "position": {
