@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792940726166,
+            "lastSyncTime": 1793559480377,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\maah\\assets\\resource\\pipeline\\地图场景.json",
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\地图场景.json",
             "savedViewport": {
-                "x": 555,
-                "y": -19,
-                "zoom": 0.58
+                "x": 785,
+                "y": 93,
+                "zoom": 0.56
             },
             "filename": "地图场景",
             "version": "v2.1.0"
@@ -43,7 +43,7 @@
                 ]
             }
         },
-        "repeat": 4,
+        "repeat": 2,
         "repeat_delay": 1000,
         "post_delay": 0,
         "rate_limit": 0,
@@ -77,7 +77,7 @@
                 ]
             }
         },
-        "repeat": 4,
+        "repeat": 2,
         "repeat_delay": 1000,
         "post_delay": 0,
         "rate_limit": 0,
@@ -107,7 +107,10 @@
                 ]
             }
         },
-        "timeout": 20000,
+        "pre_delay": 0,
+        "post_delay": 0,
+        "timeout": 1300,
+        "rate_limit": 0,
         "next": [
             "地图箭头",
             "a左",
@@ -115,7 +118,7 @@
             "地图箭头1"
         ],
         "on_error": [
-            "地图场景"
+            "统合"
         ],
         "$__mpe_code": {
             "position": {
@@ -137,8 +140,7 @@
                     "next/a6.png",
                     "next/a7.png",
                     "next/a8.png",
-                    "next/a9.png",
-                    "next/a10.png"
+                    "next/a9.png"
                 ]
             }
         },
@@ -154,7 +156,7 @@
                 ]
             }
         },
-        "repeat": 4,
+        "repeat": 2,
         "repeat_delay": 1000,
         "post_delay": 0,
         "rate_limit": 0,
@@ -190,7 +192,7 @@
                 ]
             }
         },
-        "repeat": 4,
+        "repeat": 2,
         "repeat_delay": 1000,
         "post_delay": 0,
         "rate_limit": 0,
