@@ -1,0 +1,236 @@
+{
+    "$__mpe_config_抽密闻池": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793539827825,
+            "isModifiedExternally": true,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\抽密闻池.json",
+            "savedViewport": {
+                "x": 116,
+                "y": 172,
+                "zoom": 0.56
+            },
+            "filename": "抽密闻池",
+            "version": "v2.1.0"
+        }
+    },
+    "前往主仪式间": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1110,
+                    569,
+                    151,
+                    78
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "前往探寻",
+            "前往主仪式间"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 279,
+                "y": 237
+            }
+        }
+    },
+    "前往探寻": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    889,
+                    512,
+                    233,
+                    167
+                ],
+                "template": [
+                    "主仪式间/探寻.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "密闻-抽卡界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 531,
+                "y": 245
+            }
+        }
+    },
+    "密闻-抽卡界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主仪式间/密文抽卡.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "密闻-界面确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 769,
+                "y": 257
+            }
+        }
+    },
+    "密闻-抽卡": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1086,
+                    607,
+                    22,
+                    13
+                ]
+            }
+        },
+        "timeout": 6000,
+        "next": [
+            "密闻-跳过"
+        ],
+        "on_error": [
+            "抽卡结束-退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1301,
+                "y": 271
+            }
+        }
+    },
+    "密闻-界面确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    881,
+                    22,
+                    366,
+                    60
+                ],
+                "template": [
+                    "主仪式间/密闻.png"
+                ]
+            }
+        },
+        "next": [
+            "密闻-抽卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1045,
+                "y": 255
+            }
+        }
+    },
+    "密闻-继续": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1018,
+                    13,
+                    239,
+                    87
+                ],
+                "template": [
+                    "主仪式间/继续.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "密闻-抽卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1774,
+                "y": 167
+            }
+        }
+    },
+    "密闻-跳过": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1002,
+                    14,
+                    251,
+                    73
+                ],
+                "template": [
+                    "主仪式间/跳过.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "密闻-继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 423
+            }
+        }
+    },
+    "抽卡结束-退出": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主仪式间/抽卡结束-退出.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "抽卡结束",
+        "$__mpe_code": {
+            "position": {
+                "x": 1446,
+                "y": 746
+            }
+        }
+    },
+    "==密闻抽卡==": {
+        "next": [
+            "前往主仪式间"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 52,
+                "y": -30
+            }
+        }
+    }
+}

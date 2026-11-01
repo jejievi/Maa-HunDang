@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793532714189,
+            "lastSyncTime": 1793541160456,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\事件逻辑.json",
             "savedViewport": {
-                "x": -468,
-                "y": -546,
-                "zoom": 0.61
+                "x": -1053,
+                "y": -364,
+                "zoom": 0.8
             },
             "filename": "事件逻辑",
             "version": "v2.1.0"
@@ -64,11 +64,63 @@
             }
         }
     },
+    "$__mpe_external_篝火场景_事件逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2780,
+                "y": 1008
+            }
+        }
+    },
     "$__mpe_external_统合_事件逻辑": {
         "$__mpe_code": {
             "position": {
                 "x": 2588,
                 "y": 563
+            }
+        }
+    },
+    "书士-选择卡片": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    626,
+                    278,
+                    11,
+                    11
+                ]
+            }
+        },
+        "next": [
+            "书士-选择卡片确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2142,
+                "y": 1605
+            }
+        }
+    },
+    "书士-选择卡片确认": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    629,
+                    384,
+                    11,
+                    16
+                ]
+            }
+        },
+        "next": [
+            "离开地点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2406,
+                "y": 1627
             }
         }
     },
@@ -109,6 +161,30 @@
             "position": {
                 "x": 1594,
                 "y": 1404
+            }
+        }
+    },
+    "事件-第三选项": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    209,
+                    579,
+                    14,
+                    11
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_delay": 400,
+        "next": [
+            "书士-选择卡片"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1891,
+                "y": 1567
             }
         }
     },
@@ -354,18 +430,17 @@
                 ]
             }
         },
-        "timeout": 2500,
+        "timeout": 4000,
         "next": [
             "地图场景"
         ],
         "on_error": [
-            "离开地点",
             "统合"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2082,
-                "y": 802
+                "x": 2108,
+                "y": 741
             }
         }
     },
@@ -470,8 +545,9 @@
         },
         "repeat": 2,
         "repeat_delay": 600,
+        "timeout": 10000,
         "next": [
-            "直接离开-红框"
+            "篝火专属-直接离开-红框"
         ],
         "on_error": [
             "地图场景",
@@ -503,6 +579,43 @@
             "position": {
                 "x": 2255,
                 "y": 2380
+            }
+        }
+    },
+    "篝火专属-直接离开-红框": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    663,
+                    420,
+                    455,
+                    73
+                ],
+                "template": [
+                    "直接离开-红框.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    742,
+                    441,
+                    76,
+                    32
+                ]
+            }
+        },
+        "timeout": -1,
+        "next": [
+            "篝火场景"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2450,
+                "y": 938
             }
         }
     },
@@ -657,74 +770,6 @@
             "position": {
                 "x": 2806,
                 "y": 1285
-            }
-        }
-    },
-    "事件-第三选项": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    209,
-                    579,
-                    14,
-                    11
-                ]
-            }
-        },
-        "repeat": 3,
-        "repeat_delay": 400,
-        "next": [
-            "书士-选择卡片"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1891,
-                "y": 1567
-            }
-        }
-    },
-    "书士-选择卡片": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    626,
-                    278,
-                    11,
-                    11
-                ]
-            }
-        },
-        "next": [
-            "书士-选择卡片确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2142,
-                "y": 1605
-            }
-        }
-    },
-    "书士-选择卡片确认": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    629,
-                    384,
-                    11,
-                    16
-                ]
-            }
-        },
-        "next": [
-            "离开地点"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2406,
-                "y": 1627
             }
         }
     }
