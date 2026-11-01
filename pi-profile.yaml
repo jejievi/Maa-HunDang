@@ -12,7 +12,23 @@ include:
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
+
+exclude: []
+
+display: 
+  foreground: false 
+  presets:
+    # label 可选，缺省为「短边P」
+    - label: 720P
+      width: 1280
+      height: 720
+      dpi: 240
+    - width: 1920
+      height: 1080
+      dpi: 280
+      
 app: 
   id: maahunzhui
   label: MHZ 
   icon: ./docs/imgs/hz_logo.png
+
