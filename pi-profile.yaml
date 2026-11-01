@@ -12,7 +12,6 @@ include:
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
-exclude: []
 app: 
   id: maahunzhui
   label: MHZ 

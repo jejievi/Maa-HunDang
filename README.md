@@ -5,6 +5,9 @@
 
 <div align="center">
 
-仅供学习
+本项目由 MaaFramework 强力驱动！
 
+本项目的前端使用了 MFAAvalonia,MaaFwApp 。
+
+仅供学习参考
 </div>
