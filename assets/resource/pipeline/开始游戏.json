@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793462856010,
-            "isModifiedExternally": false,
+            "lastSyncTime": 1793466583502,
+            "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": -69,
-                "y": 664,
+                "x": -191,
+                "y": 770,
                 "zoom": 0.75
             },
             "filename": "开始游戏",
@@ -91,7 +91,7 @@
                 ]
             }
         },
-        "pre_delay": 400,
+        "pre_delay": 800,
         "action": {
             "type": "Click",
             "param": {
@@ -103,10 +103,10 @@
                 ]
             }
         },
-        "repeat": 2,
         "focus": "前往观星室",
         "next": [
-            "每日挑战"
+            "每日挑战",
+            "前往观星室"
         ],
         "$__mpe_code": {
             "position": {

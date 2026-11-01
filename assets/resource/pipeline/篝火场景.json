@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793295235494,
+            "lastSyncTime": 1793503558986,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\篝火场景.json",
             "savedViewport": {
-                "x": -423,
-                "y": 156,
-                "zoom": 0.75
+                "x": 15,
+                "y": 345,
+                "zoom": 0.32
             },
             "filename": "篝火场景",
             "version": "v2.1.0"
@@ -21,14 +21,6 @@
             "position": {
                 "x": 2930,
                 "y": 707
-            }
-        }
-    },
-    "$__mpe_external_选择卡片_篝火场景": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1702,
-                "y": -298
             }
         }
     },
@@ -361,12 +353,13 @@
             }
         },
         "next": [
-            "篝火场景点击"
+            "篝火场景点击",
+            "篝火-升级"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 797,
-                "y": 172
+                "x": 703,
+                "y": 192
             }
         }
     },
@@ -402,15 +395,15 @@
         "focus": "遇到篝火",
         "next": [
             "护符1",
-            "选择卡片"
+            "篝火-升级"
         ],
         "on_error": [
             "坐下休息"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1113,
-                "y": 145
+                "x": 1088,
+                "y": 154
             }
         }
     },
@@ -439,6 +432,615 @@
             "position": {
                 "x": 1539,
                 "y": 694
+            }
+        }
+    },
+    "篝火-升级": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    678,
+                    216,
+                    13,
+                    14
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1223,
+                "y": -349
+            }
+        }
+    },
+    "篝火-确认": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击",
+            "篝火-升级_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1499,
+                "y": -358
+            }
+        }
+    },
+    "篝火-升级_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    797,
+                    219,
+                    16,
+                    6
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1816,
+                "y": -345
+            }
+        }
+    },
+    "篝火-确认_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击",
+            "篝火-升级_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2161,
+                "y": -333
+            }
+        }
+    },
+    "篝火-升级_副本1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    910,
+                    206,
+                    13,
+                    13
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2509,
+                "y": -281
+            }
+        }
+    },
+    "篝火-确认_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击",
+            "篝火-升级_副本1_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2881,
+                "y": -279
+            }
+        }
+    },
+    "篝火-升级_副本1_副本1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1023,
+                    219,
+                    14,
+                    11
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本1_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3234,
+                "y": -262
+            }
+        }
+    },
+    "篝火-确认_副本1_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火-升级_副本2_副本3_副本1_副本1",
+            "篝火场景点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3577,
+                "y": -270
+            }
+        }
+    },
+    "篝火-升级_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    685,
+                    371,
+                    6,
+                    13
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1230,
+                "y": -581
+            }
+        }
+    },
+    "篝火-确认_副本2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击",
+            "篝火-升级_副本2_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1543,
+                "y": -593
+            }
+        }
+    },
+    "篝火-确认_副本3": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击",
+            "篝火-升级_副本2_副本2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2160,
+                "y": -535
+            }
+        }
+    },
+    "篝火-确认_副本4": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击",
+            "篝火-升级_副本2_副本3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2869,
+                "y": -493
+            }
+        }
+    },
+    "篝火-确认_副本5": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火-升级_副本2_副本3_副本1",
+            "篝火场景点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3588,
+                "y": -491
+            }
+        }
+    },
+    "篝火-升级_副本2_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    794,
+                    379,
+                    10,
+                    8
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1893,
+                "y": -539
+            }
+        }
+    },
+    "篝火-升级_副本2_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    912,
+                    376,
+                    14,
+                    21
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2497,
+                "y": -510
+            }
+        }
+    },
+    "篝火-升级_副本2_副本3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1029,
+                    381,
+                    11,
+                    8
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3228,
+                "y": -491
+            }
+        }
+    },
+    "篝火-升级_副本2_副本3_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1138,
+                    371,
+                    19,
+                    13
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本5_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3918,
+                "y": -450
+            }
+        }
+    },
+    "篝火-确认_副本5_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火场景点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4256,
+                "y": -445
+            }
+        }
+    },
+    "篝火-确认_副本5_副本2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    899,
+                    659,
+                    46,
+                    22
+                ]
+            }
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "next": [
+            "篝火-升级_副本2",
+            "篝火场景点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4308,
+                "y": -160
+            }
+        }
+    },
+    "篝火-升级_副本2_副本3_副本1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1140,
+                    216,
+                    10,
+                    8
+                ]
+            }
+        },
+        "next": [
+            "篝火-确认_副本5_副本2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3955,
+                "y": -173
             }
         }
     }
