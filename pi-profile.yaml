@@ -9,5 +9,11 @@ include:
   - MaaCommonAssets/**
   - data/**
   - locales/**
+  - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
+exclude: []
+app: 
+  id: MaaHunZui
+  label: MHZ 
+  icon: ./docs/imgs/hz_logo.png
