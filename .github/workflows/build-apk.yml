@@ -11,6 +11,8 @@ on:
   push:
     branches:
       - "**"
+    tags:
+      - "v*"
     paths:
       - "Android/**"
       - "assets/**"
@@ -77,10 +79,11 @@ jobs:
           path: Android/MaaFwApp/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
-  # 仅在正式发布（release published，install.yml 打 tag 创建 Release）时执行：
-  # 把上面构建出的 debug APK 作为资产上传到该 Release，与 MaaXXX-*.zip 并列
+  # 仅在正式发布时执行，把构建出的 debug APK 作为资产上传到该 Release：
+  # - release published（install.yml 打 tag 创建 Release）
+  # - v* tag 推送（本 workflow 自己由 tag 触发时）
   upload-apk-to-release:
-    if: github.event_name == 'release'
+    if: github.event_name == 'release' || (github.event_name == 'push' && github.ref_type == 'tag')
     needs: build-apk
     runs-on: ubuntu-latest
     steps:
@@ -95,7 +98,7 @@ jobs:
         run: |
           mkdir -p release_assets
           APK=$(find apk -name "*.apk" | head -n1)
-          TAG="${{ github.event.release.tag_name }}"
+          TAG="${{ github.event.release.tag_name || github.ref_name }}"
           DATE=$(date +%Y%m%d)
           cp "$APK" "release_assets/MAA-hunDang-debug-${TAG}-${DATE}.apk"
           ls -lh release_assets/
@@ -104,4 +107,4 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: release_assets/*
-          tag_name: ${{ github.event.release.tag_name }}
+          tag_name: ${{ github.event.release.tag_name || github.ref_name }}
