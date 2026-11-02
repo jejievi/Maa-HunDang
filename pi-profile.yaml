@@ -6,7 +6,6 @@ include:
   - interface.json
   - resource/**
   - config/**
-  - MaaCommonAssets/**
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
