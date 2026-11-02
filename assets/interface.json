@@ -7,7 +7,8 @@
     "name": "MaaHunZhui",
     "contact": "QQ群: 1058992601",
     "license": "MIT",
-    "welcome": "请不要在官方有关群,及大众视野里宣传该脚本",
+    "version": "v2.0.0",
+    "welcome": "请不要在官方有关群，及大众视野里宣传该脚本",
     // 填写项目地址和版本号可实现自动更新功能
     "github": "https://github.com/liao-2004/MAA-hunDang",
     "description": "本软件开源免费，如要付费就说明你被坑了。",
