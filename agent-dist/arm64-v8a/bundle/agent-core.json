@@ -1,0 +1,16 @@
+{
+  "python": "3.13.15",
+  "pyAbiTag": "cp313",
+  "wheelApis": [
+    24,
+    21,
+    16
+  ],
+  "abi": "arm64-v8a",
+  "wheelAbi": "arm64_v8a",
+  "provides": {
+    "numpy": "2.3.2",
+    "strenum": "0.4.15",
+    "maafw": "5.13.0"
+  }
+}

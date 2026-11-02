@@ -1,0 +1,26 @@
+﻿commit 3e8a47b78f2efe98ad4c957c852c75cc346ea8dc
+Author: liao <1811172672@qq.com>
+Date:   Tue Nov 3 01:17:36 2026 +0800
+
+    ci: debug APK 限定单 ABI(arm64-v8a)，去掉 x86_64 以缩小包体积
+
+diff --git a/.github/workflows/build-apk.yml b/.github/workflows/build-apk.yml
+index 9c4d518..34a5a42 100644
+--- a/.github/workflows/build-apk.yml
++++ b/.github/workflows/build-apk.yml
+@@ -60,6 +60,14 @@ jobs:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         run: python scripts/setup_maa_framework.py
+ 
++      # 限定只打 arm64-v8a（与本地 local.properties 一致）。不写 build.debugAbi 时
++      # MaaFwApp 默认打 SHIPPED_ABIS（arm64-v8a + x86_64），APK 会多出 ~100 MB
++      - name: Write local.properties
++        working-directory: Android/MaaFwApp
++        run: |
++          echo "pi.profile=${{ github.workspace }}/pi-profile.yaml" > local.properties
++          echo "build.debugAbi=arm64-v8a" >> local.properties
++
+       - name: Build debug APK
+         working-directory: Android/MaaFwApp
+         env:
+

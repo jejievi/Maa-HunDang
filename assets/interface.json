@@ -39,11 +39,10 @@
             "name": "==启动游戏==",
             "entry": "==启动游戏==",
             "group": [
-                "狂战士"
+                "狂战士方案"
             ],
-            "option": [
-                "永久VIP"
-            ]
+            "option": [],
+            "default_check": true
         },
         {
             "name": "==开始游戏==",
@@ -55,11 +54,13 @@
                 "官服"
             ],
             "option": [
-                "永久VIP"
+                "永久VIP",
+                "是否有火斧"
             ],
             "group": [
-                "狂战士"
-            ]
+                "狂战士方案"
+            ],
+            "default_check": true
         },
         {
             "name": "==每日挑战==",
@@ -108,7 +109,8 @@
                 }
             },
             "option": [
-                "永久VIP"
+                "永久VIP",
+                "是否有火斧"
             ],
             "resource": [
                 "官服"
@@ -117,26 +119,33 @@
                 "安卓端"
             ],
             "group": [
-                "狂战士"
-            ]
+                "狂战士方案"
+            ],
+            "default_check": false
         },
         {
             "name": "==密闻抽卡==",
-            "entry": "==密闻抽卡=="
+            "entry": "==密闻抽卡==",
+            "group": [
+                "其他工具"
+            ]
         },
         {
             "name": "==退出游戏==",
             "entry": "==退出游戏==",
             "group": [
-                "狂战士"
+                "狂战士方案"
             ],
-            "option": [
-                "永久VIP"
-            ]
+            "option": [],
+            "default_check": true
         },
         {
             "name": "==检测边境==",
-            "entry": "==检测边境=="
+            "entry": "==检测边境==",
+            "group": [
+                "其他工具"
+            ],
+            "description": "初次进游戏若无自动操作，得适配ui,，进入设置，更改ui大小，游戏框需在滑动区域内"
         }
         // {
         //     "name": "选项任务",
@@ -168,12 +177,59 @@
                 },
                 {
                     "name": "No",
-                    "option": []
+                    "option": [],
+                    "pipeline_override": {
+                        "复活": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "roi": [
+                                        442,
+                                        586,
+                                        98,
+                                        35
+                                    ],
+                                    "template": [
+                                        "战斗场景/放弃挣扎.png"
+                                    ]
+                                }
+                            },
+                            "next": [
+                                "终结"
+                            ]
+                        }
+                    }
                 }
             ],
             "label": "永久VIP",
-            "default_case": "Yes",
+            "default_case": "No",
             "type": "switch",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ],
+            "description": "用于是否复活判断"
+        },
+        "是否有火斧": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "option": []
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "锻造场景": {
+                            "next": "离开地点"
+                        }
+                    }
+                }
+            ],
+            "label": "火斧",
+            "default_case": "No",
             "controller": [
                 "安卓端"
             ],
@@ -184,7 +240,11 @@
     },
     "group": [
         {
-            "name": "狂战士"
+            "name": "狂战士方案",
+            "default_expand": true
+        },
+        {
+            "name": "其他工具"
         }
     ]
     // "option": {
