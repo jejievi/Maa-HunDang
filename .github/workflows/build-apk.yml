@@ -32,6 +32,10 @@ jobs:
       - uses: actions/checkout@v7
         with:
           submodules: true
+          # 版本号由 git describe 从 tag 推导；浅克隆没有 tag，versionName 会退回提交哈希（如 b6652eb）
+          # 必须全量拉取历史与 tag，tag 构建时才能正确显示 v2.x
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Set up JDK 17
         uses: actions/setup-java@v6

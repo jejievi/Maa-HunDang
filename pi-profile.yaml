@@ -5,11 +5,7 @@ assets: ./assets
 include:
   - interface.json
   - resource/**
-<<<<<<< HEAD
   - config/** 
-=======
-  - config/**
->>>>>>> newApp
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
