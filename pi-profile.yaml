@@ -7,8 +7,6 @@ include:
   - resource/**
   - config/**
   - MaaCommonAssets/**
-  - data/**
-  - locales/**
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
@@ -28,7 +26,7 @@ display:
       dpi: 280
       
 app: 
-  id: maahunzhui
+  id: mhz
   label: MHZ 
   icon: ./docs/imgs/hz_logo.png
 
