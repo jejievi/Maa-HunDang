@@ -5,14 +5,11 @@ assets: ./assets
 include:
   - interface.json
   - resource/**
-  - config/**
-  - MaaCommonAssets/**
-  - data/**
-  - locales/**
+  - config/** 
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
 app: 
-  id: maahunzhui
+  id: mhz
   label: MHZ 
   icon: ./docs/imgs/hz_logo.png
