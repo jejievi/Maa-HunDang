@@ -66,6 +66,13 @@ jobs:
       - name: Configure OCR models
         run: python tools/configure.py
 
+      # MaaFwApp 上游把默认更新源写死为 MirrorChyan，而 MAA-hunDang 没配 mirrorchyan_rid，
+      # 不改的话启动自检会报「更新源配置缺失」，得手动在首页切 GitHub 才能用。
+      # 这里在全新 checkout 后打一次幂等补丁（tools/patch_maafw_update_source.py），
+      # 把默认源与非法值回落都改成 GitHub；子模块指针保持 7e2dc7d 不变
+      - name: Patch default update source to GitHub
+        run: python tools/patch_maafw_update_source.py
+
       - name: Build debug APK
         working-directory: Android/MaaFwApp
         env:
