@@ -60,6 +60,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/setup_maa_framework.py
 
+      # OCR 模型目录 assets/resource/model/ocr/ 被 .gitignore 忽略，CI 全新 checkout 里不存在；
+      # 必须先跑 tools/configure.py 从 MaaCommonAssets 子模块（ppocr_v6/small）重建，
+      # 否则 syncPiAssets 打出的 pi.zip 缺 OCR 模型，APK 里 OcrDetect 会加载失败
+      - name: Configure OCR models
+        run: python tools/configure.py
+
       - name: Build debug APK
         working-directory: Android/MaaFwApp
         env:
