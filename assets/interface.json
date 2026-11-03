@@ -1,17 +1,19 @@
 {
-    // 本文件主要定义了通用 UI 的行为和显示内容
-    // 可参考文档和示例添加更多您需要的功能
-    // 文档：https://maafw.xyz/docs/3.3-ProjectInterfaceV2
-    // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
-    "name": "MaaHunZhui",
+    "name": "MaaHunDang",
+    "icon": "resource/logo.ico",
     "contact": "QQ群: 1058992601",
     "license": "MIT",
-    "version": "v2.0.1",
-    "welcome": "请不要在官方有关群，及大众视野里宣传该脚本",
+    "welcome": [
+        "resource/announcement/1.简介.md",
+        "resource/announcement/2.使用说明.md",
+        "resource/announcement/3.百战须知.md",
+        "resource/announcement/4.用户协议.md",
+        "resource/announcement/5.加入我们.md"
+    ],
     // 填写项目地址和版本号可实现自动更新功能
     "github": "https://github.com/liao-2004/MAA-hunDang",
-    "description": "本软件开源免费，如要付费就说明你被坑了。",
+    "description": "本软件开源免费,受AGPL v3协议保护。",
     "controller": [
         {
             "name": "安卓端",
@@ -27,19 +29,12 @@
             ]
         }
     ],
-    // 可选的 agent 示例
-    // "agent": {
-    //     "child_exec": "python",
-    //     "child_args": [
-    //         "./agent/main.py"
-    //     ]
-    // },
     "task": [
         {
             "name": "==启动游戏==",
             "entry": "==启动游戏==",
             "group": [
-                "狂战士方案"
+                "百战方案"
             ],
             "option": [],
             "default_check": true
@@ -58,7 +53,7 @@
                 "是否有火斧"
             ],
             "group": [
-                "狂战士方案"
+                "百战方案"
             ],
             "default_check": true
         },
@@ -124,7 +119,7 @@
                 "安卓端"
             ],
             "group": [
-                "狂战士方案"
+                "百战方案"
             ],
             "default_check": false
         },
@@ -139,7 +134,7 @@
             "name": "==退出游戏==",
             "entry": "==退出游戏==",
             "group": [
-                "狂战士方案"
+                "百战方案"
             ],
             "option": [],
             "default_check": true
@@ -152,25 +147,6 @@
             ],
             "description": "初次进游戏若无自动操作，得适配ui,，进入设置，更改ui大小，游戏框需在滑动区域内"
         }
-        // {
-        //     "name": "选项任务",
-        //     "entry": "MyTask2",
-        //     "option": [
-        //         "任务选项1"
-        //     ]
-        // },
-        // {
-        //     "name": "参数任务",
-        //     "entry": "MyTask3",
-        //     "option": [
-        //         "任务选项1"
-        //     ],
-        //     "pipeline_override": {}
-        // },
-        // {
-        //     "name": "带Custom的任务",
-        //     "entry": "MyTask4"
-        // }
     ],
     "label": "深境",
     "option": {
@@ -245,34 +221,11 @@
     },
     "group": [
         {
-            "name": "狂战士方案",
+            "name": "百战方案",
             "default_expand": true
         },
         {
             "name": "其他工具"
         }
     ]
-    // "option": {
-    //     "任务选项1": {
-    //         "type": "select",
-    //         "cases": [
-    //             {
-    //                 "name": "文本1",
-    //                 "pipeline_override": {
-    //                     "OcrTask": {
-    //                         "text": "文本1"
-    //                     }
-    //                 }
-    //             },
-    //             {
-    //                 "name": "文本2",
-    //                 "pipeline_override": {
-    //                     "OcrTask": {
-    //                         "text": "文本2"
-    //                     }
-    //                 }
-    //             }
-    //         ]
-    //     }
-    // }
 }
