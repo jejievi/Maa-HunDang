@@ -6,12 +6,26 @@ include:
   - interface.json
   - resource/**
   - config/** 
+  - agent/**
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
 
 exclude: []
-
+        
+agent:
+  sourceDir: agent-dist
+  abi: [arm64-v8a, x86_64]
+  runtimes:
+    - location: bundle
+      executable: bin/python3
+      args: [-u, agent/main.py]
+      env:
+        PYTHONHOME: "{bundle}/prefix"
+        PYTHONPATH: "{bundle}/site-packages/pure.zip:{bundle}/site-packages"
+        LD_LIBRARY_PATH: "{bundle}/prefix/lib:{bundle}/site-packages/chaquopy/lib:{nativeLibs}"
+        MAAFW_BINARY_PATH: "{nativeLibs}"
+        
 display: 
   foreground: false 
   presets:

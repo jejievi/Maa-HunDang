@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793619901192,
+            "lastSyncTime": 1793716612300,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 477,
-                "y": 526,
-                "zoom": 0.57
+                "x": 667,
+                "y": 425,
+                "zoom": 0.99
             },
             "filename": "开始游戏",
             "version": "v2.1.0"
@@ -102,7 +102,8 @@
         },
         "next": [
             "启动祭坛",
-            "前往主仪式间"
+            "前往主仪式间",
+            "开始游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
@@ -371,6 +372,29 @@
             "position": {
                 "x": -78,
                 "y": 37
+            }
+        }
+    },
+    "开始游戏_关闭窗口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始游戏/关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始游戏_关闭窗口",
+            "前往主仪式间"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -42,
+                "y": -105
             }
         }
     }
