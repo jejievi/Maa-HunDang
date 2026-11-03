@@ -3,92 +3,83 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793559480377,
+            "lastSyncTime": 1793626296593,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\地图场景.json",
             "savedViewport": {
-                "x": 785,
-                "y": 93,
-                "zoom": 0.56
+                "x": 978,
+                "y": 201,
+                "zoom": 0.57
             },
             "filename": "地图场景",
             "version": "v2.1.0"
         }
     },
+    "识别关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    8,
+                    83,
+                    1216,
+                    587
+                ],
+                "expected": [
+                    "里很安全",
+                    "火苗不再能",
+                    "敌人抓住了战斗",
+                    "加强大的危",
+                    "危险的精英",
+                    "更加强大的祝",
+                    "遇一场战",
+                    "到祝福的",
+                    "途中的一点奖",
+                    "得更丰厚的奖",
+                    "生甚么事了",
+                    "的可购买",
+                    "耗魂晶强化卡牌",
+                    "可以获得祝",
+                    "予卡牌额",
+                    "这里有什么东",
+                    "人很乐意进行卡牌",
+                    "牌升级的基础价格",
+                    "要献出生命而",
+                    "深渊的祝福不需要",
+                    "以无限刷新获取印",
+                    "处前",
+                    "人的遗",
+                    "时附加2个印",
+                    "无限刷新可",
+                    "无限刷新获取祝",
+                    "强化已有的印",
+                    "印记赋予卡",
+                    "等",
+                    "无路可",
+                    "怪的生物"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 2,
+        "next": [
+            "统合"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -586,
+                "y": 232
+            }
+        }
+    },
     "$__mpe_external_统合_地图场景": {
         "$__mpe_code": {
             "position": {
-                "x": 498,
-                "y": 385
-            }
-        }
-    },
-    "a右": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": "a右.png"
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -15,
-                    0,
-                    0,
-                    0
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_delay": 1000,
-        "post_delay": 0,
-        "rate_limit": 0,
-        "next": [
-            "地图场景",
-            "统合"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9,
-                "y": 627
-            }
-        }
-    },
-    "a左": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": "a左.png"
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    15,
-                    0,
-                    0,
-                    0
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_delay": 1000,
-        "post_delay": 0,
-        "rate_limit": 0,
-        "next": [
-            "地图场景",
-            "统合"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -3,
-                "y": 336
+                "x": -264,
+                "y": 469
             }
         }
     },
@@ -109,101 +100,18 @@
         },
         "pre_delay": 0,
         "post_delay": 0,
-        "timeout": 1300,
+        "timeout": 6000,
         "rate_limit": 0,
-        "next": [
-            "地图箭头",
-            "a左",
-            "a右",
-            "地图箭头1"
-        ],
         "on_error": [
             "统合"
+        ],
+        "next": [
+            "识别关卡"
         ],
         "$__mpe_code": {
             "position": {
                 "x": -1025,
                 "y": 329
-            }
-        }
-    },
-    "地图箭头": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "next/a1.png",
-                    "next/a2.png",
-                    "next/a3.png",
-                    "next/a4.png",
-                    "next/a5.png",
-                    "next/a6.png",
-                    "next/a7.png",
-                    "next/a8.png",
-                    "next/a9.png"
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    5,
-                    76,
-                    -14,
-                    -25
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_delay": 1000,
-        "post_delay": 0,
-        "rate_limit": 0,
-        "next": [
-            "地图场景",
-            "统合"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2,
-                "y": -5
-            }
-        }
-    },
-    "地图箭头1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "地图逻辑/箭头.png"
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    7,
-                    62,
-                    -11,
-                    -11
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_delay": 1000,
-        "post_delay": 0,
-        "rate_limit": 0,
-        "next": [
-            "地图场景",
-            "统合"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 904
             }
         }
     }
