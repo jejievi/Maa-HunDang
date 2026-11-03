@@ -3,46 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793541202533,
+            "lastSyncTime": 1793619901192,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": -181,
-                "y": 450,
+                "x": 477,
+                "y": 526,
                 "zoom": 0.57
             },
             "filename": "开始游戏",
             "version": "v2.1.0"
-        }
-    },
-    "主仪式间/前往主仪式间.png": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1110,
-                    569,
-                    151,
-                    78
-                ],
-                "template": [
-                    "主仪式间/前往主仪式间.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "启动祭坛",
-            "主仪式间/前往主仪式间.png"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 289,
-                "y": -132
-            }
         }
     },
     "$__mpe_external_事件逻辑_开始游戏": {
@@ -80,7 +51,7 @@
     "===开始===": {
         "timeout": -1,
         "next": [
-            "主仪式间/前往主仪式间.png",
+            "前往主仪式间",
             "战斗场景",
             "地图场景",
             "事件逻辑"
@@ -108,6 +79,35 @@
             "position": {
                 "x": -758,
                 "y": -416
+            }
+        }
+    },
+    "前往主仪式间": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1110,
+                    569,
+                    151,
+                    78
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "启动祭坛",
+            "前往主仪式间"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 328,
+                "y": -57
             }
         }
     },
@@ -177,8 +177,7 @@
         },
         "rate_limit": 3000,
         "next": [
-            "滑动难度",
-            "启动祭坛"
+            "滑动难度"
         ],
         "$__mpe_code": {
             "position": {
@@ -308,9 +307,13 @@
         },
         "repeat": 3,
         "repeat_delay": 1000,
+        "timeout": 1800,
         "focus": "滑动",
         "next": [
             "坠入深境"
+        ],
+        "on_error": [
+            "启动祭坛"
         ],
         "$__mpe_code": {
             "position": {
@@ -359,14 +362,15 @@
         },
         "repeat": 4,
         "repeat_delay": 1000,
-        "timeout": 15000,
+        "timeout": 10000,
+        "focus": "",
         "next": [
             "进入游戏"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -97,
-                "y": -33
+                "x": -78,
+                "y": 37
             }
         }
     }
