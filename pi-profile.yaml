@@ -26,7 +26,7 @@ display:
       dpi: 280
       
 app: 
-  id: mhz
-  label: MHZ 
+  id: mhd
+  label: MHD
   icon: ./docs/imgs/hz_logo.png
 
