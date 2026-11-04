@@ -106,18 +106,43 @@ jobs:
           name: MaaFwApp-debug-apk
           path: apk
 
-      - name: Rename APK with tag and date
+      - name: Rename APK and generate release body
         shell: bash
         run: |
+          set -euo pipefail
           mkdir -p release_assets
-          APK=$(find apk -name "*.apk" | head -n1)
+          APK=$(find apk -name "*.apk" | head -n1 || true)
           TAG="${{ github.event.release.tag_name || github.ref_name }}"
           DATE=$(date +%Y%m%d)
-          cp "$APK" "release_assets/MAA-hunDang-debug-${TAG}-${DATE}.apk"
+          APK_NAME="MAA-hunDang-debug-${TAG}-${DATE}.apk"
+          cp "$APK" "release_assets/${APK_NAME}"
           ls -lh release_assets/
+
+          # 生成与 v2.0.6 手动版本一致的发布说明（下载链接）
+          VER="${TAG#v}"
+          BODY_DATE=$(date -u +%Y-%m-%d)
+          ZIP_NAME="MaaXXX-win-x86_64-${TAG}.zip"
+          BASE="https://github.com/${{ github.repository }}/releases/download/${TAG}"
+          cat > release_body.md <<EOF
+          ## ${VER} (${BODY_DATE})
+
+          如果没有特殊需求，请使用以下链接下载：
+
+          手机版: [Android ARM64 (.apk)](${BASE}/${APK_NAME})
+
+          PC版: [Windows x86_64 (.zip)](${BASE}/${ZIP_NAME})
+          EOF
 
       - name: Upload APK to release
         uses: softprops/action-gh-release@v2
         with:
           files: release_assets/*
           tag_name: ${{ github.event.release.tag_name || github.ref_name }}
+
+      - name: Update release body with download links
+        shell: bash
+        run: |
+          TAG="${{ github.event.release.tag_name || github.ref_name }}"
+          gh release edit "$TAG" --notes-file release_body.md --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
