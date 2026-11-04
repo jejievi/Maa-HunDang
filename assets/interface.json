@@ -3,7 +3,7 @@
     "name": "MaaHunDang",
     "icon": "resource/logo.ico",
     "contact": "QQ群: 1058992601",
-    "license": "MIT",
+    "license": "LICENSE",
     "welcome": [
         "resource/announcement/1.简介.md",
         "resource/announcement/2.使用说明.md",
