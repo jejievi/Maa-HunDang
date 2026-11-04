@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793527304655,
+            "lastSyncTime": 1793801866358,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\统合.json",
             "savedViewport": {
-                "x": -127,
-                "y": -3,
-                "zoom": 0.85
+                "x": -4,
+                "y": -11,
+                "zoom": 0.98
             },
             "filename": "统合",
             "version": "v2.1.0"
@@ -19,8 +19,8 @@
     "$__mpe_external_事件逻辑_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1373,
-                "y": 778
+                "x": 1401,
+                "y": 540
             }
         }
     },
@@ -32,11 +32,11 @@
             }
         }
     },
-    "$__mpe_external_奖励场景_统合": {
+    "$__mpe_external_奖励事件_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1391,
-                "y": 367
+                "x": 1409,
+                "y": 379
             }
         }
     },
@@ -51,32 +51,8 @@
     "$__mpe_external_游艺事件_统合": {
         "$__mpe_code": {
             "position": {
-                "x": 1397,
-                "y": 454
-            }
-        }
-    },
-    "$__mpe_external_移除卡牌_统合": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1384,
-                "y": 538
-            }
-        }
-    },
-    "$__mpe_external_篝火场景_统合": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1373,
-                "y": 685
-            }
-        }
-    },
-    "$__mpe_external_锻造场景_统合": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1379,
-                "y": 610
+                "x": 1404,
+                "y": 458
             }
         }
     },
@@ -103,17 +79,23 @@
         "next": [
             "战斗场景",
             "地图场景",
-            "奖励场景",
+            "奖励事件",
             "游艺事件",
-            "移除卡牌",
-            "锻造场景",
-            "篝火场景",
-            "事件逻辑"
+            "事件逻辑",
+            "移除卡牌"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 663,
-                "y": 348
+                "y": 349
+            }
+        }
+    },
+    "$__mpe_external_移除卡牌_统合": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1397,
+                "y": 647
             }
         }
     }

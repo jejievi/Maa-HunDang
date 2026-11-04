@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793626299623,
+            "lastSyncTime": 1793788801347,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\抽密闻池.json",
             "savedViewport": {
-                "x": -149,
-                "y": 17,
+                "x": -279,
+                "y": 162,
                 "zoom": 0.74
             },
             "filename": "抽密闻池",
@@ -226,11 +226,15 @@
             "type": "Click"
         },
         "post_delay": 1000,
+        "timeout": 3000,
         "focus": "抽卡结束",
+        "next": [
+            "抽卡结束-退出"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 1446,
-                "y": 746
+                "x": 1462,
+                "y": 764
             }
         }
     }

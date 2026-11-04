@@ -1,15 +1,93 @@
 {
-    "$__mpe_config_10.23奖励场景": {
+    "$__mpe_config_奖励场景": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793805763300,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\奖励场景.json",
             "savedViewport": {
-                "x": -1301,
-                "y": -36,
-                "zoom": 0.86
+                "x": -1772,
+                "y": -287,
+                "zoom": 0.98
             },
-            "filename": "10.23奖励场景",
+            "filename": "奖励场景",
             "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_战斗场景_奖励场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2708,
+                "y": 1038
+            }
+        }
+    },
+    "$__mpe_external_游艺事件_奖励场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2716,
+                "y": 925
+            }
+        }
+    },
+    "$__mpe_external_离开地点_动作_奖励场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2858,
+                "y": 548
+            }
+        }
+    },
+    "$__mpe_external_离开地点_直接_奖励场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2731,
+                "y": 802
+            }
+        }
+    },
+    "$__mpe_external_锻造场景_奖励场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2736,
+                "y": 726
+            }
+        }
+    },
+    "奖励事件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    97,
+                    290,
+                    57,
+                    373
+                ],
+                "template": [
+                    "奖励事件判断.png"
+                ],
+                "threshold": [
+                    0.75
+                ]
+            }
+        },
+        "timeout": 4000,
+        "next": [
+            "锻造场景",
+            "离开地点_直接",
+            "游艺事件"
+        ],
+        "on_error": [
+            "战斗场景"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2330,
+                "y": 781
+            }
         }
     },
     "奖励场景": {
@@ -28,20 +106,12 @@
             }
         },
         "next": [
-            "离开地点"
+            "离开地点_动作"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 2382,
                 "y": 504
-            }
-        }
-    },
-    "$__mpe_external_离开地点_10.23奖励场景": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2858,
-                "y": 548
             }
         }
     }

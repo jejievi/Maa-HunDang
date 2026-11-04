@@ -3,20 +3,20 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793198641110,
+            "lastSyncTime": 1793797561437,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\锻造间逻辑.json",
             "savedViewport": {
-                "x": -3608,
-                "y": -1783,
+                "x": -4077,
+                "y": -1937,
                 "zoom": 0.74
             },
             "filename": "锻造间逻辑",
             "version": "v2.1.0"
         }
     },
-    "$__mpe_external_离开地点_锻造间逻辑": {
+    "$__mpe_external_离开地点_动作_锻造间逻辑": {
         "$__mpe_code": {
             "position": {
                 "x": 6232,
@@ -53,23 +53,19 @@
         }
     },
     "形态升变": {
-        "recognition": {
-            "type": "TemplateMatch",
+        "action": {
+            "type": "Click",
             "param": {
-                "roi": [
-                    74,
-                    485,
-                    333,
-                    136
-                ],
-                "template": [
-                    "可形态升变图.png"
+                "target": [
+                    190,
+                    549,
+                    13,
+                    5
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
+        "repeat": 3,
+        "repeat_delay": 300,
         "timeout": 3000,
         "next": [
             "识别卡牌"
@@ -131,7 +127,7 @@
         "action": {
             "type": "Click"
         },
-        "timeout": 1800,
+        "timeout": 1000,
         "next": [
             "卡牌升变"
         ],
@@ -158,7 +154,7 @@
             }
         },
         "next": [
-            "离开地点"
+            "离开地点_动作"
         ],
         "$__mpe_code": {
             "position": {
@@ -187,8 +183,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5202,
-                "y": 3026
+                "x": 5222,
+                "y": 2935
             }
         }
     }

@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793716612300,
+            "lastSyncTime": 1793795053929,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 667,
-                "y": 425,
+                "x": 121,
+                "y": 376,
                 "zoom": 0.99
             },
             "filename": "开始游戏",
@@ -58,8 +58,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -120,
-                "y": -335
+                "x": -166,
+                "y": -403
             }
         }
     },
@@ -107,8 +107,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 328,
-                "y": -57
+                "x": 353,
+                "y": -40
             }
         }
     },
@@ -139,7 +139,6 @@
                 ]
             }
         },
-        "focus": "前往观星室",
         "next": [
             "每日挑战",
             "前往观星室"
@@ -182,8 +181,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 703,
-                "y": -137
+                "x": 680,
+                "y": -121
             }
         }
     },
@@ -225,6 +224,29 @@
             "position": {
                 "x": 1498,
                 "y": -220
+            }
+        }
+    },
+    "开始游戏_关闭窗口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始游戏/关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始游戏_关闭窗口",
+            "前往主仪式间"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -122,
+                "y": -174
             }
         }
     },
@@ -309,9 +331,9 @@
         "repeat": 3,
         "repeat_delay": 1000,
         "timeout": 1800,
-        "focus": "滑动",
         "next": [
-            "坠入深境"
+            "坠入深境",
+            "开始游戏_关闭窗口"
         ],
         "on_error": [
             "启动祭坛"
@@ -334,9 +356,7 @@
         "action": {
             "type": "Click"
         },
-        "repeat": 1,
-        "repeat_delay": 1000,
-        "timeout": 8000,
+        "timeout": 2000,
         "next": [
             "返回公告"
         ],
@@ -361,40 +381,14 @@
         "action": {
             "type": "Click"
         },
-        "repeat": 4,
-        "repeat_delay": 1000,
-        "timeout": 10000,
-        "focus": "",
+        "timeout": 8000,
         "next": [
             "进入游戏"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -78,
-                "y": 37
-            }
-        }
-    },
-    "开始游戏_关闭窗口": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "开始游戏/关闭窗口.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "开始游戏_关闭窗口",
-            "前往主仪式间"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -42,
-                "y": -105
+                "x": -95,
+                "y": 105
             }
         }
     }

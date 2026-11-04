@@ -3,17 +3,168 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793626296593,
+            "lastSyncTime": 1793804379058,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\地图场景.json",
             "savedViewport": {
-                "x": 978,
-                "y": 201,
-                "zoom": 0.57
+                "x": 1658,
+                "y": -270,
+                "zoom": 1.5
             },
             "filename": "地图场景",
             "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_统合_地图场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": -264,
+                "y": 469
+            }
+        }
+    },
+    "$__mpe_external_继续_地图场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 87,
+                "y": 967
+            }
+        }
+    },
+    "地图_退出": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1119,
+                    48,
+                    11,
+                    11
+                ]
+            }
+        },
+        "focus": "地图页识别失败，自动退出...",
+        "next": [
+            "地图退出确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -456,
+                "y": 1051
+            }
+        }
+    },
+    "地图场景": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    386,
+                    5,
+                    206,
+                    63
+                ],
+                "template": [
+                    "地图逻辑/神智.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "timeout": 3000,
+        "rate_limit": 0,
+        "next": [
+            "识别关卡"
+        ],
+        "on_error": [
+            "地图场景二次检测",
+            "统合"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1025,
+                "y": 329
+            }
+        }
+    },
+    "地图场景二次检测": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    386,
+                    5,
+                    206,
+                    63
+                ],
+                "template": [
+                    "地图逻辑/神智.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    965,
+                    620,
+                    13,
+                    10
+                ],
+                "end": [
+                    [
+                        896,
+                        541,
+                        16,
+                        6
+                    ]
+                ]
+            }
+        },
+        "post_delay": 0,
+        "timeout": 6000,
+        "rate_limit": 0,
+        "next": [
+            "识别关卡"
+        ],
+        "on_error": [
+            "地图_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -746,
+                "y": 676
+            }
+        }
+    },
+    "地图退出确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    526,
+                    220,
+                    206,
+                    49
+                ],
+                "template": [
+                    "地图逻辑/退出地图.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -173,
+                "y": 967
+            }
         }
     },
     "识别关卡": {
@@ -35,7 +186,7 @@
                     "更加强大的祝",
                     "遇一场战",
                     "到祝福的",
-                    "途中的一点奖",
+                    "旅途",
                     "得更丰厚的奖",
                     "生甚么事了",
                     "的可购买",
@@ -65,53 +216,15 @@
             "type": "Click"
         },
         "repeat": 2,
+        "post_delay": 800,
         "next": [
+            "地图场景",
             "统合"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -586,
-                "y": 232
-            }
-        }
-    },
-    "$__mpe_external_统合_地图场景": {
-        "$__mpe_code": {
-            "position": {
-                "x": -264,
-                "y": 469
-            }
-        }
-    },
-    "地图场景": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    386,
-                    5,
-                    206,
-                    63
-                ],
-                "template": [
-                    "地图逻辑/神智.png"
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "post_delay": 0,
-        "timeout": 6000,
-        "rate_limit": 0,
-        "on_error": [
-            "统合"
-        ],
-        "next": [
-            "识别关卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1025,
-                "y": 329
+                "x": -567,
+                "y": 236
             }
         }
     }

@@ -3,24 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792946285703,
+            "lastSyncTime": 1793802203059,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\maah\\assets\\resource\\pipeline\\销毁卡牌.json",
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\销毁卡牌.json",
             "savedViewport": {
-                "x": 173,
-                "y": 268,
-                "zoom": 0.57
+                "x": 871,
+                "y": 245,
+                "zoom": 0.37
             },
             "filename": "销毁卡牌",
             "version": "v2.1.0"
         }
     },
-    "$__mpe_external_离开地点_销毁卡牌": {
+    "$__mpe_external_离开地点_直接_销毁卡牌": {
         "$__mpe_code": {
             "position": {
-                "x": 570,
-                "y": -129
+                "x": 599,
+                "y": -206
             }
         }
     },
@@ -103,6 +103,7 @@
                 ]
             }
         },
+        "pre_delay": 0,
         "action": {
             "type": "Click",
             "param": {
@@ -114,16 +115,19 @@
                 ]
             }
         },
+        "post_delay": 0,
+        "timeout": 20000,
+        "rate_limit": 0,
         "next": [
             "移除卡牌界面"
         ],
         "on_error": [
-            "离开地点"
+            "离开地点_直接"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -99,
-                "y": 80
+                "x": -197,
+                "y": 8
             }
         }
     },
@@ -185,7 +189,7 @@
             }
         },
         "next": [
-            "离开地点"
+            "离开地点_直接"
         ],
         "$__mpe_code": {
             "position": {

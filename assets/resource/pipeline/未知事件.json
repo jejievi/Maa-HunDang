@@ -3,73 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793460991781,
-            "isModifiedExternally": true,
+            "lastSyncTime": 1793506807160,
+            "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\未知事件.json",
             "savedViewport": {
-                "x": 176,
-                "y": 263,
+                "x": 505,
+                "y": 351,
                 "zoom": 0.86
             },
             "filename": "未知事件",
             "version": "v2.1.0"
         }
     },
-    "未知事件-副": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    61,
-                    325,
-                    89,
-                    349
-                ],
-                "template": [
-                    "紫色选项.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    214,
-                    495,
-                    27,
-                    16
-                ]
-            }
-        },
-        "repeat": 5,
-        "repeat_delay": 800,
-        "timeout": 3000,
-        "next": [
-            "未知事件",
-            "选择卡牌移除",
-            "选择卡片",
-            "离开地点",
-            "印记刻印(1.1)",
-            "战斗场景",
-            "地图场景",
-            "终结"
-        ],
-        "on_error": [
-            "统合"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 283,
-                "y": -318
-            }
-        }
-    },
     "$__mpe_external_印记刻印(1.1)_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 782,
-                "y": 293
+                "x": 788,
+                "y": 274
             }
         }
     },
@@ -84,12 +35,12 @@
     "$__mpe_external_战斗场景_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 793,
-                "y": 338
+                "x": 790,
+                "y": 341
             }
         }
     },
-    "$__mpe_external_离开地点_未知事件": {
+    "$__mpe_external_离开地点_直接_未知事件": {
         "$__mpe_code": {
             "position": {
                 "x": 794,
@@ -159,7 +110,7 @@
         "repeat_delay": 800,
         "timeout": 3000,
         "next": [
-            "离开地点",
+            "离开地点_直接",
             "选择卡牌移除",
             "选择卡片",
             "印记刻印(1.1)",
@@ -173,8 +124,57 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 259,
-                "y": 110
+                "x": 106,
+                "y": 148
+            }
+        }
+    },
+    "未知事件-副": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    61,
+                    325,
+                    89,
+                    349
+                ],
+                "template": [
+                    "紫色选项.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    214,
+                    495,
+                    27,
+                    16
+                ]
+            }
+        },
+        "repeat": 5,
+        "repeat_delay": 800,
+        "timeout": 3000,
+        "next": [
+            "未知事件",
+            "选择卡牌移除",
+            "选择卡片",
+            "离开地点_直接",
+            "印记刻印(1.1)",
+            "战斗场景",
+            "地图场景",
+            "终结"
+        ],
+        "on_error": [
+            "统合"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 231,
+                "y": -400
             }
         }
     }
