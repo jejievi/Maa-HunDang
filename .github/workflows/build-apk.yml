@@ -126,13 +126,15 @@ jobs:
           cat > release_body.md <<EOF
           ## ${VER} (${BODY_DATE})
 
+          性能优化中...
+
           如果没有特殊需求，请使用以下链接下载：
 
           手机版: [Android ARM64 (.apk)](${BASE}/${APK_NAME})
 
           PC版: [Windows x86_64 (.zip)](${BASE}/${ZIP_NAME})
 
-          # 注:'v5.x.x' 版本的皆为测试版、不建议下载
+          ### 注:'v5.x.x' 版本的皆为测试版、不建议下载
 
           EOF
 
