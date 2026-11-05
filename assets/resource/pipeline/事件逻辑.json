@@ -1,22 +1,18 @@
 {
-    "$__mpe_config_事件逻辑": {
+    "$__mpe_config_新建Pipeline2": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793803148844,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\事件逻辑.json",
             "savedViewport": {
-                "x": -672,
-                "y": -220,
-                "zoom": 0.99
+                "x": -422,
+                "y": -158,
+                "zoom": 0.62
             },
-            "filename": "事件逻辑",
+            "filename": "新建Pipeline2",
             "version": "v2.1.0"
         }
     },
-    "$__mpe_external_启动祭坛_事件逻辑": {
+    "$__mpe_external_启动祭坛_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 2592,
@@ -24,7 +20,7 @@
             }
         }
     },
-    "$__mpe_external_地图场景_事件逻辑": {
+    "$__mpe_external_地图场景_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 2540,
@@ -32,7 +28,7 @@
             }
         }
     },
-    "$__mpe_external_战斗场景_事件逻辑": {
+    "$__mpe_external_战斗场景_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 2276,
@@ -40,7 +36,7 @@
             }
         }
     },
-    "$__mpe_external_未知事件_事件逻辑": {
+    "$__mpe_external_未知事件_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 2545,
@@ -48,7 +44,7 @@
             }
         }
     },
-    "$__mpe_external_游艺-点击空白关闭_事件逻辑": {
+    "$__mpe_external_游艺-点击空白关闭_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 3205,
@@ -56,7 +52,7 @@
             }
         }
     },
-    "$__mpe_external_游艺事件_事件逻辑": {
+    "$__mpe_external_游艺事件_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 1594,
@@ -64,7 +60,7 @@
             }
         }
     },
-    "$__mpe_external_篝火场景_事件逻辑": {
+    "$__mpe_external_篝火场景_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 2776,
@@ -72,7 +68,7 @@
             }
         }
     },
-    "$__mpe_external_统合_事件逻辑": {
+    "$__mpe_external_统合_新建Pipeline2": {
         "$__mpe_code": {
             "position": {
                 "x": 2588,
@@ -210,7 +206,8 @@
             "离开地点",
             "游艺事件",
             "事件-失控书士",
-            "电音歌手"
+            "电音歌手",
+            "离开地点2"
         ],
         "on_error": [
             "选择卡片",
@@ -452,8 +449,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2075,
-                "y": 750
+                "x": 2178,
+                "y": 781
             }
         }
     },
@@ -506,8 +503,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1552,
-                "y": 588
+                "x": 1387,
+                "y": 557
             }
         }
     },
@@ -549,8 +546,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1586,
-                "y": 1030
+                "x": 1571,
+                "y": 958
             }
         }
     },
@@ -574,7 +571,7 @@
         "rate_limit": 0,
         "next": [
             "直接离开-红框",
-            "离开地点"
+            "离开地点_直接"
         ],
         "on_error": [
             "地图场景",
@@ -582,8 +579,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1755,
-                "y": 552
+                "x": 1799,
+                "y": 782
             }
         }
     },
@@ -607,8 +604,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1414,
-                "y": 792
+                "x": 1177,
+                "y": 861
             }
         }
     },
@@ -666,8 +663,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2450,
-                "y": 938
+                "x": 2361,
+                "y": 959
             }
         }
     },

@@ -131,6 +131,9 @@ jobs:
           手机版: [Android ARM64 (.apk)](${BASE}/${APK_NAME})
 
           PC版: [Windows x86_64 (.zip)](${BASE}/${ZIP_NAME})
+
+          # 注:'v5.x.x' 版本的皆为测试版、不建议下载
+
           EOF
 
       - name: Upload APK to release

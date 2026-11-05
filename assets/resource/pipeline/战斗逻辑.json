@@ -4,8 +4,8 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 156,
-                "y": 222,
+                "x": 302,
+                "y": 107,
                 "zoom": 0.7
             },
             "filename": "新建Pipeline3",
@@ -42,12 +42,13 @@
         "next": [
             "战斗中",
             "离开地点_直接",
-            "终结"
+            "终结",
+            "继续"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 840,
-                "y": 509
+                "x": 881,
+                "y": 477
             }
         }
     },
@@ -66,22 +67,11 @@
                 ]
             }
         },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1208,
-                    268,
-                    19,
-                    14
-                ]
-            }
-        },
-        "timeout": 6000,
         "next": [
             "自动战斗",
             "离开地点_直接",
-            "终结"
+            "终结",
+            "继续"
         ],
         "$__mpe_code": {
             "position": {
@@ -108,7 +98,7 @@
         "timeout": 1000,
         "next": [
             "粪怪",
-            "战斗中"
+            "战斗_首次攻击"
         ],
         "$__mpe_code": {
             "position": {
@@ -164,12 +154,13 @@
         "next": [
             "战斗中",
             "离开地点_直接",
-            "终结"
+            "终结",
+            "继续"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1093,
-                "y": 106
+                "x": 1057,
+                "y": 84
             }
         }
     },
@@ -203,8 +194,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 555,
-                "y": 12
+                "x": 444,
+                "y": 52
             }
         }
     },
@@ -283,9 +274,15 @@
     "$__mpe_external_继续_新建Pipeline3": {
         "$__mpe_code": {
             "position": {
-                "x": 1690,
-                "y": -262
-            }
+                "x": 1760,
+                "y": -200
+            },
+            "extra_positions": [
+                {
+                    "x": 1280,
+                    "y": 977
+                }
+            ]
         }
     },
     "复活": {
@@ -320,16 +317,43 @@
     "$__mpe_external_终结_新建Pipeline3": {
         "$__mpe_code": {
             "position": {
-                "x": 1117,
-                "y": 1028
+                "x": 1282,
+                "y": 978
             }
         }
     },
     "$__mpe_external_离开地点_直接_新建Pipeline3": {
         "$__mpe_code": {
             "position": {
-                "x": 1291,
-                "y": 905
+                "x": 1280,
+                "y": 975
+            }
+        }
+    },
+    "战斗_首次攻击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    571,
+                    98,
+                    119
+                ],
+                "template": [
+                    "战斗场景/战斗场景.png"
+                ]
+            }
+        },
+        "pre_delay": 500,
+        "timeout": 6000,
+        "next": [
+            "自动战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 14,
+                "y": 157
             }
         }
     }

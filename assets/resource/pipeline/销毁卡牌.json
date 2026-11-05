@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793802203059,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\销毁卡牌.json",
             "savedViewport": {
-                "x": 871,
-                "y": 245,
-                "zoom": 0.37
+                "x": 325,
+                "y": 228,
+                "zoom": 0.7
             },
             "filename": "销毁卡牌",
             "version": "v2.1.0"
@@ -103,7 +99,7 @@
                 ]
             }
         },
-        "pre_delay": 0,
+        "pre_delay": 400,
         "action": {
             "type": "Click",
             "param": {
