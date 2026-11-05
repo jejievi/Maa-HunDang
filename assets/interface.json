@@ -1,19 +1,16 @@
 {
+    // 本文件主要定义了通用 UI 的行为和显示内容
+    // 可参考文档和示例添加更多您需要的功能
+    // 文档：https://maafw.xyz/docs/3.3-ProjectInterfaceV2
+    // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
-    "name": "MaaHunDang",
-    "icon": "resource/logo.ico",
+    "name": "MaaHunZhui",
     "contact": "QQ群: 1058992601",
     "license": "LICENSE",
-    "welcome": [
-        "resource/announcement/1.简介.md",
-        "resource/announcement/2.使用说明.md",
-        "resource/announcement/3.百战须知.md",
-        "resource/announcement/4.用户协议.md",
-        "resource/announcement/5.加入我们.md"
-    ],
+    "welcome": "请不要在有关及官方群里讨论MHD，也不要在视频平台及社交网络上传播MHD，感谢您的理解！",
     // 填写项目地址和版本号可实现自动更新功能
     "github": "https://github.com/liao-2004/MAA-hunDang",
-    "description": "本软件开源免费,受AGPL v3协议保护。",
+    "description": "本软件开源免费，如要付费就说明你被坑了。",
     "controller": [
         {
             "name": "安卓端",
@@ -29,15 +26,23 @@
             ]
         }
     ],
+    // 可选的 agent 示例
+    // "agent": {
+    //     "child_exec": "python",
+    //     "child_args": [
+    //         "./agent/main.py"
+    //     ]
+    // },
     "task": [
         {
             "name": "==启动游戏==",
             "entry": "==启动游戏==",
             "group": [
-                "百战方案"
+                "狂战士"
             ],
-            "option": [],
-            "default_check": true
+            "option": [
+                "永久VIP"
+            ]
         },
         {
             "name": "==开始游戏==",
@@ -48,11 +53,12 @@
             "resource": [
                 "官服"
             ],
-            "option": [],
-            "group": [
-                "百战方案"
+            "option": [
+                "永久VIP"
             ],
-            "default_check": true
+            "group": [
+                "狂战士"
+            ]
         },
         {
             "name": "==每日挑战==",
@@ -83,6 +89,8 @@
                 },
                 "===开始===": {
                     "next": [
+                        "返回公告",
+                        "进入游戏",
                         "前往观星室",
                         "每日挑战-开始",
                         "每日挑战",
@@ -98,20 +106,11 @@
                         "前往观星室",
                         "统合"
                     ]
-                },
-                "滑动难度": {
-                    "on_error": [
-                        "每日挑战-开始"
-                    ]
-                },
-                "开始游戏_关闭窗口": {
-                    "next": [
-                        "开始游戏_关闭窗口",
-                        "前往观星室"
-                    ]
                 }
             },
-            "option": [],
+            "option": [
+                "永久VIP"
+            ],
             "resource": [
                 "官服"
             ],
@@ -119,35 +118,48 @@
                 "安卓端"
             ],
             "group": [
-                "百战方案"
-            ],
-            "default_check": false
+                "狂战士"
+            ]
         },
         {
             "name": "==密闻抽卡==",
-            "entry": "==密闻抽卡==",
-            "group": [
-                "其他工具"
-            ]
+            "entry": "==密闻抽卡=="
         },
         {
             "name": "==退出游戏==",
             "entry": "==退出游戏==",
             "group": [
-                "百战方案"
+                "狂战士"
             ],
-            "option": [],
-            "default_check": true
+            "option": [
+                "永久VIP"
+            ]
         },
         {
             "name": "==检测边境==",
-            "entry": "==检测边境==",
-            "group": [
-                "其他工具"
-            ],
-            "description": "初次进游戏若无自动操作，得适配ui,，进入设置，更改ui大小，游戏框需在滑动区域内(非必要不要选入任务，以免造成不必要的性能损耗)"
+            "entry": "==检测边境=="
         }
+        // {
+        //     "name": "选项任务",
+        //     "entry": "MyTask2",
+        //     "option": [
+        //         "任务选项1"
+        //     ]
+        // },
+        // {
+        //     "name": "参数任务",
+        //     "entry": "MyTask3",
+        //     "option": [
+        //         "任务选项1"
+        //     ],
+        //     "pipeline_override": {}
+        // },
+        // {
+        //     "name": "带Custom的任务",
+        //     "entry": "MyTask4"
+        // }
     ],
+    "label": "深境",
     "option": {
         "永久VIP": {
             "cases": [
@@ -157,101 +169,46 @@
                 },
                 {
                     "name": "No",
-                    "option": [],
-                    "pipeline_override": {
-                        "复活": {
-                            "recognition": {
-                                "type": "TemplateMatch",
-                                "param": {
-                                    "roi": [
-                                        442,
-                                        586,
-                                        98,
-                                        35
-                                    ],
-                                    "template": [
-                                        "战斗场景/放弃挣扎.png"
-                                    ]
-                                }
-                            },
-                            "timeout": -1,
-                            "next": [
-                                "终结"
-                            ]
-                        },
-                        "复活1": {
-                            "recognition": {
-                                "type": "TemplateMatch",
-                                "param": {
-                                    "roi": [
-                                        442,
-                                        586,
-                                        98,
-                                        35
-                                    ],
-                                    "template": [
-                                        "战斗场景/放弃挣扎.png"
-                                    ]
-                                }
-                            },
-                            "timeout": -1,
-                            "next": [
-                                "终结"
-                            ]
-                        }
-                    }
+                    "option": []
                 }
             ],
             "label": "永久VIP",
-            "default_case": "No",
+            "default_case": "Yes",
             "type": "switch",
             "controller": [
                 "安卓端"
             ],
             "resource": [
                 "官服"
-            ],
-            "description": "用于是否复活判断"
-        },
-        "是否有火斧": {
-            "type": "switch",
-            "cases": [
-                {
-                    "name": "Yes",
-                    "option": []
-                },
-                {
-                    "name": "No",
-                    "pipeline_override": {
-                        "锻造场景": {
-                            "next": "离开地点_动作"
-                        }
-                    }
-                }
-            ],
-            "label": "火斧",
-            "default_case": "No",
-            "controller": [
-                "安卓端"
-            ],
-            "resource": [
-                "官服"
-            ],
-            "description": "用于锻造升变策略"
+            ]
         }
     },
     "group": [
         {
-            "name": "百战方案",
-            "default_expand": true
-        },
-        {
-            "name": "其他工具"
+            "name": "狂战士"
         }
-    ],
-    "global_option": [
-        "是否有火斧",
-        "永久VIP"
-    ],
-    "label": "Maa_魂境_扫荡"
+    ]
+    // "option": {
+    //     "任务选项1": {
+    //         "type": "select",
+    //         "cases": [
+    //             {
+    //                 "name": "文本1",
+    //                 "pipeline_override": {
+    //                     "OcrTask": {
+    //                         "text": "文本1"
+    //                     }
+    //                 }
+    //             },
+    //             {
+    //                 "name": "文本2",
+    //                 "pipeline_override": {
+    //                     "OcrTask": {
+    //                         "text": "文本2"
+    //                     }
+    //                 }
+    //             }
+    //         ]
+    //     }
+    // }
 }
