@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793887589895,
+            "lastSyncTime": 1793900229961,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\奖励场景.json",
             "savedViewport": {
-                "x": -1301,
-                "y": 216,
-                "zoom": 0.56
+                "x": -724,
+                "y": 169,
+                "zoom": 0.49
             },
             "filename": "奖励场景",
             "version": "v2.1.0"
@@ -53,6 +53,226 @@
             "position": {
                 "x": 2736,
                 "y": 726
+            }
+        }
+    },
+    "奖励_点击空白处确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    540,
+                    655,
+                    198,
+                    48
+                ],
+                "template": [
+                    "游艺/游艺-领取并离开.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "祝福奖励",
+            "离开地点_动作"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3269,
+                "y": 368
+            }
+        }
+    },
+    "奖励_确认": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    660,
+                    16,
+                    7
+                ]
+            }
+        },
+        "next": [
+            "奖励_选择卡牌_副本1",
+            "奖励_点击空白处确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3440,
+                "y": -31
+            }
+        }
+    },
+    "奖励_确认2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    660,
+                    16,
+                    7
+                ]
+            }
+        },
+        "next": [
+            "奖励_选择卡牌_副本1_副本1",
+            "奖励_点击空白处确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4201,
+                "y": 36
+            }
+        }
+    },
+    "奖励_确认2_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    660,
+                    16,
+                    7
+                ]
+            }
+        },
+        "next": [
+            "奖励_选择卡牌_副本1_副本1_副本1",
+            "奖励_点击空白处确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4211,
+                "y": 279
+            }
+        }
+    },
+    "奖励_确认2_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1104,
+                    202,
+                    9,
+                    18
+                ]
+            }
+        },
+        "next": [
+            "奖励_点击空白处确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4270,
+                "y": 502
+            }
+        }
+    },
+    "奖励_选择卡牌": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    836,
+                    17,
+                    189,
+                    47
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "next": [
+            "新建节点62"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2920,
+                "y": -49
+            }
+        }
+    },
+    "奖励_选择卡牌_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    836,
+                    17,
+                    189,
+                    47
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "next": [
+            "新建节点62_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3687,
+                "y": 20
+            }
+        }
+    },
+    "奖励_选择卡牌_副本1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    836,
+                    17,
+                    189,
+                    47
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "next": [
+            "新建节点62_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3679,
+                "y": 271
+            }
+        }
+    },
+    "奖励_选择卡牌_副本1_副本1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    836,
+                    17,
+                    189,
+                    47
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "next": [
+            "新建节点62_副本1_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3726,
+                "y": 487
             }
         }
     },
@@ -118,6 +338,94 @@
             }
         }
     },
+    "新建节点62": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    832,
+                    215,
+                    13,
+                    13
+                ]
+            }
+        },
+        "next": [
+            "奖励_确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3190,
+                "y": -41
+            }
+        }
+    },
+    "新建节点62_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1010,
+                    208,
+                    11,
+                    16
+                ]
+            }
+        },
+        "next": [
+            "奖励_确认2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3944,
+                "y": 33
+            }
+        }
+    },
+    "新建节点62_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    746,
+                    204,
+                    11,
+                    20
+                ]
+            }
+        },
+        "next": [
+            "奖励_确认2_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3941,
+                "y": 272
+            }
+        }
+    },
+    "新建节点62_副本1_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    746,
+                    204,
+                    11,
+                    20
+                ]
+            }
+        },
+        "next": [
+            "奖励_确认2_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3996,
+                "y": 499
+            }
+        }
+    },
     "祝福奖励": {
         "recognition": {
             "type": "TemplateMatch",
@@ -145,8 +453,7 @@
             }
         },
         "next": [
-            "祝福奖励_确认",
-            "奖励_选择卡牌"
+            "祝福奖励_确认"
         ],
         "$__mpe_code": {
             "position": {
@@ -175,320 +482,13 @@
         },
         "next": [
             "奖励_点击空白处确认",
+            "奖励_选择卡牌",
             "祝福奖励"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2900,
-                "y": 376
-            }
-        }
-    },
-    "奖励_选择卡牌": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    836,
-                    17,
-                    189,
-                    47
-                ],
-                "template": [
-                    "事件逻辑/选择卡牌.png"
-                ]
-            }
-        },
-        "next": [
-            "新建节点62"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2920,
-                "y": -49
-            }
-        }
-    },
-    "新建节点62": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    832,
-                    215,
-                    13,
-                    13
-                ]
-            }
-        },
-        "next": [
-            "奖励_确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3190,
-                "y": -41
-            }
-        }
-    },
-    "奖励_确认": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    922,
-                    660,
-                    16,
-                    7
-                ]
-            }
-        },
-        "next": [
-            "奖励_选择卡牌_副本1",
-            "奖励_点击空白处确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3440,
-                "y": -31
-            }
-        }
-    },
-    "奖励_选择卡牌_副本1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    836,
-                    17,
-                    189,
-                    47
-                ],
-                "template": [
-                    "事件逻辑/选择卡牌.png"
-                ]
-            }
-        },
-        "next": [
-            "新建节点62_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3687,
-                "y": 20
-            }
-        }
-    },
-    "新建节点62_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1010,
-                    208,
-                    11,
-                    16
-                ]
-            }
-        },
-        "next": [
-            "奖励_确认2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3944,
-                "y": 33
-            }
-        }
-    },
-    "奖励_确认2": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    922,
-                    660,
-                    16,
-                    7
-                ]
-            }
-        },
-        "next": [
-            "奖励_选择卡牌_副本1_副本1",
-            "奖励_点击空白处确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4201,
-                "y": 36
-            }
-        }
-    },
-    "奖励_选择卡牌_副本1_副本1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    836,
-                    17,
-                    189,
-                    47
-                ],
-                "template": [
-                    "事件逻辑/选择卡牌.png"
-                ]
-            }
-        },
-        "next": [
-            "新建节点62_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3679,
-                "y": 271
-            }
-        }
-    },
-    "新建节点62_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    746,
-                    204,
-                    11,
-                    20
-                ]
-            }
-        },
-        "next": [
-            "奖励_确认2_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3941,
-                "y": 272
-            }
-        }
-    },
-    "奖励_确认2_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    922,
-                    660,
-                    16,
-                    7
-                ]
-            }
-        },
-        "next": [
-            "奖励_选择卡牌_副本1_副本1_副本1",
-            "奖励_点击空白处确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4211,
-                "y": 279
-            }
-        }
-    },
-    "奖励_选择卡牌_副本1_副本1_副本1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    836,
-                    17,
-                    189,
-                    47
-                ],
-                "template": [
-                    "事件逻辑/选择卡牌.png"
-                ]
-            }
-        },
-        "next": [
-            "新建节点62_副本1_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3726,
-                "y": 487
-            }
-        }
-    },
-    "新建节点62_副本1_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    746,
-                    204,
-                    11,
-                    20
-                ]
-            }
-        },
-        "next": [
-            "奖励_确认2_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3996,
-                "y": 499
-            }
-        }
-    },
-    "奖励_确认2_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1104,
-                    202,
-                    9,
-                    18
-                ]
-            }
-        },
-        "next": [
-            "奖励_点击空白处确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4270,
-                "y": 502
-            }
-        }
-    },
-    "奖励_点击空白处确认": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    540,
-                    655,
-                    198,
-                    48
-                ],
-                "template": [
-                    "游艺/游艺-领取并离开.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "祝福奖励",
-            "离开地点_动作"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3197,
-                "y": 417
+                "x": 2969,
+                "y": 346
             }
         }
     }
