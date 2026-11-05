@@ -1,0 +1,506 @@
+{
+    "$__mpe_config_战斗场景": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793873767166,
+            "isModifiedExternally": false,
+            "isDeleted": true,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗逻辑.json",
+            "savedViewport": {
+                "x": 776,
+                "y": 352,
+                "zoom": 0.2
+            },
+            "filename": "战斗场景",
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_奖励场景_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1295,
+                "y": 1172
+            }
+        }
+    },
+    "$__mpe_external_终结_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1297,
+                "y": 1179
+            }
+        }
+    },
+    "$__mpe_external_继续_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 376,
+                "y": -554
+            },
+            "extra_positions": [
+                {
+                    "x": 1293,
+                    "y": 1173
+                }
+            ]
+        }
+    },
+    "复活": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    739,
+                    581,
+                    82,
+                    44
+                ],
+                "template": [
+                    "战斗场景/挣扎.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "结束消失",
+            "自动战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 439,
+                "y": -491
+            }
+        }
+    },
+    "战斗-设置": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1159,
+                    13,
+                    92,
+                    73
+                ],
+                "template": [
+                    "战斗场景/战斗-设置.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "战斗-设置2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -209,
+                "y": -527
+            }
+        }
+    },
+    "战斗-设置2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1201,
+                    33,
+                    30,
+                    34
+                ]
+            }
+        },
+        "next": [
+            "战斗-设置3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": -594
+            }
+        }
+    },
+    "战斗-设置3": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    772,
+                    232,
+                    48,
+                    27
+                ]
+            }
+        },
+        "next": [
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 84,
+                "y": -588
+            }
+        }
+    },
+    "战斗_首次攻击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    571,
+                    98,
+                    119
+                ],
+                "template": [
+                    "战斗场景/战斗场景.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "自动战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -168,
+                "y": 217
+            }
+        }
+    },
+    "战斗中": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    571,
+                    98,
+                    119
+                ],
+                "template": [
+                    "战斗场景/战斗场景.png"
+                ]
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "自动战斗"
+        ],
+        "on_error": [
+            "选择一项",
+            "终结",
+            "奖励场景",
+            "继续",
+            "复活",
+            "战斗中",
+            "延迟箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 192,
+                "y": 529
+            }
+        }
+    },
+    "战斗场景": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    575,
+                    128,
+                    136
+                ],
+                "template": [
+                    "战斗场景/战斗场景.png"
+                ]
+            }
+        },
+        "timeout": 1000,
+        "next": [
+            "粪怪"
+        ],
+        "on_error": [
+            "战斗_首次攻击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -580,
+                "y": -89
+            }
+        }
+    },
+    "粪怪": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    382,
+                    39,
+                    296,
+                    41
+                ],
+                "expected": [
+                    "极星水母",
+                    "遣学士",
+                    "行医"
+                ]
+            }
+        },
+        "next": [
+            "战斗-设置"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -254,
+                "y": -147
+            }
+        }
+    },
+    "结束消失": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1151,
+                    324,
+                    121,
+                    60
+                ],
+                "template": [
+                    "战斗场景/卡死-结束回合.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "战斗中",
+            "奖励场景",
+            "终结",
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1113,
+                "y": 106
+            }
+        }
+    },
+    "自动战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1177,
+                    251,
+                    93,
+                    38
+                ],
+                "template": [
+                    "战斗场景/te结束战斗.png"
+                ]
+            }
+        },
+        "pre_delay": 1500,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0,
+        "timeout": 8000,
+        "next": [
+            "结束消失",
+            "复活"
+        ],
+        "on_error": [
+            "跳过回合",
+            "战斗中",
+            "继续",
+            "奖励场景",
+            "终结",
+            "延迟箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 433,
+                "y": -258
+            }
+        }
+    },
+    "跳过回合": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1151,
+                    324,
+                    121,
+                    60
+                ],
+                "template": [
+                    "战斗场景/卡死-结束回合.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1151,
+                    324,
+                    121,
+                    60
+                ]
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "战斗中"
+        ],
+        "on_error": [
+            "选择一项",
+            "继续",
+            "奖励场景",
+            "终结",
+            "跳过回合",
+            "延迟箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 752,
+                "y": 124
+            }
+        }
+    },
+    "选择一项": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    537,
+                    252,
+                    211,
+                    43
+                ],
+                "template": [
+                    "战斗场景/选择一项.png"
+                ]
+            }
+        },
+        "timeout": 5000,
+        "next": [
+            "夜巡人",
+            "战斗_确定_(选择黄金)"
+        ],
+        "on_error": [
+            "终结",
+            "奖励场景",
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 404,
+                "y": 1380
+            }
+        }
+    },
+    "延迟箱": {
+        "focus": "网络状态不好...",
+        "next": [
+            "终结",
+            "奖励场景",
+            "继续",
+            "战斗_首次攻击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 798,
+                "y": 753
+            }
+        }
+    },
+    "战斗_确定_(选择黄金)": {
+        "recognition": {
+            "type": "TemplateMatch"
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    800,
+                    427,
+                    16,
+                    14
+                ]
+            }
+        },
+        "timeout": 5000,
+        "next": [
+            "选择一项",
+            "跳过回合"
+        ],
+        "on_error": [
+            "终结",
+            "奖励场景",
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 411,
+                "y": 1411
+            }
+        }
+    },
+    "夜巡人": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    421,
+                    327,
+                    257,
+                    133
+                ],
+                "template": [
+                    "战斗场景/夜寻人_生命.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    283,
+                    -1,
+                    -1,
+                    -2
+                ]
+            }
+        },
+        "timeout": 5000,
+        "next": [
+            "选择一项",
+            "跳过回合"
+        ],
+        "on_error": [
+            "终结",
+            "奖励场景",
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 435,
+                "y": 964
+            }
+        }
+    }
+}
