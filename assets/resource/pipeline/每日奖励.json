@@ -1,0 +1,464 @@
+{
+    "$__mpe_config_每日奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -196,
+                "y": 131,
+                "zoom": 0.7
+            },
+            "filename": "每日奖励",
+            "version": "v2.1.0"
+        }
+    },
+    "==每日奖励==": {
+        "next": [
+            "前往大厅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 692,
+                "y": -270
+            }
+        }
+    },
+    "更改任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    900,
+                    65,
+                    151,
+                    111
+                ],
+                "template": [
+                    "每日任务/任务路口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "更改任务中",
+        "next": [
+            "不足80的任务刷新1",
+            "离开任务",
+            "更改任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1315,
+                "y": -233
+            }
+        }
+    },
+    "前往大厅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1125,
+                    536,
+                    126,
+                    97
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "",
+        "next": [
+            "前往大厅1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 989,
+                "y": -258
+            }
+        }
+    },
+    "不足80的任务刷新1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    343,
+                    359,
+                    658,
+                    25
+                ],
+                "expected": [
+                    "50"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -128,
+                    -148,
+                    8,
+                    11
+                ]
+            }
+        },
+        "post_delay": 4000,
+        "timeout": 10000,
+        "next": [
+            "不足80的任务刷新1"
+        ],
+        "on_error": [
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1697,
+                "y": -400
+            }
+        }
+    },
+    "离开任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    58,
+                    118,
+                    90
+                ],
+                "template": [
+                    "开始游戏/关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 6000,
+        "focus": "更改结束",
+        "next": [
+            "离开任务",
+            "前往大厅1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1665,
+                "y": -4
+            }
+        }
+    },
+    "商店异界赠礼(仅VIP可用)": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1145,
+                    121,
+                    83,
+                    48
+                ],
+                "template": [
+                    "每日任务/商店.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "商店异界赠礼(仅VIP可用)",
+            "深境商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1309,
+                "y": 587
+            }
+        }
+    },
+    "深境商店": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    63,
+                    251,
+                    158,
+                    68
+                ],
+                "expected": [
+                    "深境商店"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "周期之礼"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1671,
+                "y": 584
+            }
+        }
+    },
+    "周期之礼": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    525,
+                    68,
+                    151,
+                    55
+                ],
+                "expected": [
+                    "周期之礼"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 2000,
+        "next": [
+            "领取"
+        ],
+        "on_error": [
+            "深境商店_关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1962,
+                "y": 585
+            }
+        }
+    },
+    "领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    319,
+                    578,
+                    151,
+                    53
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "深境商店_点击任意空白关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2207,
+                "y": 611
+            }
+        }
+    },
+    "深境商店_点击任意空白关闭": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    498,
+                    663,
+                    294,
+                    55
+                ],
+                "expected": [
+                    "点击任意空白处关闭"
+                ]
+            }
+        },
+        "pre_delay": 400,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "深境商店_关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2480,
+                "y": 593
+            }
+        }
+    },
+    "深境商店_关闭": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    66,
+                    18,
+                    23,
+                    20
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2791,
+                "y": 632
+            }
+        }
+    },
+    "前往大厅1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1125,
+                    536,
+                    126,
+                    97
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "前往大厅2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 943,
+                "y": 304
+            }
+        }
+    },
+    "前往大厅2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1125,
+                    536,
+                    126,
+                    97
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 967,
+                "y": 619
+            }
+        }
+    },
+    "前往领取任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    900,
+                    65,
+                    151,
+                    111
+                ],
+                "template": [
+                    "每日任务/任务路口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "领取任务",
+            "离开任务_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1307,
+                "y": 312
+            }
+        }
+    },
+    "领取任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    239,
+                    497,
+                    799,
+                    67
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "领取任务",
+            "离开任务_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1563,
+                "y": 312
+            }
+        }
+    },
+    "离开任务_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    58,
+                    118,
+                    90
+                ],
+                "template": [
+                    "开始游戏/关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 6000,
+        "focus": "更改结束",
+        "next": [
+            "前往大厅2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1937,
+                "y": 327
+            }
+        }
+    }
+}

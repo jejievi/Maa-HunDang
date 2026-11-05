@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793889776719,
+            "lastSyncTime": 1793899980265,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 825,
-                "y": 369,
+                "x": 1019,
+                "y": 204,
                 "zoom": 0.57
             },
             "filename": "开始游戏",
@@ -59,8 +59,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -747,
-                "y": -426
+                "x": -780,
+                "y": 637
             }
         }
     },
@@ -345,8 +345,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -539,
-                "y": 165
+                "x": -416,
+                "y": 672
             }
         }
     },
@@ -360,15 +360,34 @@
         "action": {
             "type": "Click"
         },
-        "timeout": 8000,
-        "rate_limit": 1000,
+        "rate_limit": 25000,
         "next": [
-            "进入游戏"
+            "进入游戏",
+            "启动游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -170,
-                "y": 123
+                "x": -212,
+                "y": 281
+            }
+        }
+    },
+    "启动游戏_关闭窗口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始游戏/关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 114,
+                "y": 305
             }
         }
     }

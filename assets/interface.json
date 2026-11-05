@@ -35,6 +35,22 @@
     // },
     "task": [
         {
+            "name": "==每日奖励==",
+            "entry": "==每日奖励==",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ],
+            "option": [
+                "更改任务",
+                "领取任务",
+                "VIP每日异界赠礼"
+            ],
+            "default_check": true
+        },
+        {
             "name": "==启动游戏==",
             "entry": "==启动游戏==",
             "group": [
@@ -225,6 +241,66 @@
                 "官服"
             ],
             "label": "每日挑战",
+            "default_case": "No"
+        },
+        "更改任务": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "前往大厅": {
+                            "next": [
+                                "更改任务",
+                                "前往大厅1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No"
+                }
+            ],
+            "default_case": "No"
+        },
+        "VIP每日异界赠礼": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "前往大厅2": {
+                            "next": [
+                                "商店异界赠礼(仅VIP可用)"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No"
+                }
+            ],
+            "label": "VIP每日异界赠礼",
+            "default_case": "No"
+        },
+        "领取任务": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "前往大厅1": {
+                            "next": [
+                                "前往领取任务",
+                                "前往大厅2"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No"
+                }
+            ],
             "default_case": "No"
         }
     },
