@@ -4,12 +4,56 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -904,
-                "y": 263,
-                "zoom": 0.75
+                "x": -1153,
+                "y": 266,
+                "zoom": 0.86
             },
             "filename": "退出游戏",
             "version": "v2.1.0"
+        }
+    },
+    "新建节点55": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    3,
+                    708,
+                    10,
+                    11
+                ],
+                "end": [
+                    [
+                        4,
+                        0,
+                        8,
+                        5
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "==检测边境=="
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2526,
+                "y": 181
+            }
+        }
+    },
+    "==退出游戏==": {
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.chillyroom.containerofsoul.yw"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1599,
+                "y": -8
+            }
         }
     },
     "==检测边境==": {
@@ -68,7 +112,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 1844,
-                "y": 174
+                "y": 177
             }
         }
     },
@@ -97,8 +141,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2069,
-                "y": 170
+                "x": 2072,
+                "y": 182
             }
         }
     },
@@ -123,26 +167,12 @@
             }
         },
         "next": [
-            "==检测边境=="
+            "新建节点55"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2295,
-                "y": 174
-            }
-        }
-    },
-    "==退出游戏==": {
-        "action": {
-            "type": "StopApp",
-            "param": {
-                "package": "com.chillyroom.containerofsoul.yw"
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1621,
-                "y": -21
+                "x": 2296,
+                "y": 175
             }
         }
     }

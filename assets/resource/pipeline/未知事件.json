@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793506807160,
+            "lastSyncTime": 1793805329198,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\未知事件.json",
             "savedViewport": {
-                "x": 505,
-                "y": 351,
+                "x": 296,
+                "y": 282,
                 "zoom": 0.86
             },
             "filename": "未知事件",
@@ -19,23 +19,23 @@
     "$__mpe_external_印记刻印(1.1)_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 788,
-                "y": 274
+                "x": 767,
+                "y": 271
             }
         }
     },
     "$__mpe_external_地图场景_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 803,
-                "y": 387
+                "x": 767,
+                "y": 406
             }
         }
     },
     "$__mpe_external_战斗场景_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 790,
+                "x": 770,
                 "y": 341
             }
         }
@@ -43,31 +43,23 @@
     "$__mpe_external_离开地点_直接_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 794,
-                "y": 205
+                "x": 772,
+                "y": 198
             }
         }
     },
     "$__mpe_external_终结_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 786,
-                "y": 464
-            }
-        }
-    },
-    "$__mpe_external_统合_未知事件": {
-        "$__mpe_code": {
-            "position": {
-                "x": 783,
-                "y": 569
+                "x": 767,
+                "y": 470
             }
         }
     },
     "$__mpe_external_选择卡片_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 782,
+                "x": 772,
                 "y": 136
             }
         }
@@ -75,8 +67,8 @@
     "$__mpe_external_选择卡牌移除_未知事件": {
         "$__mpe_code": {
             "position": {
-                "x": 790,
-                "y": 63
+                "x": 770,
+                "y": 69
             }
         }
     },
@@ -108,7 +100,6 @@
         },
         "repeat": 5,
         "repeat_delay": 800,
-        "timeout": 3000,
         "next": [
             "离开地点_直接",
             "选择卡牌移除",
@@ -118,9 +109,6 @@
             "地图场景",
             "终结",
             "未知事件-副"
-        ],
-        "on_error": [
-            "统合"
         ],
         "$__mpe_code": {
             "position": {
@@ -157,7 +145,6 @@
         },
         "repeat": 5,
         "repeat_delay": 800,
-        "timeout": 3000,
         "next": [
             "未知事件",
             "选择卡牌移除",
@@ -168,13 +155,10 @@
             "地图场景",
             "终结"
         ],
-        "on_error": [
-            "统合"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 231,
-                "y": -400
+                "x": 109,
+                "y": 149
             }
         }
     }
