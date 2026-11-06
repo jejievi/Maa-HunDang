@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793975461067,
+            "lastSyncTime": 1793976316966,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 428,
-                "y": -203,
-                "zoom": 0.64
+                "x": 989,
+                "y": 116,
+                "zoom": 0.73
             },
             "filename": "战斗场景",
             "version": "v2.1.0"
@@ -44,6 +44,14 @@
                     "y": 1173
                 }
             ]
+        }
+    },
+    "$__mpe_external_黑终结_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1291,
+                "y": 1172
+            }
         }
     },
     "复活": {
@@ -267,15 +275,15 @@
                 ]
             }
         },
-        "pre_delay": 0,
+        "pre_delay": 800,
         "post_delay": 0,
         "next": [
             "自动战斗"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -96,
-                "y": 147
+                "x": -331,
+                "y": 139
             }
         }
     },
@@ -588,14 +596,6 @@
             "position": {
                 "x": 161,
                 "y": 1256
-            }
-        }
-    },
-    "$__mpe_external_黑终结_战斗场景": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1291,
-                "y": 1172
             }
         }
     }
