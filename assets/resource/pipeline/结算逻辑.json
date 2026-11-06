@@ -3,25 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793619890422,
+            "lastSyncTime": 1793976098852,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\结算逻辑.json",
             "savedViewport": {
-                "x": -1716,
-                "y": 78,
-                "zoom": 0.57
+                "x": -1176,
+                "y": 184,
+                "zoom": 0.65
             },
             "filename": "结算逻辑",
             "version": "v2.1.0"
-        }
-    },
-    "$__mpe_external_开始游戏_关闭窗口_结算逻辑": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4341,
-                "y": 528
-            }
         }
     },
     "$__mpe_external_前往主仪式间_结算逻辑": {
@@ -32,17 +24,19 @@
             }
         }
     },
-    "失败": {
-        "next": [
-            "终结",
-            "留下遗物",
-            "继续",
-            "点击空白关闭"
-        ],
+    "$__mpe_external_开始游戏_点空白处关闭_结算逻辑": {
         "$__mpe_code": {
             "position": {
-                "x": 2650,
-                "y": -60
+                "x": 4341,
+                "y": 534
+            }
+        }
+    },
+    "$__mpe_external_战斗场景_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2804,
+                "y": -66
             }
         }
     },
@@ -72,12 +66,12 @@
             "结束探索",
             "点击空白关闭",
             "前往主仪式间",
-            "开始游戏_关闭窗口"
+            "开始游戏_点空白处关闭"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3655,
-                "y": 544
+                "x": 3671,
+                "y": 575
             }
         }
     },
@@ -134,8 +128,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2573,
-                "y": 294
+                "x": 2491,
+                "y": 281
             }
         }
     },
@@ -164,12 +158,12 @@
             "前往主仪式间",
             "点击空白关闭",
             "结束探索",
-            "开始游戏_关闭窗口"
+            "开始游戏_点空白处关闭"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4025,
-                "y": 119
+                "x": 4015,
+                "y": 135
             }
         }
     },
@@ -198,7 +192,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 3257,
-                "y": 735
+                "y": 660
             }
         }
     },
@@ -223,8 +217,35 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2804,
-                "y": 586
+                "x": 2790,
+                "y": 594
+            }
+        }
+    },
+    "黑终结": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    299,
+                    30,
+                    21
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 400,
+        "focus": "成就：遇到了百战克星",
+        "next": [
+            "继续",
+            "战斗场景",
+            "留下遗物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2386,
+                "y": -61
             }
         }
     }

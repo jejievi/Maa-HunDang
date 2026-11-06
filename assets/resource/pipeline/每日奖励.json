@@ -4,12 +4,216 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -196,
-                "y": 131,
+                "x": -365,
+                "y": 265,
                 "zoom": 0.7
             },
             "filename": "每日奖励",
             "version": "v2.1.0"
+        }
+    },
+    "任务一": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    199,
+                    202,
+                    114,
+                    51
+                ],
+                "template": [
+                    "每日任务/刷新.png"
+                ]
+            }
+        },
+        "next": [
+            "不足80的任务刷新_任务一",
+            "任务二",
+            "任务三",
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1547,
+                "y": -632
+            }
+        }
+    },
+    "不足80的任务刷新_任务一": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    334,
+                    354,
+                    65,
+                    36
+                ],
+                "expected": [
+                    "50"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -128,
+                    -148,
+                    8,
+                    11
+                ]
+            }
+        },
+        "post_delay": 4000,
+        "timeout": 10000,
+        "focus": "刷新任务",
+        "next": [
+            "不足80的任务刷新_任务一",
+            "任务二",
+            "任务三",
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1900,
+                "y": -659
+            }
+        }
+    },
+    "任务二": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    509,
+                    202,
+                    133,
+                    54
+                ],
+                "template": [
+                    "每日任务/刷新.png"
+                ]
+            }
+        },
+        "next": [
+            "不足80的任务刷新_任务二",
+            "任务三",
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1498,
+                "y": -400
+            }
+        }
+    },
+    "不足80的任务刷新_任务二": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    648,
+                    357,
+                    49,
+                    30
+                ],
+                "expected": [
+                    "50"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -128,
+                    -148,
+                    8,
+                    11
+                ]
+            }
+        },
+        "post_delay": 4000,
+        "timeout": 10000,
+        "focus": "刷新任务",
+        "next": [
+            "不足80的任务刷新_任务二",
+            "任务三",
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1909,
+                "y": -298
+            }
+        }
+    },
+    "任务三": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    808,
+                    200,
+                    124,
+                    57
+                ],
+                "template": [
+                    "每日任务/刷新.png"
+                ]
+            }
+        },
+        "next": [
+            "不足80的任务刷新_任务三",
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1550,
+                "y": -127
+            }
+        }
+    },
+    "不足80的任务刷新_任务三": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    957,
+                    359,
+                    49,
+                    29
+                ],
+                "expected": [
+                    "50"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -128,
+                    -148,
+                    8,
+                    11
+                ]
+            }
+        },
+        "post_delay": 4000,
+        "timeout": 10000,
+        "focus": "刷新任务",
+        "next": [
+            "不足80的任务刷新_任务三",
+            "离开任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1914,
+                "y": -152
+            }
         }
     },
     "==每日奖励==": {
@@ -43,14 +247,16 @@
         },
         "focus": "更改任务中",
         "next": [
-            "不足80的任务刷新1",
-            "离开任务",
-            "更改任务"
+            "更改任务",
+            "任务一",
+            "任务二",
+            "任务三",
+            "离开任务"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1315,
-                "y": -233
+                "x": 1190,
+                "y": -214
             }
         }
     },
@@ -83,47 +289,6 @@
             }
         }
     },
-    "不足80的任务刷新1": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    343,
-                    359,
-                    658,
-                    25
-                ],
-                "expected": [
-                    "50"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -128,
-                    -148,
-                    8,
-                    11
-                ]
-            }
-        },
-        "post_delay": 4000,
-        "timeout": 10000,
-        "next": [
-            "不足80的任务刷新1"
-        ],
-        "on_error": [
-            "离开任务"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1697,
-                "y": -400
-            }
-        }
-    },
     "离开任务": {
         "recognition": {
             "type": "TemplateMatch",
@@ -150,8 +315,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1665,
-                "y": -4
+                "x": 2390,
+                "y": -111
             }
         }
     },
@@ -392,13 +557,14 @@
             "type": "Click"
         },
         "next": [
+            "前往领取任务",
             "领取任务",
             "离开任务_副本1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1307,
-                "y": 312
+                "x": 1273,
+                "y": 314
             }
         }
     },
@@ -426,8 +592,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1563,
-                "y": 312
+                "x": 1573,
+                "y": 277
             }
         }
     },
@@ -456,8 +622,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1937,
-                "y": 327
+                "x": 1866,
+                "y": 294
             }
         }
     }
