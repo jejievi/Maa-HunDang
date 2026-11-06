@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793900229961,
+            "lastSyncTime": 1793981227266,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\奖励场景.json",
             "savedViewport": {
-                "x": -724,
-                "y": 169,
-                "zoom": 0.49
+                "x": -2349,
+                "y": -40,
+                "zoom": 0.98
             },
             "filename": "奖励场景",
             "version": "v2.1.0"
@@ -74,14 +74,15 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 400,
         "next": [
             "祝福奖励",
             "离开地点_动作"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3269,
-                "y": 368
+                "x": 3249,
+                "y": 389
             }
         }
     },
@@ -159,20 +160,21 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1104,
-                    202,
-                    9,
-                    18
+                    922,
+                    660,
+                    16,
+                    7
                 ]
             }
         },
         "next": [
+            "奖励_选择卡牌_副本1_副本1_副本1_副本1",
             "奖励_点击空白处确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4270,
-                "y": 502
+                "x": 4255,
+                "y": 472
             }
         }
     },
@@ -196,8 +198,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2920,
-                "y": -49
+                "x": 2924,
+                "y": -59
             }
         }
     },
@@ -271,8 +273,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3726,
-                "y": 487
+                "x": 3735,
+                "y": 509
             }
         }
     },
@@ -387,10 +389,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    746,
-                    204,
-                    11,
-                    20
+                    1143,
+                    202,
+                    10,
+                    19
                 ]
             }
         },
@@ -399,8 +401,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3941,
-                "y": 272
+                "x": 3943,
+                "y": 290
             }
         }
     },
@@ -489,6 +491,75 @@
             "position": {
                 "x": 2969,
                 "y": 346
+            }
+        }
+    },
+    "奖励_选择卡牌_副本1_副本1_副本1_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    836,
+                    17,
+                    189,
+                    47
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "next": [
+            "新建节点62_副本1_副本1_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3755,
+                "y": 767
+            }
+        }
+    },
+    "新建节点62_副本1_副本1_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    921,
+                    207,
+                    8,
+                    16
+                ]
+            }
+        },
+        "next": [
+            "奖励_确认2_副本1_副本1_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4040,
+                "y": 778
+            }
+        }
+    },
+    "奖励_确认2_副本1_副本1_副本1": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    922,
+                    660,
+                    16,
+                    7
+                ]
+            }
+        },
+        "next": [
+            "奖励_点击空白处确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4313,
+                "y": 786
             }
         }
     }
