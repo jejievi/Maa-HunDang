@@ -29,6 +29,14 @@
     ],
     "task": [
         {
+            "name": "==启动游戏==",
+            "entry": "==启动游戏==",
+            "group": [
+                "百战方案"
+            ],
+            "option": []
+        },
+        {
             "name": "==每日奖励==",
             "entry": "==每日奖励==",
             "controller": [
@@ -43,16 +51,6 @@
                 "VIP每日异界赠礼"
             ],
             "default_check": true
-        },
-        {
-            "name": "==启动游戏==",
-            "entry": "==启动游戏==",
-            "group": [
-                "百战方案"
-            ],
-            "option": [
-                "永久VIP"
-            ]
         },
         {
             "name": "==开始游戏==",
@@ -73,21 +71,19 @@
             ]
         },
         {
-            "name": "==退出游戏==",
-            "entry": "==退出游戏==",
-            "group": [
-                "百战方案"
-            ],
-            "option": [
-                "永久VIP"
-            ]
-        },
-        {
             "name": "==密闻抽卡==",
             "entry": "==密闻抽卡==",
             "group": [
                 "其他工具"
             ]
+        },
+        {
+            "name": "==退出游戏==",
+            "entry": "==退出游戏==",
+            "group": [
+                "百战方案"
+            ],
+            "option": []
         },
         {
             "name": "==检测边境==",
@@ -108,7 +104,7 @@
                 }
             ],
             "label": "永久VIP",
-            "default_case": "Yes",
+            "default_case": "No",
             "type": "switch",
             "controller": [
                 "安卓端"

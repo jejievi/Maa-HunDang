@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793976318650,
-            "isModifiedExternally": false,
+            "lastSyncTime": 1794013237437,
+            "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 888,
-                "y": 219,
-                "zoom": 0.79
+                "x": 549,
+                "y": 353,
+                "zoom": 0.52
             },
             "filename": "开始游戏",
             "version": "v2.1.0"
@@ -85,12 +85,13 @@
         "next": [
             "启动祭坛",
             "前往主仪式间",
-            "开始游戏_点空白处关闭"
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 353,
-                "y": -40
+                "x": 355,
+                "y": -124
             }
         }
     },
@@ -124,7 +125,8 @@
         "next": [
             "每日挑战",
             "前往观星室",
-            "开始游戏_点空白处关闭"
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
@@ -138,6 +140,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
+                    "开始游戏/活动_关闭窗口.png",
                     "开始游戏/关闭窗口.png"
                 ]
             }
@@ -147,12 +150,13 @@
         },
         "timeout": 5000,
         "next": [
-            "自动游戏_点空白处关闭"
+            "自动游戏_点空白处关闭",
+            "启动游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 106,
-                "y": 209
+                "x": 100,
+                "y": 282
             }
         }
     },
@@ -187,8 +191,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 678,
-                "y": -109
+                "x": 682,
+                "y": -19
             }
         }
     },
@@ -238,7 +242,8 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "开始游戏/关闭窗口.png"
+                    "开始游戏/关闭窗口.png",
+                    "开始游戏/活动_关闭窗口.png"
                 ]
             }
         },
@@ -251,8 +256,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -176,
-                "y": -11
+                "x": -108,
+                "y": -2
             }
         }
     },
@@ -280,8 +285,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -569,
-                "y": -195
+                "x": -407,
+                "y": -245
             }
         }
     },
@@ -375,8 +380,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1098,
-                "y": -221
+                "x": 958,
+                "y": -169
             }
         }
     },
@@ -405,8 +410,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 82,
-                "y": 572
+                "x": 21,
+                "y": 616
             }
         }
     },
@@ -451,7 +456,7 @@
         "action": {
             "type": "Click"
         },
-        "rate_limit": 25000,
+        "timeout": 25000,
         "next": [
             "进入游戏",
             "启动游戏_关闭窗口",
@@ -459,7 +464,7 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -212,
+                "x": -299,
                 "y": 281
             }
         }

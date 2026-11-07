@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793976316966,
-            "isModifiedExternally": false,
+            "lastSyncTime": 1793981695145,
+            "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 989,
-                "y": 116,
-                "zoom": 0.73
+                "x": 423,
+                "y": -167,
+                "zoom": 0.56
             },
             "filename": "战斗场景",
             "version": "v2.1.0"
@@ -19,16 +19,16 @@
     "$__mpe_external_奖励场景_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1295,
-                "y": 1172
+                "x": 1243,
+                "y": 1275
             }
         }
     },
     "$__mpe_external_终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1288,
-                "y": 1176
+                "x": 1252,
+                "y": 1273
             }
         }
     },
@@ -40,8 +40,8 @@
             },
             "extra_positions": [
                 {
-                    "x": 1290,
-                    "y": 1173
+                    "x": 1252,
+                    "y": 1274
                 }
             ]
         }
@@ -49,8 +49,8 @@
     "$__mpe_external_黑终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1291,
-                "y": 1172
+                "x": 1244,
+                "y": 1269
             }
         }
     },
@@ -88,10 +88,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    421,
-                    327,
-                    257,
-                    133
+                    414,
+                    325,
+                    155,
+                    57
                 ],
                 "template": [
                     "战斗场景/夜寻人_生命.png"
@@ -222,24 +222,24 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    668,
-                    487,
-                    253,
-                    193
+                    458,
+                    410,
+                    159,
+                    56
                 ],
                 "template": [
-                    "战斗场景/战斗_确定.png"
+                    "战斗场景/融化的黄金_黄.png"
                 ]
             }
         },
         "action": {
             "type": "Click",
             "param": {
-                "target": [
-                    800,
-                    427,
-                    16,
-                    14
+                "target_offset": [
+                    320,
+                    -2,
+                    -100,
+                    -6
                 ]
             }
         },
@@ -255,8 +255,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -167,
-                "y": 1703
+                "x": -187,
+                "y": 1708
             }
         }
     },
@@ -515,8 +515,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -196,
-                "y": 1688
+                "x": -185,
+                "y": 1733
             }
         }
     },
