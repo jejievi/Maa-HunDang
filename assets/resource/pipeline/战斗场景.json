@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793981695145,
+            "lastSyncTime": 1794013535933,
             "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 423,
-                "y": -167,
+                "x": 248,
+                "y": 321,
                 "zoom": 0.56
             },
             "filename": "战斗场景",
@@ -19,16 +19,16 @@
     "$__mpe_external_奖励场景_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1243,
-                "y": 1275
+                "x": 1250,
+                "y": 1330
             }
         }
     },
     "$__mpe_external_终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1252,
-                "y": 1273
+                "x": 1250,
+                "y": 1328
             }
         }
     },
@@ -41,7 +41,7 @@
             "extra_positions": [
                 {
                     "x": 1252,
-                    "y": 1274
+                    "y": 1326
                 }
             ]
         }
@@ -49,8 +49,8 @@
     "$__mpe_external_黑终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1244,
-                "y": 1269
+                "x": 1251,
+                "y": 1324
             }
         }
     },
@@ -128,7 +128,7 @@
     },
     "延迟箱": {
         "timeout": 15000,
-        "focus": "网络状态不好...",
+        "focus": "战斗超时，进入缓存期...",
         "next": [
             "终结",
             "奖励场景",
@@ -212,7 +212,7 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 84,
+                "x": 86,
                 "y": -588
             }
         }
@@ -317,8 +317,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -500,
-                "y": 733
+                "x": -462,
+                "y": 769
             }
         }
     },
@@ -382,8 +382,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1417,
-                "y": 559
+                "x": 1471,
+                "y": 630
             }
         }
     },
@@ -404,13 +404,14 @@
                 ]
             }
         },
+        "focus": "遇到粪怪了，跑路跑路",
         "next": [
             "战斗-设置"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -254,
-                "y": -147
+                "x": -433,
+                "y": -424
             }
         }
     },
