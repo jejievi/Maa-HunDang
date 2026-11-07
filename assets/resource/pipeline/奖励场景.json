@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793981227266,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\奖励场景.json",
             "savedViewport": {
-                "x": -2349,
-                "y": -40,
-                "zoom": 0.98
+                "x": -2041,
+                "y": 26,
+                "zoom": 0.8
             },
             "filename": "奖励场景",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "$__mpe_external_战斗场景_奖励场景": {
@@ -74,15 +70,14 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 400,
         "next": [
             "祝福奖励",
             "离开地点_动作"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3249,
-                "y": 389
+                "x": 3269,
+                "y": 368
             }
         }
     },
@@ -160,21 +155,20 @@
             "type": "Click",
             "param": {
                 "target": [
-                    922,
-                    660,
-                    16,
-                    7
+                    1104,
+                    202,
+                    9,
+                    18
                 ]
             }
         },
         "next": [
-            "奖励_选择卡牌_副本1_副本1_副本1_副本1",
             "奖励_点击空白处确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4255,
-                "y": 472
+                "x": 4270,
+                "y": 502
             }
         }
     },
@@ -198,8 +192,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2924,
-                "y": -59
+                "x": 2920,
+                "y": -49
             }
         }
     },
@@ -273,8 +267,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3735,
-                "y": 509
+                "x": 3726,
+                "y": 487
             }
         }
     },
@@ -335,8 +329,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2382,
-                "y": 504
+                "x": 2367,
+                "y": 483
             }
         }
     },
@@ -389,10 +383,10 @@
             "type": "Click",
             "param": {
                 "target": [
-                    1143,
-                    202,
-                    10,
-                    19
+                    746,
+                    204,
+                    11,
+                    20
                 ]
             }
         },
@@ -401,8 +395,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3943,
-                "y": 290
+                "x": 3941,
+                "y": 272
             }
         }
     },
@@ -443,6 +437,7 @@
                 ]
             }
         },
+        "pre_delay": 0,
         "action": {
             "type": "Click",
             "param": {
@@ -454,6 +449,7 @@
                 ]
             }
         },
+        "post_delay": 0,
         "next": [
             "祝福奖励_确认"
         ],
@@ -479,9 +475,11 @@
                 ]
             }
         },
+        "pre_delay": 0,
         "action": {
             "type": "Click"
         },
+        "post_delay": 0,
         "next": [
             "奖励_点击空白处确认",
             "奖励_选择卡牌",
@@ -489,77 +487,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2969,
-                "y": 346
-            }
-        }
-    },
-    "奖励_选择卡牌_副本1_副本1_副本1_副本1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    836,
-                    17,
-                    189,
-                    47
-                ],
-                "template": [
-                    "事件逻辑/选择卡牌.png"
-                ]
-            }
-        },
-        "next": [
-            "新建节点62_副本1_副本1_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3755,
-                "y": 767
-            }
-        }
-    },
-    "新建节点62_副本1_副本1_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    921,
-                    207,
-                    8,
-                    16
-                ]
-            }
-        },
-        "next": [
-            "奖励_确认2_副本1_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4040,
-                "y": 778
-            }
-        }
-    },
-    "奖励_确认2_副本1_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    922,
-                    660,
-                    16,
-                    7
-                ]
-            }
-        },
-        "next": [
-            "奖励_点击空白处确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4313,
-                "y": 786
+                "x": 2909,
+                "y": 348
             }
         }
     }

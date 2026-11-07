@@ -1,18 +1,18 @@
 {
-    "$__mpe_config_结算逻辑": {
+    "$__mpe_config_新建Pipeline7": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -1043,
-                "y": 279,
+                "x": -1206,
+                "y": 186,
                 "zoom": 0.62
             },
-            "filename": "结算逻辑",
+            "filename": "新建Pipeline7",
             "version": "v2.1.1"
         }
     },
-    "$__mpe_external_前往主仪式间_结算逻辑": {
+    "$__mpe_external_前往主仪式间_新建Pipeline7": {
         "$__mpe_code": {
             "position": {
                 "x": 4379,
@@ -20,7 +20,7 @@
             }
         }
     },
-    "$__mpe_external_开始游戏_点空白处关闭_结算逻辑": {
+    "$__mpe_external_开始游戏_点空白处关闭_新建Pipeline7": {
         "$__mpe_code": {
             "position": {
                 "x": 4341,
@@ -28,11 +28,11 @@
             }
         }
     },
-    "$__mpe_external_统合_结算逻辑": {
+    "$__mpe_external_战斗场景_新建Pipeline7": {
         "$__mpe_code": {
             "position": {
-                "x": 2786,
-                "y": -61
+                "x": 2804,
+                "y": -66
             }
         }
     },
@@ -107,8 +107,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "结算逻辑/终结.png",
-                    "死亡截图.png"
+                    "结算逻辑/终结.png"
                 ]
             }
         },
@@ -235,7 +234,7 @@
         "focus": "成就：遇到了百战克星",
         "next": [
             "继续",
-            "统合",
+            "战斗场景",
             "留下遗物",
             "奖励场景"
         ],
@@ -246,7 +245,7 @@
             }
         }
     },
-    "$__mpe_external_奖励场景_结算逻辑": {
+    "$__mpe_external_奖励场景_新建Pipeline7": {
         "$__mpe_code": {
             "position": {
                 "x": 2794,
