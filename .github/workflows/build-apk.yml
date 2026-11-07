@@ -78,22 +78,68 @@ jobs:
       # 就地生成一把随机密钥，于是同版本两次构建的证书都不同（Android 只允许同签名覆盖安装，
       # 签名不一致就报 INSTALL_FAILED_UPDATE_INCOMPATIBLE，只能卸载重装）。
       # 这里把仓库固定的一张调试证书还原到 runner 的默认路径，让每次构建都签同一张证书。
-      # 密钥存 GitHub Secret（base64），不进仓库；没配时只告警不红，避免 CI 直接断掉。
+      # 密钥存 GitHub Secret（base64），不进仓库。
+      # 没配就直接红灯：v1.0.19 / v1.0.20 都是因为「只告警、不打断」，才把随机签名的包发了出去，
+      # 用户照样装不上而 CI 全绿 —— 这种静默失败比构建失败代价大得多。
       - name: Restore fixed debug keystore
         env:
           DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
+          DEBUG_KEYSTORE_SHA256: ${{ secrets.ANDROID_DEBUG_KEYSTORE_SHA256 }}
         run: |
           set -euo pipefail
           if [ -z "${DEBUG_KEYSTORE_BASE64:-}" ]; then
-            echo "::warning::ANDROID_DEBUG_KEYSTORE_BASE64 未配置，本次将退回 AGP 随机 debug 签名，产出的 APK 无法覆盖安装旧版"
-            exit 0
+            echo "::error::ANDROID_DEBUG_KEYSTORE_BASE64 未配置：签名无法固定，本次会产出「装不上」的包。请在仓库 Settings → Secrets → Actions 里添加该 Secret，值取 MHD-ci-signing/debug.keystore.base64.txt 的整行内容后重跑。"
+            exit 1
           fi
-          mkdir -p "$HOME/.android"
-          printf '%s' "$DEBUG_KEYSTORE_BASE64" | base64 -d > "$HOME/.android/debug.keystore"
-          # AGP 默认 debug 签名配置认的口径：alias androiddebugkey，口令 android
-          keytool -list -keystore "$HOME/.android/debug.keystore" -storepass android \
-            -alias androiddebugkey > /dev/null
-          echo "已还原固定 debug keystore"
+          P12="${RUNNER_TEMP}/fixed-debug.p12"
+          printf '%s' "$DEBUG_KEYSTORE_BASE64" | base64 -d > "$P12"
+          # Secret 里存的是 PKCS12；AGP 的 debug 签名配置按 JKS 口径读取，这里就地转换容器格式。
+          # 只换壳：密钥对、证书、alias 全不变，所以证书指纹仍是同一串
+          KS="${RUNNER_TEMP}/debug-jks.keystore"
+          rm -f "$KS"
+          keytool -importkeystore -noprompt \
+            -srckeystore "$P12" -srcstoretype PKCS12 -srcstorepass android \
+            -destkeystore "$KS" -deststoretype JKS -deststorepass android -destkeypass android \
+            > /dev/null
+          keytool -list -keystore "$KS" -storepass android -alias androiddebugkey > /dev/null
+          # 不按标签解析：去掉冒号后取第一段 64 位十六进制，keytool 的 SHA256 行必然命中
+          KS_SHA=$(keytool -list -v -keystore "$KS" -storepass android -alias androiddebugkey \
+            | tr -d ':' | grep -oE '[0-9a-fA-F]{64}' | head -n1 | tr 'A-F' 'a-f')
+          echo "已准备好固定 debug keystore（JKS），证书 SHA-256: $KS_SHA"
+          if [ "$KS_SHA" != "8cbdd603768b30f78dfb19108172043c07dd00459d8e207073e7ebbf6ba1b20d" ]; then
+            echo "::error::Secret 里那把钥匙的证书指纹是 $KS_SHA，与预期的 8cbdd603…b20d 不一致"
+            exit 1
+          fi
+          # AGP 9 实际读取的 debug 密钥位置和 ANDROID_* 环境变量强相关（实测 $HOME/.android 没被用上），
+          # 所以把同一张证书铺到几个候选目录；下一个步骤会打印构建后到底用了哪个文件
+          install_keystore() {
+            dst="$1"
+            [ -n "$dst" ] || return 0
+            rm -f "$dst/debug.keystore" 2>/dev/null || true
+            mkdir -p "$dst" 2>/dev/null || sudo mkdir -p "$dst" 2>/dev/null || return 0
+            cp "$KS" "$dst/debug.keystore" 2>/dev/null \
+              || sudo cp "$KS" "$dst/debug.keystore" 2>/dev/null || true
+            echo "  keystore -> $dst/debug.keystore"
+          }
+          echo "候选 debug 密钥位置:"
+          install_keystore "$HOME/.android"
+          # 真凶：AGP 9 读的是 XDG 目录 ~/.config/.android/debug.keystore（实测取证见下个步骤的注解），
+          # 传统 $HOME/.android 那张它根本不看
+          install_keystore "${XDG_CONFIG_HOME:-$HOME/.config}/.android"
+          if [ -n "${ANDROID_USER_HOME:-}" ]; then install_keystore "$ANDROID_USER_HOME"; fi
+          if [ -n "${ANDROID_SDK_HOME:-}" ]; then install_keystore "$ANDROID_SDK_HOME/.android"; fi
+          if [ -n "${ANDROID_HOME:-}" ]; then install_keystore "$ANDROID_HOME/.android"; fi
+          install_keystore "/usr/local/lib/android/sdk/.android"
+          # 把本次签名身份的指纹留在文件里，后面的校验步骤以它为准（只需一个 Secret 即可自校验）
+          printf '%s' "$KS_SHA" > "${RUNNER_TEMP}/expected_sha256.txt"
+          if [ -n "${DEBUG_KEYSTORE_SHA256:-}" ]; then
+            DECLARED=$(printf '%s' "$DEBUG_KEYSTORE_SHA256" | tr -d ':' | tr 'A-F' 'a-f' | xargs)
+            echo "Secret 里声明的预期指纹: $DECLARED"
+            if [ "$DECLARED" != "$KS_SHA" ]; then
+              echo "::error::Secret ANDROID_DEBUG_KEYSTORE_BASE64 里的密钥指纹（$KS_SHA）与 ANDROID_DEBUG_KEYSTORE_SHA256（$DECLARED）不一致，说明两者不是同一把钥匙"
+              exit 1
+            fi
+          fi
 
       - name: Build debug APK
         working-directory: Android/MaaFwApp
@@ -101,27 +147,51 @@ jobs:
           PI_PROFILE: ${{ github.workspace }}/pi-profile.yaml
         run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
 
+      # 取证步骤：把环境变量与所有 debug.keystore 的证书指纹打进注解，用于确认 AGP 到底读了哪一个
+      - name: Diagnose debug keystore actually used
+        if: always()
+        run: |
+          set -uo pipefail
+          DIAG=" | ENV: $(env | grep -E '^(ANDROID_HOME|ANDROID_SDK_ROOT|ANDROID_SDK_HOME|ANDROID_USER_HOME)=' | tr '\n' ' ')"
+          DIAG="$DIAG | HOME=$HOME"
+          for f in $(find "$HOME" /usr/local/lib/android -name "debug.keystore" 2>/dev/null | grep -v '/\.git/' | sort -u); do
+            sha=$(keytool -list -v -keystore "$f" -storepass android -alias androiddebugkey 2>/dev/null \
+              | tr -d ':' | grep -oE '[0-9a-fA-F]{64}' | head -n1 | tr 'A-F' 'a-f' || true)
+            DIAG="$DIAG | $f => ${sha:-读不出}"
+          done
+          echo "$DIAG"
+          echo "::notice::DIAG$DIAG"
+
       # 签名没生效的话，用户又要卸载重装，而 CI 照样是绿的 —— 这里把它变成红灯
       - name: Verify APK signature matches the fixed key
         working-directory: Android/MaaFwApp
-        env:
-          EXPECTED_SHA256: ${{ secrets.ANDROID_DEBUG_KEYSTORE_SHA256 }}
         run: |
           set -euo pipefail
           APK=$(find app/build/outputs/apk/debug -name "*.apk" | head -n1)
           APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -n1)
-          ACTUAL=$("$APKSIGNER" verify --print-certs "$APK" \
-            | awk -F': ' '/SHA-256 digest/ {print $2; exit}' | tr -d ':' | tr 'A-F' 'a-f' | xargs)
-          echo "APK 签名证书 SHA-256: $ACTUAL"
-          if [ -z "${EXPECTED_SHA256:-}" ]; then
-            echo "::warning::ANDROID_DEBUG_KEYSTORE_SHA256 未配置，只打印不校验"
-            exit 0
-          fi
-          EXPECTED=$(printf '%s' "$EXPECTED_SHA256" | tr -d ':' | tr 'A-F' 'a-f' | xargs)
-          if [ "$ACTUAL" != "$EXPECTED" ]; then
-            echo "::error::APK 签名与固定密钥不一致（actual=$ACTUAL expected=$EXPECTED），用户会装不上更新"
+          # 不按 «标签: 值» 解析（apksigner 的输出格式各版本不同，按字段取会拿到标签文本）：
+          # 去掉冒号后取第一段 64 位十六进制即为证书 SHA-256，SHA-1 只有 40 位不会误中
+          ACTUAL=$("$APKSIGNER" verify --print-certs "$APK" 2>&1 \
+            | tr -d ':' | grep -oE '[0-9a-fA-F]{64}' | head -n1 | tr 'A-F' 'a-f')
+          echo "APK 签名证书 SHA-256: ${ACTUAL:-<空>}"
+          # 期望值取「本次还原进 runner 的那张 keystore」的证书指纹，所以不需要第二个 Secret
+          EXPECTED_FILE="${RUNNER_TEMP}/expected_sha256.txt"
+          if [ ! -s "$EXPECTED_FILE" ]; then
+            echo "::error::拿不到固定密钥的指纹（Restore 步骤没有留下 expected_sha256.txt），无法校验签名"
             exit 1
           fi
+          EXPECTED=$(tr -d '[:space:]' < "$EXPECTED_FILE")
+          if [ -z "$ACTUAL" ]; then
+            RAW=$("$APKSIGNER" verify --print-certs "$APK" 2>&1 | tr '\n' '|' | head -c 400)
+            echo "::error::读不到 APK 的签名证书指纹。apksigner 原始输出: ${RAW}"
+            exit 1
+          fi
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            RAW=$("$APKSIGNER" verify --print-certs "$APK" 2>&1 | tr '\n' '|' | head -c 400)
+            echo "::error::APK 签名与固定密钥不一致（actual=$ACTUAL expected=$EXPECTED）——AGP 没有使用 ~/.android/debug.keystore。apksigner: ${RAW}"
+            exit 1
+          fi
+          echo "签名与固定密钥一致，可以覆盖安装"
 
       # 正式 release APK 需要先在 app/build.gradle.kts 配置签名（keystore），
       # 配置好后把下面注释打开，并把上传路径改成 release
