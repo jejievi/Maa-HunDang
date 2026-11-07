@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794058087703,
+            "isModifiedExternally": true,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\结算逻辑.json",
             "savedViewport": {
-                "x": -1206,
-                "y": 186,
-                "zoom": 0.62
+                "x": -721,
+                "y": 364,
+                "zoom": 0.57
             },
             "filename": "新建Pipeline7",
-            "version": "v2.1.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_前往主仪式间_新建Pipeline7": {
@@ -17,6 +21,14 @@
             "position": {
                 "x": 4379,
                 "y": 378
+            }
+        }
+    },
+    "$__mpe_external_奖励场景_新建Pipeline7": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2794,
+                "y": -158
             }
         }
     },
@@ -31,8 +43,8 @@
     "$__mpe_external_战斗场景_新建Pipeline7": {
         "$__mpe_code": {
             "position": {
-                "x": 2804,
-                "y": -66
+                "x": 2778,
+                "y": -63
             }
         }
     },
@@ -180,6 +192,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 500,
         "next": [
             "点击空白关闭",
             "结束探索"
@@ -229,8 +242,9 @@
                 ]
             }
         },
-        "repeat": 2,
+        "repeat": 3,
         "repeat_delay": 400,
+        "timeout": 8000,
         "focus": "成就：遇到了百战克星",
         "next": [
             "继续",
@@ -242,14 +256,6 @@
             "position": {
                 "x": 2386,
                 "y": -61
-            }
-        }
-    },
-    "$__mpe_external_奖励场景_新建Pipeline7": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2794,
-                "y": -158
             }
         }
     }

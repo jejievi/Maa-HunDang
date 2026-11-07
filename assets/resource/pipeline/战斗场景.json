@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794051796461,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 367,
-                "y": -140,
-                "zoom": 0.53
+                "x": 216,
+                "y": -218,
+                "zoom": 0.46
             },
             "filename": "战斗场景",
-            "version": "v2.1.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_奖励场景_战斗场景": {
@@ -115,8 +119,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -363,
-                "y": 1662
+                "x": -354,
+                "y": 1763
             }
         }
     },
@@ -248,8 +252,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -358,
-                "y": 1668
+                "x": -80,
+                "y": 1651
             }
         }
     },
@@ -476,8 +480,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 679,
-                "y": 513
+                "x": 666,
+                "y": 541
             }
         }
     },
@@ -511,8 +515,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -341,
-                "y": 1663
+                "x": -171,
+                "y": 1355
             }
         }
     },
@@ -584,14 +588,12 @@
             "战斗_确定_(选择黄金)"
         ],
         "on_error": [
-            "终结",
-            "奖励场景",
-            "继续"
+            "延迟箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -358,
-                "y": 1667
+                "x": -153,
+                "y": 1270
             }
         }
     }

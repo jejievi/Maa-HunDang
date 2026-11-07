@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794052662359,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\奖励场景.json",
             "savedViewport": {
-                "x": -2041,
-                "y": 26,
-                "zoom": 0.8
+                "x": -2094,
+                "y": -199,
+                "zoom": 0.98
             },
             "filename": "奖励场景",
-            "version": "v2.1.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_战斗场景_奖励场景": {
@@ -308,16 +312,16 @@
     },
     "奖励场景": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    515,
-                    98,
-                    266,
-                    98
+                    556,
+                    121,
+                    167,
+                    60
                 ],
-                "template": [
-                    "奖励-战斗胜利.png"
+                "expected": [
+                    "战斗"
                 ]
             }
         },
