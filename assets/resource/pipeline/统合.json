@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793802436736,
+            "lastSyncTime": 1794051195844,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\统合.json",
             "savedViewport": {
-                "x": -452,
-                "y": -73,
+                "x": -276,
+                "y": -134,
                 "zoom": 0.99
             },
             "filename": "统合",
@@ -68,7 +68,6 @@
         "inverse": false,
         "pre_delay": 0,
         "post_delay": 0,
-        "timeout": -1,
         "rate_limit": 0,
         "next": [
             "战斗场景",
