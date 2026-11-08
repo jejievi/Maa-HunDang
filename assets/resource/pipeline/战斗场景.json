@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794051796461,
+            "lastSyncTime": 1794052579770,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 216,
-                "y": -218,
-                "zoom": 0.46
+                "x": 582,
+                "y": -228,
+                "zoom": 0.71
             },
             "filename": "战斗场景",
             "version": "v2.1.0"
@@ -20,15 +20,15 @@
         "$__mpe_code": {
             "position": {
                 "x": 1216,
-                "y": 1625
+                "y": 1636
             }
         }
     },
     "$__mpe_external_终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1217,
-                "y": 1624
+                "x": 1186,
+                "y": 1807
             }
         }
     },
@@ -40,8 +40,8 @@
             },
             "extra_positions": [
                 {
-                    "x": 1221,
-                    "y": 1628
+                    "x": 1183,
+                    "y": 1721
                 }
             ]
         }
@@ -139,8 +139,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 290,
-                "y": 1378
+                "x": 254,
+                "y": 1431
             }
         }
     },
@@ -314,8 +314,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -266,
-                "y": 942
+                "x": -283,
+                "y": 919
             }
         }
     },
@@ -441,7 +441,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 797,
-                "y": 913
+                "y": 378
             }
         }
     },
@@ -480,8 +480,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 666,
-                "y": 541
+                "x": 231,
+                "y": 654
             }
         }
     },
@@ -548,10 +548,10 @@
         },
         "timeout": 3000,
         "next": [
+            "选择一项",
             "战斗中"
         ],
         "on_error": [
-            "选择一项",
             "继续",
             "奖励场景",
             "终结",
@@ -561,8 +561,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1056,
-                "y": 595
+                "x": 719,
+                "y": 870
             }
         }
     },
@@ -592,8 +592,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -153,
-                "y": 1270
+                "x": 105,
+                "y": 1146
             }
         }
     }
