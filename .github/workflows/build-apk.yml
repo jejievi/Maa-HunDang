@@ -104,6 +104,8 @@ jobs:
           keytool -list -keystore "$KS" -storepass android -alias androiddebugkey > /dev/null
           # 这把钥匙同时作为 release 的签名身份：已装用户的包就是这张证书。
           # 换一张证书 = INSTALL_FAILED_UPDATE_INCOMPATIBLE，用户必须先卸载，所以这里绝不另造 key。
+          # 2026-11-12 因迁移到 jejievi/Maa-HunDang 重新生成过一次（旧指纹 8cbdd603…b20d 作废），
+          # 此前的安装包与新证书不匹配，需卸载重装；从本版本起的包之间可正常覆盖升级。
           {
             printf 'KEYSTORE_PATH=%s\n' "$KS"
             printf 'KEYSTORE_PASSWORD=android\n'
@@ -114,8 +116,8 @@ jobs:
           KS_SHA=$(keytool -list -v -keystore "$KS" -storepass android -alias androiddebugkey \
             | tr -d ':' | grep -oE '[0-9a-fA-F]{64}' | head -n1 | tr 'A-F' 'a-f')
           echo "已准备好固定 debug keystore（JKS），证书 SHA-256: $KS_SHA"
-          if [ "$KS_SHA" != "8cbdd603768b30f78dfb19108172043c07dd00459d8e207073e7ebbf6ba1b20d" ]; then
-            echo "::error::Secret 里那把钥匙的证书指纹是 $KS_SHA，与预期的 8cbdd603…b20d 不一致"
+          if [ "$KS_SHA" != "16579268f076395c9fef1c9594b046f44ff9b0ae92fe91d8fc98fabc6e2a25fd" ]; then
+            echo "::error::Secret 里那把钥匙的证书指纹是 $KS_SHA，与预期的 16579268…25fd 不一致"
             exit 1
           fi
           # AGP 9 实际读取的 debug 密钥位置和 ANDROID_* 环境变量强相关（实测 $HOME/.android 没被用上），
