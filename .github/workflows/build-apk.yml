@@ -73,7 +73,7 @@ jobs:
       - name: Patch default update source to GitHub
         run: python tools/patch_maafw_update_source.py
 
-      # 关键：固定 debug 签名，解决「每次更新都得先卸载旧版」。
+      # 关键：固定签名身份，解决「每次更新都得先卸载旧版」。
       # GitHub 托管 runner 每次都是全新机器，AGP 找不到 ~/.android/debug.keystore 时会
       # 就地生成一把随机密钥，于是同版本两次构建的证书都不同（Android 只允许同签名覆盖安装，
       # 签名不一致就报 INSTALL_FAILED_UPDATE_INCOMPATIBLE，只能卸载重装）。
@@ -102,6 +102,14 @@ jobs:
             -destkeystore "$KS" -deststoretype JKS -deststorepass android -destkeypass android \
             > /dev/null
           keytool -list -keystore "$KS" -storepass android -alias androiddebugkey > /dev/null
+          # 这把钥匙同时作为 release 的签名身份：已装用户的包就是这张证书。
+          # 换一张证书 = INSTALL_FAILED_UPDATE_INCOMPATIBLE，用户必须先卸载，所以这里绝不另造 key。
+          {
+            printf 'KEYSTORE_PATH=%s\n' "$KS"
+            printf 'KEYSTORE_PASSWORD=android\n'
+            printf 'KEY_ALIAS=androiddebugkey\n'
+            printf 'KEY_PASSWORD=android\n'
+          } >> "$GITHUB_ENV"
           # 不按标签解析：去掉冒号后取第一段 64 位十六进制，keytool 的 SHA256 行必然命中
           KS_SHA=$(keytool -list -v -keystore "$KS" -storepass android -alias androiddebugkey \
             | tr -d ':' | grep -oE '[0-9a-fA-F]{64}' | head -n1 | tr 'A-F' 'a-f')
@@ -141,18 +149,19 @@ jobs:
             fi
           fi
 
-      - name: Build debug APK
+      - name: Build release APK
         working-directory: Android/MaaFwApp
         env:
           PI_PROFILE: ${{ github.workspace }}/pi-profile.yaml
-        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
+        run: ./gradlew :app:assembleRelease --no-daemon --stacktrace
 
       # 取证步骤：把环境变量与所有 debug.keystore 的证书指纹打进注解，用于确认 AGP 到底读了哪一个
       - name: Diagnose debug keystore actually used
         if: always()
         run: |
           set -uo pipefail
-          DIAG=" | ENV: $(env | grep -E '^(ANDROID_HOME|ANDROID_SDK_ROOT|ANDROID_SDK_HOME|ANDROID_USER_HOME)=' | tr '\n' ' ')"
+          DIAG=" | KEYSTORE_PATH=${KEYSTORE_PATH:-<未设置>}"
+          DIAG="$DIAG | ENV: $(env | grep -E '^(ANDROID_HOME|ANDROID_SDK_ROOT|ANDROID_SDK_HOME|ANDROID_USER_HOME)=' | tr '\n' ' ')"
           DIAG="$DIAG | HOME=$HOME"
           for f in $(find "$HOME" /usr/local/lib/android -name "debug.keystore" 2>/dev/null | grep -v '/\.git/' | sort -u); do
             sha=$(keytool -list -v -keystore "$f" -storepass android -alias androiddebugkey 2>/dev/null \
@@ -167,7 +176,7 @@ jobs:
         working-directory: Android/MaaFwApp
         run: |
           set -euo pipefail
-          APK=$(find app/build/outputs/apk/debug -name "*.apk" | head -n1)
+          APK=$(find app/build/outputs/apk/release -name "*.apk" | head -n1)
           APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -n1)
           # 不按 «标签: 值» 解析（apksigner 的输出格式各版本不同，按字段取会拿到标签文本）：
           # 去掉冒号后取第一段 64 位十六进制即为证书 SHA-256，SHA-1 只有 40 位不会误中
@@ -188,22 +197,19 @@ jobs:
           fi
           if [ "$ACTUAL" != "$EXPECTED" ]; then
             RAW=$("$APKSIGNER" verify --print-certs "$APK" 2>&1 | tr '\n' '|' | head -c 400)
-            echo "::error::APK 签名与固定密钥不一致（actual=$ACTUAL expected=$EXPECTED）——AGP 没有使用 ~/.android/debug.keystore。apksigner: ${RAW}"
+            echo "::error::APK 签名与固定密钥不一致（actual=$ACTUAL expected=$EXPECTED）——release 没有用到 KEYSTORE_PATH 指定的 keystore。apksigner: ${RAW}"
             exit 1
           fi
           echo "签名与固定密钥一致，可以覆盖安装"
 
-      # 正式 release APK 需要先在 app/build.gradle.kts 配置签名（keystore），
-      # 配置好后把下面注释打开，并把上传路径改成 release
-      # - name: Build release APK
-      #   working-directory: Android/MaaFwApp
-      #   run: ./gradlew :app:assembleRelease --no-daemon --stacktrace
+      # 正式 release APK 已经在上面用固定密钥签名（KEYSTORE_PATH 由 Restore 步骤导出），
+      # 证书与已装用户完全一致，所以是「覆盖安装」而不是「另一个 App」
 
-      - name: Upload debug APK
+      - name: Upload release APK
         uses: actions/upload-artifact@v7
         with:
-          name: MaaFwApp-debug-apk
-          path: Android/MaaFwApp/app/build/outputs/apk/debug/*.apk
+          name: MaaFwApp-release-apk
+          path: Android/MaaFwApp/app/build/outputs/apk/release/*.apk
           if-no-files-found: error
 
   # 仅在正式发布时执行，把构建出的 debug APK 作为资产上传到该 Release：
@@ -214,10 +220,10 @@ jobs:
     needs: build-apk
     runs-on: ubuntu-latest
     steps:
-      - name: Download debug APK artifact
+      - name: Download release APK artifact
         uses: actions/download-artifact@v4
         with:
-          name: MaaFwApp-debug-apk
+          name: MaaFwApp-release-apk
           path: apk
 
       - name: Rename APK and generate release body
@@ -232,7 +238,7 @@ jobs:
           # 唯一 apk 才算 universal」挑包（MaaFwApp GitHubUpdate.selectAsset 用的是
           # singleOrNull），同一 Release 里出现两个这样的包会判成查不到安装包，
           # 用户就只能手动下载 —— 再撞上签名冲突，就得先卸载。一个 Release 只留一个 apk。
-          APK_NAME="MAA-hunDang-debug-${TAG}.apk"
+          APK_NAME="MAA-hunDang-${TAG}.apk"
           cp "$APK" "release_assets/${APK_NAME}"
           ls -lh release_assets/
 
