@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -365,
-                "y": 265,
-                "zoom": 0.7
+                "x": -272,
+                "y": 36,
+                "zoom": 0.62
             },
             "filename": "每日奖励",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "任务一": {
@@ -245,6 +245,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "focus": "更改任务中",
         "next": [
             "更改任务",
@@ -255,8 +256,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1190,
-                "y": -214
+                "x": 1228,
+                "y": -270
             }
         }
     },
@@ -338,6 +339,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1500,
         "next": [
             "商店异界赠礼(仅VIP可用)",
             "深境商店"
@@ -478,6 +480,9 @@
                 ]
             }
         },
+        "next": [
+            "每日奖励事件结束"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 2791,
@@ -531,10 +536,14 @@
         "action": {
             "type": "Click"
         },
+        "timeout": 5000,
+        "on_error": [
+            "每日奖励事件结束"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 967,
-                "y": 619
+                "x": 948,
+                "y": 654
             }
         }
     },
@@ -556,6 +565,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "前往领取任务",
             "领取任务",
@@ -563,8 +573,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1273,
-                "y": 314
+                "x": 1232,
+                "y": 272
             }
         }
     },
@@ -586,14 +596,15 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 15000,
         "next": [
             "领取任务",
             "离开任务_副本1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1573,
-                "y": 277
+                "x": 1570,
+                "y": 252
             }
         }
     },
@@ -622,8 +633,19 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1866,
-                "y": 294
+                "x": 1907,
+                "y": 290
+            }
+        }
+    },
+    "每日奖励事件结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 985,
+                "y": 961
             }
         }
     }

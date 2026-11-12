@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793788801347,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\抽密闻池.json",
             "savedViewport": {
-                "x": -279,
-                "y": 162,
-                "zoom": 0.74
+                "x": -299,
+                "y": 68,
+                "zoom": 0.71
             },
             "filename": "抽密闻池",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "==密闻抽卡==": {
@@ -76,8 +72,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1301,
-                "y": 271
+                "x": 1300,
+                "y": 277
             }
         }
     },
@@ -151,8 +147,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1774,
-                "y": 167
+                "x": 1860,
+                "y": 261
             }
         }
     },
@@ -175,12 +171,13 @@
             "type": "Click"
         },
         "next": [
-            "密闻-继续"
+            "密闻-继续",
+            "密闻-抽卡"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1612,
-                "y": 423
+                "x": 1611,
+                "y": 427
             }
         }
     },
@@ -231,10 +228,24 @@
         "next": [
             "抽卡结束-退出"
         ],
+        "on_error": [
+            "抽密闻池结束"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 1462,
                 "y": 764
+            }
+        }
+    },
+    "抽密闻池结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1822,
+                "y": 892
             }
         }
     }
