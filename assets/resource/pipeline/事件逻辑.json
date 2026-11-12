@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -539,
-                "y": -175,
-                "zoom": 0.62
+                "x": -698,
+                "y": 0,
+                "zoom": 0.71
             },
             "filename": "事件逻辑",
             "version": "v2.1.1"
@@ -405,7 +405,7 @@
         },
         "repeat": 3,
         "repeat_delay": 500,
-        "timeout": 5000,
+        "timeout": 4000,
         "next": [
             "战斗场景",
             "选择卡片-复制",

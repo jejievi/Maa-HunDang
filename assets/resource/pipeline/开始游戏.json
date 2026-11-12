@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794140724010,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 540,
-                "y": 547,
-                "zoom": 0.66
+                "x": -189,
+                "y": 284,
+                "zoom": 0.71
             },
             "filename": "开始游戏",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "$__mpe_external_事件逻辑_开始游戏": {
@@ -171,10 +167,13 @@
             "自动游戏_点空白处关闭",
             "启动游戏_关闭窗口"
         ],
+        "on_error": [
+            "启动游戏结束"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 100,
-                "y": 282
+                "y": 351
             }
         }
     },
@@ -427,10 +426,13 @@
             "自动游戏_点空白处关闭",
             "启动游戏_关闭窗口"
         ],
+        "on_error": [
+            "启动游戏结束"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 21,
-                "y": 616
+                "x": -42,
+                "y": 664
             }
         }
     },
@@ -485,6 +487,17 @@
             "position": {
                 "x": -299,
                 "y": 281
+            }
+        }
+    },
+    "启动游戏结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 433,
+                "y": 552
             }
         }
     }
