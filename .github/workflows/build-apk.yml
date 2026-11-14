@@ -247,7 +247,7 @@ jobs:
           # 生成与 v2.0.6 手动版本一致的发布说明（下载链接）
           VER="${TAG#v}"
           BODY_DATE=$(date -u +%Y-%m-%d)
-          ZIP_NAME="MaaXXX-win-x86_64-${TAG}.zip"
+          ZIP_NAME="MaaHunDang-win-x86_64-${TAG}.zip"
           BASE="https://github.com/${{ github.repository }}/releases/download/${TAG}"
           cat > release_body.md <<EOF
           ## ${VER} (${BODY_DATE})
