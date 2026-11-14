@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794653776346,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 674,
-                "y": -375,
-                "zoom": 0.54
+                "x": 1102,
+                "y": -293,
+                "zoom": 0.95
             },
             "filename": "战斗场景",
             "version": "v2.1.1"
@@ -117,6 +121,123 @@
             "position": {
                 "x": -354,
                 "y": 1763
+            }
+        }
+    },
+    "夺魄-确定": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    921,
+                    661,
+                    27,
+                    8
+                ]
+            }
+        },
+        "next": [
+            "战斗_首次攻击",
+            "夺魄_祝福2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -236,
+                "y": 639
+            }
+        }
+    },
+    "夺魄-确定2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    921,
+                    661,
+                    27,
+                    8
+                ]
+            }
+        },
+        "next": [
+            "战斗_首次攻击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -220,
+                "y": 419
+            }
+        }
+    },
+    "夺魄_祝福": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    846,
+                    17,
+                    167,
+                    46
+                ],
+                "template": [
+                    "战斗场景/夺魄_祝福.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    686,
+                    192,
+                    14,
+                    17
+                ]
+            }
+        },
+        "next": [
+            "夺魄-确定"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -515,
+                "y": 623
+            }
+        }
+    },
+    "夺魄_祝福2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    846,
+                    17,
+                    167,
+                    46
+                ],
+                "template": [
+                    "战斗场景/夺魄_祝福.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    889,
+                    206,
+                    6,
+                    17
+                ]
+            }
+        },
+        "next": [
+            "夺魄-确定2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -470,
+                "y": 394
             }
         }
     },
@@ -275,8 +396,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -763,
-                "y": 848
+                "x": -792,
+                "y": 963
             }
         }
     },

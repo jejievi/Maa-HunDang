@@ -50,7 +50,10 @@
                 "领取任务",
                 "VIP每日异界赠礼"
             ],
-            "default_check": true
+            "default_check": true,
+            "group": [
+                "每日大厅"
+            ]
         },
         {
             "name": "==开始游戏==",
@@ -64,7 +67,8 @@
             "option": [
                 "永久VIP",
                 "是否有火斧",
-                "每日挑战"
+                "每日挑战",
+                "狭缝角色祝福"
             ],
             "group": [
                 "百战方案"
@@ -74,7 +78,7 @@
             "name": "==密闻抽卡==",
             "entry": "==密闻抽卡==",
             "group": [
-                "其他工具"
+                "每日大厅"
             ]
         },
         {
@@ -87,7 +91,11 @@
         },
         {
             "name": "==检测边境==",
-            "entry": "==检测边境=="
+            "entry": "==检测边境==",
+            "group": [
+                "其他工具"
+            ],
+            "description": "运行后没有行动、更改过UI大小、启动选项任务后将屏幕包裹滑动范围(手机端)"
         }
     ],
     "label": "Maa_深境_扫荡",
@@ -257,12 +265,52 @@
                 }
             ],
             "default_case": "No"
+        },
+        "狭缝角色祝福": {
+            "type": "checkbox",
+            "cases": [
+                {
+                    "name": "万法",
+                    "pipeline_override": {
+                        "狭缝": {
+                            "next": [
+                                "战斗场景",
+                                "选择卡片-复制",
+                                "选择卡片",
+                                "狭缝",
+                                "直接离开"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "复仇者",
+                    "pipeline_override": {
+                        "战斗_首次攻击": {
+                            "next": [
+                                "自动战斗",
+                                "夺魄_祝福"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "label": "狭缝角色祝福",
+            "resource": [],
+            "default_case": [],
+            "min_count": 0,
+            "max_count": 2,
+            "description": "勾选拥有的角色、便于局内识别"
         }
     },
     "group": [
         {
+            "name": "每日大厅"
+        },
+        {
             "name": "百战方案",
-            "default_expand": true
+            "default_expand": true,
+            "label": "百战方案"
         },
         {
             "name": "其他工具",
