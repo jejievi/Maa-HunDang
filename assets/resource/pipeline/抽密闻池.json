@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794500448955,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\抽密闻池.json",
             "savedViewport": {
-                "x": -439,
-                "y": -8,
-                "zoom": 0.69
+                "x": -573,
+                "y": -99,
+                "zoom": 0.82
             },
             "filename": "抽密闻池",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "==密闻抽卡==": {
@@ -70,15 +66,13 @@
         "post_delay": 1000,
         "timeout": 6000,
         "next": [
-            "密闻-跳过"
-        ],
-        "on_error": [
-            "抽卡结束-退出"
+            "密闻-跳过",
+            "胧月秘闻不足"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1300,
-                "y": 277
+                "x": 1288,
+                "y": 297
             }
         }
     },
@@ -250,8 +244,34 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1822,
-                "y": 892
+                "x": 1800,
+                "y": 910
+            }
+        }
+    },
+    "胧月秘闻不足": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    521,
+                    311,
+                    260,
+                    101
+                ],
+                "expected": [
+                    "秘闻不足"
+                ]
+            }
+        },
+        "focus": "秘闻不足、退出抽卡",
+        "next": [
+            "抽卡结束-退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1088,
+                "y": 630
             }
         }
     }
