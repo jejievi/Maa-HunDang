@@ -3,24 +3,20 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794052579770,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 582,
-                "y": -228,
-                "zoom": 0.71
+                "x": 674,
+                "y": -375,
+                "zoom": 0.54
             },
             "filename": "战斗场景",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "$__mpe_external_奖励场景_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1216,
-                "y": 1636
+                "x": 1186,
+                "y": 1638
             }
         }
     },
@@ -49,8 +45,8 @@
     "$__mpe_external_黑终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1338,
-                "y": 1400
+                "x": 1201,
+                "y": 1493
             }
         }
     },
@@ -129,9 +125,9 @@
         "focus": "战斗超时，进入缓存期...",
         "next": [
             "复活",
+            "奖励场景",
             "战斗_首次攻击",
             "终结",
-            "奖励场景",
             "继续"
         ],
         "on_error": [
@@ -139,8 +135,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 254,
-                "y": 1431
+                "x": 295,
+                "y": 1588
             }
         }
     },
@@ -279,8 +275,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -561,
-                "y": 891
+                "x": -763,
+                "y": 848
             }
         }
     },
@@ -561,8 +557,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 719,
-                "y": 870
+                "x": 680,
+                "y": 857
             }
         }
     },
