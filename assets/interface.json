@@ -108,7 +108,25 @@
                 },
                 {
                     "name": "No",
-                    "option": []
+                    "option": [],
+                    "pipeline_override": {
+                        "复活": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "roi": [
+                                        434,
+                                        581,
+                                        117,
+                                        46
+                                    ],
+                                    "template": [
+                                        "战斗场景/放弃挣扎.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
                 }
             ],
             "label": "永久VIP",
