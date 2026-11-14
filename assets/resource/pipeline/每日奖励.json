@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -272,
-                "y": 36,
-                "zoom": 0.62
+                "x": -530,
+                "y": 260,
+                "zoom": 0.71
             },
             "filename": "每日奖励",
             "version": "v2.1.1"
@@ -596,15 +596,19 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 15000,
+        "post_delay": 2000,
+        "timeout": 4000,
         "next": [
             "领取任务",
+            "每日任务_点空白处关闭"
+        ],
+        "on_error": [
             "离开任务_副本1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1570,
-                "y": 252
+                "x": 1580,
+                "y": 229
             }
         }
     },
@@ -626,6 +630,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "timeout": 6000,
         "focus": "更改结束",
         "next": [
@@ -633,8 +638,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1907,
-                "y": 290
+                "x": 2307,
+                "y": 262
             }
         }
     },
@@ -646,6 +651,39 @@
             "position": {
                 "x": 985,
                 "y": 961
+            }
+        }
+    },
+    "每日任务_点空白处关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    515,
+                    665,
+                    254,
+                    41
+                ],
+                "template": [
+                    "结算逻辑/点击空白关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 4000,
+        "next": [
+            "领取任务",
+            "每日任务_点空白处关闭"
+        ],
+        "on_error": [
+            "离开任务_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1908,
+                "y": 211
             }
         }
     }
