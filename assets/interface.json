@@ -288,7 +288,7 @@
             "type": "checkbox",
             "cases": [
                 {
-                    "name": "万法",
+                    "name": "万法/舞娘",
                     "pipeline_override": {
                         "狭缝": {
                             "next": [
