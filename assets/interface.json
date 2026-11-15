@@ -195,7 +195,9 @@
             "cases": [
                 {
                     "name": "Yes",
-                    "option": [],
+                    "option": [
+                        "和平模式"
+                    ],
                     "pipeline_override": {
                         "结束探索": {
                             "next": [
@@ -245,7 +247,8 @@
                 "官服"
             ],
             "label": "每日挑战",
-            "default_case": "No"
+            "default_case": "No",
+            "description": "每日挑战祝福多变、不一定都适合百战"
         },
         "更改任务": {
             "type": "switch",
@@ -512,6 +515,44 @@
             "resource": [
                 "官服"
             ]
+        },
+        "和平模式": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "自动战斗": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "roi": [
+                                        1151,
+                                        324,
+                                        121,
+                                        60
+                                    ],
+                                    "template": [
+                                        "战斗场景/卡死-结束回合.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "No"
+                }
+            ],
+            "label": "和平模式",
+            "description": "不攻击",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ],
+            "default_case": "No"
         }
     },
     "group": [
