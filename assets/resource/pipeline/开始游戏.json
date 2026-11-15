@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794726617394,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": -189,
-                "y": 284,
-                "zoom": 0.71
+                "x": -702,
+                "y": 546,
+                "zoom": 0.99
             },
             "filename": "开始游戏",
-            "version": "v2.1.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_事件逻辑_开始游戏": {
@@ -39,8 +43,8 @@
     "$__mpe_external_离开地点2_开始游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 1830,
-                "y": -159
+                "x": 1701,
+                "y": -88
             }
         }
     },
@@ -177,6 +181,17 @@
             }
         }
     },
+    "启动游戏结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 433,
+                "y": 552
+            }
+        }
+    },
     "启动祭坛": {
         "recognition": {
             "type": "TemplateMatch",
@@ -208,23 +223,23 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 682,
-                "y": -19
+                "x": 540,
+                "y": 16
             }
         }
     },
     "坠入深境": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    532,
-                    271,
-                    227,
-                    117
+                    542,
+                    297,
+                    213,
+                    82
                 ],
-                "template": [
-                    "坠入深境.png"
+                "expected": [
+                    "坠入深境"
                 ]
             }
         },
@@ -249,8 +264,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1498,
-                "y": -220
+                "x": 1296,
+                "y": -165
             }
         }
     },
@@ -398,8 +413,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 819,
-                "y": -172
+                "x": 834,
+                "y": -142
             }
         }
     },
@@ -487,17 +502,6 @@
             "position": {
                 "x": -299,
                 "y": 281
-            }
-        }
-    },
-    "启动游戏结束": {
-        "action": {
-            "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 433,
-                "y": 552
             }
         }
     }
