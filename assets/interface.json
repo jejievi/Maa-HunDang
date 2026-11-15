@@ -5,12 +5,12 @@
     "license": "./LICENSE",
     "icon": "./logo.ico",
     "welcome": [
-        "resource/announcement/1.简介.md",
-        "resource/announcement/2.使用说明.md",
-        "resource/announcement/3.百战须知.md",
-        "resource/announcement/4.用户协议.md",
-        "resource/announcement/5.加入我们.md",
-        "resource/announcement/6.更新内容.md"
+        "resource/announcement/1.公告.md",
+        "resource/announcement/2.简介.md",
+        "resource/announcement/3.使用说明.md",
+        "resource/announcement/4.百战须知.md",
+        "resource/announcement/5.用户协议.md",
+        "resource/announcement/6.加入我们.md"
     ],
     "github": "https://github.com/liao-2004/MAA-hunDang",
     "description": "本软件开源免费,受AGPL v3协议保护。",
