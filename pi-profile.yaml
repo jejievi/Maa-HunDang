@@ -9,9 +9,6 @@ include:
   - docs/imgs/hz_logo.png
   - CONTACT
   - LICENSE
-  - logo.ico
-  - resource/announcement/images/hz_logo.png
-  - resource/announcement/images/源力1.png
 
 exclude: []
         

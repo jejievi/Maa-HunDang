@@ -2,8 +2,7 @@
     "interface_version": 2,
     "name": "MaaHunDang",
     "contact": "QQ群: 1058992601",
-    "license": "./LICENSE",
-    "icon": "./logo.ico",
+    "license": "../LICENSE",
     "welcome": [
         "resource/announcement/1.公告.md",
         "resource/announcement/2.简介.md",
