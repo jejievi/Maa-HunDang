@@ -244,7 +244,7 @@ jobs:
           cp "$APK" "release_assets/${APK_NAME}"
           ls -lh release_assets/
 
-          # 生成与 v2.0.6 手动版本一致的发布说明（下载链接）
+          # 发布说明（下载链接）
           VER="${TAG#v}"
           BODY_DATE=$(date -u +%Y-%m-%d)
           ZIP_NAME="MaaHunDang-win-x86_64-${TAG}.zip"
@@ -252,9 +252,7 @@ jobs:
           cat > release_body.md <<EOF
           ## ${VER} (${BODY_DATE})
 
-          ### 事件逻辑更改中...
-
-          多个狭缝遇到角色祝福无法进行下去的问题
+          ### 增加自动合成宝石功能
 
           如果没有特殊需求，请使用以下链接下载：
 
