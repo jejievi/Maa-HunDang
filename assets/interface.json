@@ -2,13 +2,15 @@
     "interface_version": 2,
     "name": "MaaHunDang",
     "contact": "QQ群: 1058992601",
-    "license": "LICENSE",
+    "license": "./LICENSE",
+    "icon": "./logo.ico",
     "welcome": [
         "resource/announcement/1.简介.md",
         "resource/announcement/2.使用说明.md",
         "resource/announcement/3.百战须知.md",
         "resource/announcement/4.用户协议.md",
-        "resource/announcement/5.加入我们.md"
+        "resource/announcement/5.加入我们.md",
+        "resource/announcement/6.更新内容.md"
     ],
     "github": "https://github.com/liao-2004/MAA-hunDang",
     "description": "本软件开源免费,受AGPL v3协议保护。",
@@ -24,6 +26,9 @@
             "name": "官服",
             "path": [
                 "./resource"
+            ],
+            "controller": [
+                "安卓端"
             ]
         }
     ],
@@ -34,7 +39,14 @@
             "group": [
                 "百战方案"
             ],
-            "option": []
+            "option": [],
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ],
+            "default_check": true
         },
         {
             "name": "每日奖励",
@@ -72,7 +84,8 @@
             ],
             "group": [
                 "百战方案"
-            ]
+            ],
+            "default_check": true
         },
         {
             "name": "密闻抽卡",
@@ -253,7 +266,13 @@
                 }
             ],
             "default_case": "No",
-            "description": "更改任务(尚未完善、确保密闻足够多次刷新再勾选)"
+            "description": "更改任务(尚未完善、确保密闻足够多次刷新再勾选)",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ]
         },
         "VIP每日异界赠礼": {
             "type": "switch",
@@ -273,7 +292,13 @@
                 }
             ],
             "label": "VIP每日异界赠礼",
-            "default_case": "No"
+            "default_case": "No",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ]
         },
         "领取任务": {
             "type": "switch",
@@ -293,13 +318,19 @@
                     "name": "No"
                 }
             ],
-            "default_case": "No"
+            "default_case": "No",
+            "resource": [
+                "官服"
+            ],
+            "controller": [
+                "安卓端"
+            ]
         },
         "狭缝角色祝福": {
             "type": "checkbox",
             "cases": [
                 {
-                    "name": "万法/舞娘",
+                    "name": "万法",
                     "pipeline_override": {
                         "狭缝": {
                             "next": [
@@ -313,7 +344,7 @@
                     }
                 },
                 {
-                    "name": "复仇者",
+                    "name": "复仇者/舞娘",
                     "pipeline_override": {
                         "战斗_首次攻击": {
                             "next": [
@@ -325,11 +356,16 @@
                 }
             ],
             "label": "狭缝角色祝福",
-            "resource": [],
+            "resource": [
+                "官服"
+            ],
             "default_case": [],
             "min_count": 0,
             "max_count": 2,
-            "description": "勾选拥有的角色、便于局内识别"
+            "description": "勾选拥有的角色、便于局内识别",
+            "controller": [
+                "安卓端"
+            ]
         },
         "合成宝石等级": {
             "type": "select",
@@ -469,12 +505,19 @@
                 }
             ],
             "label": "合成宝石等级",
-            "default_case": "二级宝石"
+            "default_case": "二级宝石",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
+            ]
         }
     },
     "group": [
         {
-            "name": "每日大厅"
+            "name": "每日大厅",
+            "default_expand": true
         },
         {
             "name": "百战方案",
