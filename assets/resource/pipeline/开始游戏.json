@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794729630699,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": -723,
-                "y": 372,
-                "zoom": 0.99
+                "x": -747,
+                "y": 831,
+                "zoom": 0.82
             },
             "filename": "开始游戏",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "$__mpe_external_事件逻辑_开始游戏": {
@@ -43,8 +39,8 @@
     "$__mpe_external_离开地点2_开始游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 1701,
-                "y": -88
+                "x": 1830,
+                "y": -159
             }
         }
     },
@@ -181,17 +177,6 @@
             }
         }
     },
-    "启动游戏结束": {
-        "action": {
-            "type": "StopTask"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 433,
-                "y": 552
-            }
-        }
-    },
     "启动祭坛": {
         "recognition": {
             "type": "TemplateMatch",
@@ -223,8 +208,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 517,
-                "y": -24
+                "x": 601,
+                "y": -86
             }
         }
     },
@@ -233,10 +218,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    542,
-                    297,
-                    213,
-                    82
+                    532,
+                    271,
+                    227,
+                    117
                 ],
                 "template": [
                     "坠入深境.png"
@@ -264,8 +249,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1283,
-                "y": -160
+                "x": 1300,
+                "y": -249
             }
         }
     },
@@ -317,8 +302,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 69,
-                "y": 124
+                "x": 71,
+                "y": 114
             }
         }
     },
@@ -410,12 +395,12 @@
         ],
         "on_error": [
             "启动祭坛",
-            "坠入深境_ocr识别"
+            "坠入深境_副"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 834,
-                "y": -142
+                "x": 819,
+                "y": -172
             }
         }
     },
@@ -506,15 +491,26 @@
             }
         }
     },
-    "坠入深境_ocr识别": {
+    "启动游戏结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 433,
+                "y": 552
+            }
+        }
+    },
+    "坠入深境_副": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    542,
-                    297,
-                    213,
-                    82
+                    532,
+                    271,
+                    227,
+                    117
                 ],
                 "expected": [
                     "坠入深境"
@@ -522,15 +518,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    625,
-                    319,
-                    36,
-                    40
-                ]
-            }
+            "type": "Click"
         },
         "repeat": 2,
         "post_delay": 8000,
@@ -538,12 +526,12 @@
         "focus": "开始游戏",
         "next": [
             "离开地点2",
-            "坠入深境_ocr识别"
+            "坠入深境_副"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1279,
-                "y": 227
+                "x": 1292,
+                "y": 137
             }
         }
     }
