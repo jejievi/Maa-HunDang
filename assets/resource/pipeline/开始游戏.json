@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794729630699,
+            "lastSyncTime": 1794841891264,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": -723,
-                "y": 372,
-                "zoom": 0.99
+                "x": -414,
+                "y": 365,
+                "zoom": 0.86
             },
             "filename": "开始游戏",
             "version": "v2.1.0"
@@ -108,8 +108,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 355,
-                "y": -124
+                "x": 172,
+                "y": -215
             }
         }
     },
@@ -148,8 +148,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 323,
-                "y": -519
+                "x": 280,
+                "y": -537
             }
         }
     },
@@ -233,10 +233,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    542,
-                    297,
-                    213,
-                    82
+                    534,
+                    289,
+                    222,
+                    90
                 ],
                 "template": [
                     "坠入深境.png"
@@ -266,6 +266,47 @@
             "position": {
                 "x": 1283,
                 "y": -160
+            }
+        }
+    },
+    "坠入深境_ocr识别": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    542,
+                    297,
+                    213,
+                    82
+                ],
+                "expected": [
+                    "坠入深境"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    625,
+                    319,
+                    36,
+                    40
+                ]
+            }
+        },
+        "repeat": 2,
+        "post_delay": 8000,
+        "timeout": -1,
+        "focus": "开始游戏",
+        "next": [
+            "离开地点2",
+            "坠入深境_ocr识别"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1279,
+                "y": 227
             }
         }
     },
@@ -503,47 +544,6 @@
             "position": {
                 "x": -299,
                 "y": 281
-            }
-        }
-    },
-    "坠入深境_ocr识别": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    542,
-                    297,
-                    213,
-                    82
-                ],
-                "expected": [
-                    "坠入深境"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    625,
-                    319,
-                    36,
-                    40
-                ]
-            }
-        },
-        "repeat": 2,
-        "post_delay": 8000,
-        "timeout": -1,
-        "focus": "开始游戏",
-        "next": [
-            "离开地点2",
-            "坠入深境_ocr识别"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1279,
-                "y": 227
             }
         }
     }

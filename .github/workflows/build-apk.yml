@@ -260,6 +260,9 @@ jobs:
 
           3、增加凌晨签到中断任务解决方案
 
+          4、更新无火斧则升级斧子策略
+
+
           如果没有特殊需求，请使用以下链接下载：
 
           手机版: [Android ARM64 (.apk)](https://gh-proxy.com/${BASE}/${APK_NAME})
