@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794060163785,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\结算逻辑.json",
             "savedViewport": {
-                "x": -1422,
-                "y": 516,
-                "zoom": 0.89
+                "x": -2572,
+                "y": 106,
+                "zoom": 0.61
             },
             "filename": "结算逻辑",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "$__mpe_external_地图场景_结算逻辑": {
@@ -43,8 +39,8 @@
     "$__mpe_external_开始游戏_点空白处关闭_结算逻辑": {
         "$__mpe_code": {
             "position": {
-                "x": 4341,
-                "y": 534
+                "x": 4375,
+                "y": 467
             }
         }
     },
@@ -77,17 +73,20 @@
         "repeat": 3,
         "repeat_delay": 400,
         "post_delay": 1000,
-        "timeout": -1,
+        "timeout": 70000,
         "next": [
             "结束探索",
             "点击空白关闭",
-            "前往主仪式间",
-            "开始游戏_点空白处关闭"
+            "前往主仪式间"
+        ],
+        "on_error": [
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3671,
-                "y": 575
+                "x": 3662,
+                "y": 596
             }
         }
     },
@@ -167,13 +166,16 @@
             "type": "Click"
         },
         "post_delay": 7000,
-        "timeout": -1,
+        "timeout": 70000,
         "focus": "游戏结束",
         "next": [
             "前往主仪式间",
             "点击空白关闭",
-            "结束探索",
-            "开始游戏_点空白处关闭"
+            "结束探索"
+        ],
+        "on_error": [
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
         ],
         "$__mpe_code": {
             "position": {
@@ -207,8 +209,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3257,
-                "y": 660
+                "x": 3252,
+                "y": 760
             }
         }
     },
@@ -265,6 +267,14 @@
             "position": {
                 "x": 2386,
                 "y": -61
+            }
+        }
+    },
+    "$__mpe_external_开始游戏_关闭窗口_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4375,
+                "y": 526
             }
         }
     }
