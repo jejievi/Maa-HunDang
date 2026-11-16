@@ -4,8 +4,8 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2572,
-                "y": 106,
+                "x": -2331,
+                "y": 267,
                 "zoom": 0.61
             },
             "filename": "结算逻辑",
@@ -273,8 +273,8 @@
     "$__mpe_external_开始游戏_关闭窗口_结算逻辑": {
         "$__mpe_code": {
             "position": {
-                "x": 4375,
-                "y": 526
+                "x": 4381,
+                "y": 467
             }
         }
     }
