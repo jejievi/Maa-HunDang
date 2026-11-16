@@ -268,7 +268,7 @@
                 }
             ],
             "default_case": "No",
-            "description": "更改任务(尚未完善、确保密闻足够多次刷新再勾选)",
+            "description": "更改任务",
             "controller": [
                 "安卓端"
             ],
