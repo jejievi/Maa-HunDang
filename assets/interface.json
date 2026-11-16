@@ -17,7 +17,8 @@
         {
             "name": "安卓端",
             "type": "Adb",
-            "display_short_side": 720 // 默认缩放分辨率的短边长度
+            "display_short_side": 720
+            // 默认缩放分辨率的短边长度
         }
     ],
     "resource": [
@@ -570,6 +571,6 @@
         }
     ],
     "global_option": [],
-    "label": "Maa_魂境_扫荡",
+    "label": "Maa_魂境_扫荡"
     // "icon": "resource\\announcement\\images\\hz_logo.ico"
 }
