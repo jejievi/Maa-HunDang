@@ -1,11 +1,10 @@
 name: build-apk
 
 # 触发条件：
-# - push 时如果改了 Android 子模块指针（gitlink）或本 workflow 文件
+# - push 时如果改了 Android/（宿主源码已内联进本仓库，不再有子模块指针）或本 workflow 文件
 # - PR 涉及上述路径
 # - 手动触发（Actions 页面点 Run workflow）
-# 注意：子模块里的代码改动要推到这个仓库，需要先在父仓库更新子模块指针：
-#   git add Android/MaaFwApp && git commit && git push
+# 注意：宿主（MaaFwApp）源码直接改在 Android/MaaFwApp 下并随本仓库提交，改完即生效
 
 on:
   push:
@@ -65,13 +64,6 @@ jobs:
       # 否则 syncPiAssets 打出的 pi.zip 缺 OCR 模型，APK 里 OcrDetect 会加载失败
       - name: Configure OCR models
         run: python tools/configure.py
-
-      # MaaFwApp 上游把默认更新源写死为 MirrorChyan，而 MAA-hunDang 没配 mirrorchyan_rid，
-      # 不改的话启动自检会报「更新源配置缺失」，得手动在首页切 GitHub 才能用。
-      # 这里在全新 checkout 后打一次幂等补丁（tools/patch_maafw_update_source.py），
-      # 把默认源与非法值回落都改成 GitHub；子模块指针保持 7e2dc7d 不变
-      - name: Patch default update source to GitHub
-        run: python tools/patch_maafw_update_source.py
 
       # 关键：固定签名身份，解决「每次更新都得先卸载旧版」。
       # GitHub 托管 runner 每次都是全新机器，AGP 找不到 ~/.android/debug.keystore 时会
