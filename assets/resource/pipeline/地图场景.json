@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795011572643,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\地图场景.json",
             "savedViewport": {
-                "x": 1410,
-                "y": -34,
-                "zoom": 0.82
+                "x": 1298,
+                "y": 162,
+                "zoom": 0.87
             },
             "filename": "地图场景",
-            "version": "v2.1.1"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_统合_地图场景": {
@@ -134,7 +138,8 @@
         "timeout": 6000,
         "rate_limit": 0,
         "next": [
-            "识别关卡"
+            "识别关卡",
+            "识别关卡副"
         ],
         "on_error": [
             "地图_退出"
@@ -143,6 +148,50 @@
             "position": {
                 "x": -772,
                 "y": 689
+            }
+        }
+    },
+    "地图场景副": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    386,
+                    5,
+                    206,
+                    63
+                ],
+                "template": [
+                    "地图逻辑/神智.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1248,
+                    630,
+                    14,
+                    14
+                ]
+            }
+        },
+        "post_delay": 300,
+        "timeout": 3000,
+        "rate_limit": 0,
+        "next": [
+            "识别关卡副"
+        ],
+        "on_error": [
+            "地图场景二次检测",
+            "统合"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1080,
+                "y": 316
             }
         }
     },
@@ -175,6 +224,70 @@
         }
     },
     "识别关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    8,
+                    83,
+                    1216,
+                    587
+                ],
+                "expected": [
+                    "里很安全",
+                    "苗不再能",
+                    "人抓住了",
+                    "强大的危",
+                    "险的精英",
+                    "强大的祝",
+                    "遇一场战",
+                    "到祝福的",
+                    "中的一",
+                    "丰厚的奖",
+                    "生甚么事",
+                    "的可购买",
+                    "晶强化卡",
+                    "以获得祝",
+                    "予卡牌额",
+                    "里有什么东",
+                    "人很乐意进",
+                    "升级的基础",
+                    "要献出生命而",
+                    "祝福不需要",
+                    "限刷新获取",
+                    "处前",
+                    "人的遗",
+                    "时附加2个印",
+                    "限刷新可",
+                    "新获取祝",
+                    "强化已有的印",
+                    "记赋予卡",
+                    "等",
+                    "无路可",
+                    "怪的生物"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 2,
+        "post_delay": 800,
+        "next": [
+            "地图场景副",
+            "统合"
+        ],
+        "on_error": [
+            "地图_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -582,
+                "y": 136
+            }
+        }
+    },
+    "识别关卡副": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -233,8 +346,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -566,
-                "y": 219
+                "x": -561,
+                "y": -184
             }
         }
     }
