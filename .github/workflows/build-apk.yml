@@ -264,6 +264,8 @@ jobs:
 
           5、修复地图页特定地区无法前往下一位置bug
 
+          6、增加护甲祝福识别机制，仍待完善 
+
           如果没有特殊需求，请使用以下链接下载：
 
           手机版: [Android ARM64 (.apk)](https://gh-proxy.com/${BASE}/${APK_NAME})
