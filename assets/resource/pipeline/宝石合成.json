@@ -3,13 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795174684470,
+            "isModifiedExternally": true,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\宝石合成.json",
             "savedViewport": {
-                "x": -976,
-                "y": 328,
-                "zoom": 0.49
+                "x": -1574,
+                "y": 231,
+                "zoom": 0.55
             },
             "filename": "宝石合成",
-            "version": "v2.1.3"
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_anchor_gemGrade_宝石合成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4741,
+                "y": 502
+            }
         }
     },
     "三级白1": {
@@ -140,6 +152,134 @@
             }
         }
     },
+    "三级绿1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/三级宝石/三级绿1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "三级绿1_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3085,
+                "y": 1700
+            }
+        }
+    },
+    "三级绿1_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/三级宝石/三级绿1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3531,
+                "y": 1701
+            }
+        }
+    },
+    "三级绿2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/三级宝石/三级绿2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "三级绿2_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3089,
+                "y": 1883
+            }
+        }
+    },
+    "三级绿2_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/三级宝石/三级绿2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3506,
+                "y": 1905
+            }
+        }
+    },
     "三级黄1": {
         "max_hit": 1,
         "recognition": {
@@ -180,7 +320,7 @@
                     582
                 ],
                 "template": [
-                    "宝石合成/三级宝石/三级红1.png"
+                    "宝石合成/三级宝石/三级黄1.png"
                 ],
                 "threshold": [
                     0.9
@@ -241,8 +381,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2684,
-                "y": 252
+                "x": 2648,
+                "y": 281
             }
         }
     },
@@ -305,7 +445,7 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3581,
+                "x": 3585,
                 "y": -10
             }
         }
@@ -334,8 +474,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3088,
-                "y": 593
+                "x": 3073,
+                "y": 618
             }
         }
     },
@@ -398,8 +538,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3172,
-                "y": 328
+                "x": 3137,
+                "y": 259
             }
         }
     },
@@ -499,6 +639,902 @@
             "position": {
                 "x": 3542,
                 "y": -368
+            }
+        }
+    },
+    "五级白1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白1_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2088,
+                "y": 1790
+            }
+        }
+    },
+    "五级白1_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2491,
+                "y": 1808
+            }
+        }
+    },
+    "五级白2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白2_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1844,
+                "y": 1523
+            }
+        }
+    },
+    "五级白2_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2715,
+                "y": 1538
+            }
+        }
+    },
+    "五级白3": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白3.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白3_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1856,
+                "y": 1798
+            }
+        }
+    },
+    "五级白3_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白3.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2743,
+                "y": 1825
+            }
+        }
+    },
+    "五级白4": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    724,
+                    105,
+                    482,
+                    601
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白4.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白4_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2105,
+                "y": 2092
+            }
+        }
+    },
+    "五级白4_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    724,
+                    105,
+                    482,
+                    601
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白4.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2472,
+                "y": 2094
+            }
+        }
+    },
+    "五级白5": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白5.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白5_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1870,
+                "y": 2075
+            }
+        }
+    },
+    "五级白5_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白5.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2746,
+                "y": 2110
+            }
+        }
+    },
+    "五级白6": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白6.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白6_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2131,
+                "y": 2375
+            }
+        }
+    },
+    "五级白6_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白6.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2451,
+                "y": 2393
+            }
+        }
+    },
+    "五级白7": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白7.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级白7_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1902,
+                "y": 2376
+            }
+        }
+    },
+    "五级白7_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级白7.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2715,
+                "y": 2390
+            }
+        }
+    },
+    "五级红1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级红1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级红1_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2090,
+                "y": 1215
+            }
+        }
+    },
+    "五级红1_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级红1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2436,
+                "y": 1221
+            }
+        }
+    },
+    "五级红2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级红2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级红2_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2080,
+                "y": 1481
+            }
+        }
+    },
+    "五级红2_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级红2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2441,
+                "y": 1497
+            }
+        }
+    },
+    "五级黄1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    737,
+                    102,
+                    466,
+                    588
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级黄1_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2170,
+                "y": 2687
+            }
+        }
+    },
+    "五级黄1_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    737,
+                    102,
+                    452,
+                    599
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2472,
+                "y": 2695
+            }
+        }
+    },
+    "五级黄2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级黄2_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2183,
+                "y": 2977
+            }
+        }
+    },
+    "五级黄2_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄2.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2469,
+                "y": 2984
+            }
+        }
+    },
+    "五级黄3": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄3.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级黄3_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2193,
+                "y": 3281
+            }
+        }
+    },
+    "五级黄3_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄3.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2525,
+                "y": 3282
+            }
+        }
+    },
+    "五级黄4": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄4.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级黄4_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2208,
+                "y": 3536
+            }
+        }
+    },
+    "五级黄4_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄4.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2549,
+                "y": 3539
+            }
+        }
+    },
+    "五级黄5": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄5.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "五级黄5_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2241,
+                "y": 3802
+            }
+        }
+    },
+    "五级黄5_点击": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    747,
+                    103,
+                    458,
+                    582
+                ],
+                "template": [
+                    "宝石合成/五级宝石/五级黄5.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "gemGrade",
+        "repeat": 4,
+        "repeat_delay": 380,
+        "next": [
+            "非宝石合成格子",
+            "宝石合成格子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2522,
+                "y": 3809
             }
         }
     },
@@ -1412,13 +2448,21 @@
         "action": {
             "type": "Click"
         },
+        "timeout": 1000,
         "next": [
-            "[Anchor]gemGrade"
+            "[Anchor]gemGrade",
+            "二级黄1",
+            "二级白1",
+            "二级绿1",
+            "二级红1"
+        ],
+        "on_error": [
+            "上翻页"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4316,
-                "y": 400
+                "x": 4334,
+                "y": 480
             }
         }
     },
@@ -1478,7 +2522,7 @@
             }
         }
     },
-    "非宝石合成格子": {
+    "宝石合成格子": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1493,27 +2537,22 @@
                 ]
             }
         },
-        "inverse": true,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    345,
-                    660,
-                    17,
-                    10
-                ]
-            }
-        },
+        "pre_delay": 0,
         "post_delay": 0,
+        "timeout": 1000,
         "next": [
-            "宝石_密卷不足",
-            "宝石_空白处关闭"
+            "二级黄1",
+            "二级白1",
+            "二级绿1",
+            "二级红1"
+        ],
+        "on_error": [
+            "上翻页"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4281,
-                "y": -8
+                "x": 4291,
+                "y": 773
             }
         }
     },
@@ -1601,40 +2640,6 @@
             }
         }
     },
-    "宝石合成格子": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    502,
-                    425,
-                    51,
-                    48
-                ],
-                "template": [
-                    "宝石合成/合成格子.png"
-                ]
-            }
-        },
-        "pre_delay": 0,
-        "post_delay": 0,
-        "timeout": 2000,
-        "next": [
-            "二级黄1",
-            "二级白1",
-            "二级绿1",
-            "二级红1"
-        ],
-        "on_error": [
-            "上翻页"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4286,
-                "y": 865
-            }
-        }
-    },
     "滑到最底": {
         "action": {
             "type": "Swipe",
@@ -1673,1027 +2678,42 @@
             }
         }
     },
-    "三级绿1": {
-        "max_hit": 1,
+    "非宝石合成格子": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    747,
-                    103,
-                    458,
-                    582
+                    502,
+                    425,
+                    51,
+                    48
                 ],
                 "template": [
-                    "宝石合成/三级宝石/三级绿1.png"
-                ],
-                "threshold": [
-                    0.9
+                    "宝石合成/合成格子.png"
                 ]
             }
         },
-        "next": [
-            "三级绿1_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3085,
-                "y": 1700
-            }
-        }
-    },
-    "三级绿2": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/三级宝石/三级绿2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "三级绿2_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3089,
-                "y": 1883
-            }
-        }
-    },
-    "三级绿1_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/三级宝石/三级绿1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
+        "inverse": true,
         "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3531,
-                "y": 1701
-            }
-        }
-    },
-    "三级绿2_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
+            "type": "Click",
             "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/三级宝石/三级绿2.png"
-                ],
-                "threshold": [
-                    0.9
+                "target": [
+                    345,
+                    660,
+                    17,
+                    10
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
+        "post_delay": 0,
         "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
+            "宝石_密卷不足",
+            "宝石_空白处关闭"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3506,
-                "y": 1905
-            }
-        }
-    },
-    "五级红1": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级红1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级红1_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2090,
-                "y": 1215
-            }
-        }
-    },
-    "五级红2": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级红2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级红2_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2080,
-                "y": 1481
-            }
-        }
-    },
-    "五级白1": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白1_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2088,
-                "y": 1790
-            }
-        }
-    },
-    "五级白4": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    724,
-                    105,
-                    482,
-                    601
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白4.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白4_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2105,
-                "y": 2092
-            }
-        }
-    },
-    "五级白6": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白6.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白6_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2131,
-                "y": 2375
-            }
-        }
-    },
-    "五级黄1": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    737,
-                    102,
-                    466,
-                    588
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级黄1_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2170,
-                "y": 2687
-            }
-        }
-    },
-    "五级黄2": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级黄2_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2183,
-                "y": 2977
-            }
-        }
-    },
-    "五级黄3": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄3.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级黄3_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2193,
-                "y": 3281
-            }
-        }
-    },
-    "五级黄4": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄4.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级黄4_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2208,
-                "y": 3536
-            }
-        }
-    },
-    "五级黄5": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄5.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级黄5_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2241,
-                "y": 3802
-            }
-        }
-    },
-    "五级白2": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白2_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1844,
-                "y": 1523
-            }
-        }
-    },
-    "五级白3": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白3.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白3_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1856,
-                "y": 1798
-            }
-        }
-    },
-    "五级白5": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白5.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白5_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1870,
-                "y": 2075
-            }
-        }
-    },
-    "五级白7": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白7.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "next": [
-            "五级白7_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1902,
-                "y": 2376
-            }
-        }
-    },
-    "五级红1_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级红1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2436,
-                "y": 1221
-            }
-        }
-    },
-    "五级红2_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级红2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2441,
-                "y": 1497
-            }
-        }
-    },
-    "五级白2_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2715,
-                "y": 1538
-            }
-        }
-    },
-    "五级白1_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2491,
-                "y": 1808
-            }
-        }
-    },
-    "五级白3_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白3.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2743,
-                "y": 1825
-            }
-        }
-    },
-    "五级白4_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    724,
-                    105,
-                    482,
-                    601
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白4.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2472,
-                "y": 2094
-            }
-        }
-    },
-    "五级白5_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白5.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2746,
-                "y": 2110
-            }
-        }
-    },
-    "五级白6_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白6.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2451,
-                "y": 2393
-            }
-        }
-    },
-    "五级白7_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级白7.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2715,
-                "y": 2390
-            }
-        }
-    },
-    "五级黄1_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    737,
-                    102,
-                    452,
-                    599
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄1.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2472,
-                "y": 2695
-            }
-        }
-    },
-    "五级黄2_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2469,
-                "y": 2984
-            }
-        }
-    },
-    "五级黄3_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄3.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2525,
-                "y": 3282
-            }
-        }
-    },
-    "五级黄4_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄4.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2549,
-                "y": 3539
-            }
-        }
-    },
-    "五级黄5_点击": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    747,
-                    103,
-                    458,
-                    582
-                ],
-                "template": [
-                    "宝石合成/五级宝石/五级黄5.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "anchor": "gemGrade",
-        "repeat": 4,
-        "repeat_delay": 380,
-        "next": [
-            "非宝石合成格子",
-            "宝石合成格子"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2522,
-                "y": 3809
+                "x": 4281,
+                "y": -8
             }
         }
     }
