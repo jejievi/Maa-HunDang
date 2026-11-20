@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -766,
-                "y": 498,
-                "zoom": 0.61
+                "x": -1508,
+                "y": 482,
+                "zoom": 0.73
             },
             "filename": "新建Pipeline3",
             "version": "v2.1.3"
@@ -44,7 +44,7 @@
             }
         }
     },
-    "$__mpe_external_战斗场景_新建Pipeline3": {
+    "$__mpe_external_战斗中_新建Pipeline3": {
         "$__mpe_code": {
             "position": {
                 "x": 2830,
@@ -252,7 +252,7 @@
         "focus": "成就：遇到了百战克星",
         "next": [
             "继续",
-            "战斗场景",
+            "战斗中",
             "留下遗物",
             "奖励场景",
             "地图场景",
