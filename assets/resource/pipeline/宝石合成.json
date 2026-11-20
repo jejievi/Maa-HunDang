@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -1740,
-                "y": 325,
-                "zoom": 0.66
+                "x": -976,
+                "y": 328,
+                "zoom": 0.49
             },
             "filename": "宝石合成",
             "version": "v2.1.3"
@@ -62,6 +62,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -125,6 +126,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -188,6 +190,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -293,6 +296,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -301,8 +305,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3607,
-                "y": -8
+                "x": 3581,
+                "y": -10
             }
         }
     },
@@ -356,6 +360,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -419,6 +424,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -482,6 +488,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -490,8 +497,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3522,
-                "y": -351
+                "x": 3542,
+                "y": -368
             }
         }
     },
@@ -586,6 +593,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -649,6 +657,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -712,6 +721,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -775,6 +785,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -838,6 +849,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -901,6 +913,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -964,6 +977,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1027,6 +1041,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1090,6 +1105,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1153,6 +1169,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1216,6 +1233,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1279,6 +1297,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1342,6 +1361,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1392,16 +1412,10 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "二级黄1_点击",
-            "二级白1_点击",
-            "二级绿1_点击",
-            "二级红1_点击"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 4300,
-                "y": 339
+                "x": 4316,
+                "y": 400
             }
         }
     },
@@ -1613,8 +1627,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4331,
-                "y": 669
+                "x": 4286,
+                "y": 865
             }
         }
     },
@@ -1735,6 +1749,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -1769,6 +1784,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2209,6 +2225,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2243,6 +2260,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2277,6 +2295,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2311,6 +2330,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2345,6 +2365,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2379,6 +2400,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2413,6 +2435,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2447,6 +2470,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2481,6 +2505,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2515,6 +2540,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2549,6 +2575,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2583,6 +2610,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2617,6 +2645,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
@@ -2651,6 +2680,7 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "gemGrade",
         "repeat": 4,
         "repeat_delay": 380,
         "next": [
