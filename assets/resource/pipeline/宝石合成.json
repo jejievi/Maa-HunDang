@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794837467478,
-            "isModifiedExternally": true,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\宝石合成.json",
             "savedViewport": {
-                "x": -1203,
-                "y": -1162,
-                "zoom": 0.87
+                "x": -1740,
+                "y": 325,
+                "zoom": 0.66
             },
             "filename": "宝石合成",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "三级白1": {
@@ -66,11 +62,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "三级白1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -129,11 +125,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "三级红1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -192,11 +188,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "三级黄1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -242,8 +238,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2724,
-                "y": 321
+                "x": 2684,
+                "y": 252
             }
         }
     },
@@ -297,16 +293,16 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "二级白1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3526,
-                "y": 12
+                "x": 3607,
+                "y": -8
             }
         }
     },
@@ -360,11 +356,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "二级红1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -423,16 +419,16 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "二级绿1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3558,
-                "y": 326
+                "x": 3510,
+                "y": 320
             }
         }
     },
@@ -460,8 +456,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3168,
-                "y": -298
+                "x": 3210,
+                "y": -330
             }
         }
     },
@@ -486,16 +482,16 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "二级黄1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3462,
-                "y": -292
+                "x": 3522,
+                "y": -351
             }
         }
     },
@@ -506,8 +502,8 @@
         "focus": "",
         "$__mpe_code": {
             "position": {
-                "x": 5259,
-                "y": 1043
+                "x": 5160,
+                "y": 992
             }
         }
     },
@@ -535,8 +531,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4871,
-                "y": 1039
+                "x": 4874,
+                "y": 959
             }
         }
     },
@@ -590,11 +586,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级白1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -653,11 +649,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级紫1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -716,11 +712,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级红1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -779,11 +775,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级红2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -842,11 +838,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级绿1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -905,11 +901,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级绿2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -968,11 +964,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级绿3_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1031,11 +1027,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级绿4_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1094,11 +1090,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级绿5_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1157,11 +1153,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级绿6_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1220,11 +1216,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级黄1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1283,11 +1279,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级黄2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1346,11 +1342,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "四级黄3_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1373,8 +1369,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4547,
-                "y": 828
+                "x": 4693,
+                "y": 603
             }
         }
     },
@@ -1404,8 +1400,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4316,
-                "y": 500
+                "x": 4300,
+                "y": 339
             }
         }
     },
@@ -1465,7 +1461,7 @@
             }
         }
     },
-    "宝石合成格子": {
+    "非宝石合成格子": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1499,8 +1495,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4001,
-                "y": 1658
+                "x": 4281,
+                "y": -8
             }
         }
     },
@@ -1588,25 +1584,24 @@
             }
         }
     },
-    "数字1": {
+    "宝石合成格子": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    724,
-                    111,
-                    496,
-                    579
+                    502,
+                    425,
+                    51,
+                    48
                 ],
                 "template": [
-                    "宝石合成/数字1.png"
-                ],
-                "threshold": [
-                    0.9
+                    "宝石合成/合成格子.png"
                 ]
             }
         },
-        "timeout": 5000,
+        "pre_delay": 0,
+        "post_delay": 0,
+        "timeout": 2000,
         "next": [
             "二级黄1",
             "二级白1",
@@ -1618,43 +1613,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4071,
-                "y": 1185
-            }
-        }
-    },
-    "数字2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    716,
-                    111,
-                    503,
-                    579
-                ],
-                "template": [
-                    "宝石合成/数字2.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "timeout": 5000,
-        "next": [
-            "二级黄1",
-            "二级白1",
-            "二级绿1",
-            "二级红1"
-        ],
-        "on_error": [
-            "上翻页"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4114,
-                "y": 1119
+                "x": 4331,
+                "y": 669
             }
         }
     },
@@ -1775,11 +1735,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字2",
-            "数字1",
-            "三级绿1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -1809,11 +1769,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "三级绿2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2249,11 +2209,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级红1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2283,11 +2243,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级红2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2317,11 +2277,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2351,11 +2311,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2385,11 +2345,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白3_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2419,11 +2379,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白4_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2453,11 +2413,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白5_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2487,11 +2447,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白6_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2521,11 +2481,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级白7_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2555,11 +2515,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级黄1_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2589,11 +2549,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级黄2_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2623,11 +2583,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级黄3_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2657,11 +2617,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级黄4_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
@@ -2691,11 +2651,11 @@
         "action": {
             "type": "Click"
         },
+        "repeat": 4,
+        "repeat_delay": 380,
         "next": [
-            "宝石合成格子",
-            "数字1",
-            "数字2",
-            "五级黄5_点击"
+            "非宝石合成格子",
+            "宝石合成格子"
         ],
         "$__mpe_code": {
             "position": {
