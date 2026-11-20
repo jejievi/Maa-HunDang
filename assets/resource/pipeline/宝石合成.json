@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795174684470,
-            "isModifiedExternally": true,
+            "lastSyncTime": 1795178194441,
+            "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\宝石合成.json",
             "savedViewport": {
-                "x": -1574,
-                "y": 231,
+                "x": -922,
+                "y": -1139,
                 "zoom": 0.55
             },
             "filename": "宝石合成",
@@ -1288,10 +1288,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    747,
+                    732,
                     103,
                     458,
-                    582
+                    598
                 ],
                 "template": [
                     "宝石合成/五级宝石/五级黄2.png"
@@ -1316,10 +1316,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    747,
+                    732,
                     103,
                     458,
-                    582
+                    598
                 ],
                 "template": [
                     "宝石合成/五级宝石/五级黄2.png"

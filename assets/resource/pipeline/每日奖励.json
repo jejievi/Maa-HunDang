@@ -3,17 +3,255 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794834611991,
-            "isModifiedExternally": false,
+            "lastSyncTime": 1795022146083,
+            "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\每日奖励.json",
             "savedViewport": {
-                "x": -566,
-                "y": 189,
-                "zoom": 0.71
+                "x": -186,
+                "y": -167,
+                "zoom": 0.52
             },
             "filename": "每日奖励",
             "version": "v2.1.0"
+        }
+    },
+    "前往大厅3": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1125,
+                    536,
+                    126,
+                    97
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "on_error": [
+            "每日奖励事件结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 958,
+                "y": 1083
+            }
+        }
+    },
+    "升格之旅": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    929,
+                    68,
+                    314,
+                    103
+                ],
+                "expected": [
+                    "升格之旅"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "升格之旅_任务",
+            "升格之旅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1314,
+                "y": 1084
+            }
+        }
+    },
+    "升格之旅_任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    8,
+                    260,
+                    173,
+                    79
+                ],
+                "expected": [
+                    "任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 1500,
+        "next": [
+            "升格之旅_任务_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1556,
+                "y": 1101
+            }
+        }
+    },
+    "升格之旅_全部领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    704,
+                    240,
+                    213,
+                    87
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "升格之旅_全部领取",
+            "升格之旅_任务_升格任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1948,
+                "y": 963
+            }
+        }
+    },
+    "升格之旅_任务_升格任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    225,
+                    504,
+                    141,
+                    95
+                ],
+                "expected": [
+                    "升格任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 1500,
+        "next": [
+            "升格之旅_升格任务_全部领取"
+        ],
+        "on_error": [
+            "升格之旅_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2203,
+                "y": 1117
+            }
+        }
+    },
+    "升格之旅_升格任务_全部领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    704,
+                    240,
+                    213,
+                    87
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "升格之旅_升格任务_全部领取",
+            "升格之旅_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2547,
+                "y": 1155
+            }
+        }
+    },
+    "升格之旅_退出": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    46,
+                    3,
+                    95,
+                    56
+                ],
+                "template": [
+                    "每日奖励/升格之旅_退出.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "升格之旅_退出",
+            "每日奖励事件结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2435,
+                "y": 1416
+            }
+        }
+    },
+    "升格之旅_任务_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    228,
+                    284,
+                    119,
+                    65
+                ],
+                "expected": [
+                    "本周任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 1500,
+        "next": [
+            "升格之旅_全部领取"
+        ],
+        "on_error": [
+            "升格之旅_任务_升格任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1730,
+                "y": 1105
+            }
         }
     },
     "==每日奖励==": {
@@ -310,13 +548,13 @@
             "type": "Click"
         },
         "timeout": 5000,
-        "on_error": [
-            "每日奖励事件结束"
+        "next": [
+            "前往大厅3"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 948,
-                "y": 654
+                "x": 946,
+                "y": 648
             }
         }
     },
@@ -486,8 +724,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 985,
-                "y": 961
+                "x": 1197,
+                "y": 1585
             }
         }
     },
@@ -532,7 +770,7 @@
             }
         },
         "next": [
-            "每日奖励事件结束"
+            "前往大厅3"
         ],
         "$__mpe_code": {
             "position": {
