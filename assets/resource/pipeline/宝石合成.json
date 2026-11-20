@@ -1412,6 +1412,9 @@
         "action": {
             "type": "Click"
         },
+        "next": [
+            "[Anchor]gemGrade"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 4316,
