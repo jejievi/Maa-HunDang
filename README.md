@@ -13,7 +13,7 @@
 
 1、在[release页面](https://github.com/liao-2004/MAA-hunDang/releases/latest)下载最新版本
 
-2、阅读[使用前必读.md](https://github.com/liao-2004/MAA-hunDang/blob/main/docs/guide/使用前必读.md)
+2、常见问题阅读[使用前必读.md](https://github.com/liao-2004/MAA-hunDang/blob/main/docs/guide/使用前必读.md)
 
 ## 功能
 
