@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793800432553,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\游艺事件.json",
             "savedViewport": {
-                "x": -233,
-                "y": 250,
-                "zoom": 0.57
+                "x": 522,
+                "y": 155,
+                "zoom": 0.55
             },
             "filename": "游艺事件",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "$__mpe_external_离开地点_直接_游艺事件": {
@@ -301,8 +297,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 701,
-                "y": 549
+                "x": 697,
+                "y": 554
             }
         }
     },
@@ -626,7 +622,8 @@
         "next": [
             "印记刻印(1.1)",
             "游艺-接受并离开",
-            "离开地点_直接"
+            "离开地点_直接",
+            "选择卡片"
         ],
         "$__mpe_code": {
             "position": {
@@ -692,12 +689,13 @@
         "next": [
             "游艺-点击空白关闭",
             "印记刻印(1.1)",
-            "离开地点_直接"
+            "离开地点_直接",
+            "选择卡片"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 444,
-                "y": 360
+                "x": 407,
+                "y": 255
             }
         }
     },
@@ -851,6 +849,14 @@
             "position": {
                 "x": 353,
                 "y": -264
+            }
+        }
+    },
+    "$__mpe_external_选择卡片_游艺事件": {
+        "$__mpe_code": {
+            "position": {
+                "x": 627,
+                "y": 813
             }
         }
     }
