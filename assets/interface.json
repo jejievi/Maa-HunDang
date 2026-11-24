@@ -357,6 +357,8 @@
                     "pipeline_override": {
                         "战斗_首次攻击": {
                             "next": [
+                                "[Anchor]QuickCharmSettings",
+                                "[Anchor]Armring",
                                 "自动战斗",
                                 "夺魄_祝福"
                             ]
