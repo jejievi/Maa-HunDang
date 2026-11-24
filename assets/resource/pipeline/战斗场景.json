@@ -3,17 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795539960504,
-            "isModifiedExternally": false,
+            "lastSyncTime": 1795545394904,
+            "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 1706,
-                "y": -437,
-                "zoom": 0.62
+                "x": 1523,
+                "y": -489,
+                "zoom": 0.63
             },
             "filename": "新建Pipeline3",
             "version": "v2.1.0"
+        }
+    },
+    "$__mpe_anchor_ArmringStuck_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": -963,
+                "y": 1633
+            }
         }
     },
     "$__mpe_anchor_Armring_新建Pipeline3": {
@@ -271,7 +279,7 @@
         "next": [
             "复活",
             "奖励场景",
-            "战斗_首次攻击",
+            "战斗中",
             "终结",
             "继续"
         ],
@@ -280,8 +288,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 295,
-                "y": 1588
+                "x": 293,
+                "y": 1504
             }
         }
     },
@@ -414,6 +422,10 @@
             }
         },
         "pre_delay": 200,
+        "anchor": {
+            "ArmringStuck": "铁臂",
+            "ArmringStuckNext": "自动战斗"
+        },
         "post_delay": 0,
         "next": [
             "[Anchor]QuickCharmSettings",
@@ -424,8 +436,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1979,
-                "y": 1037
+                "x": -1813,
+                "y": 948
             }
         }
     },
@@ -444,6 +456,9 @@
                 ]
             }
         },
+        "anchor": {
+            "ArmringStuck": ""
+        },
         "timeout": 3000,
         "next": [
             "[Anchor]Armring",
@@ -460,8 +475,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1012,
-                "y": 1043
+                "x": -1064,
+                "y": 909
             }
         }
     },
@@ -654,6 +669,10 @@
         "action": {
             "type": "Click"
         },
+        "anchor": {
+            "Armring": "铁臂",
+            "ArmringStuckNext": ""
+        },
         "post_delay": 0,
         "timeout": 8000,
         "next": [
@@ -670,8 +689,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 355,
-                "y": 625
+                "x": -144,
+                "y": 694
             }
         }
     },
@@ -705,8 +724,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -119,
-                "y": 1332
+                "x": -142,
+                "y": 1682
             }
         }
     },
@@ -827,8 +846,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 680,
-                "y": 857
+                "x": 699,
+                "y": 852
             }
         }
     },
@@ -882,14 +901,22 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 0,
+        "anchor": {
+            "Armring": ""
+        },
+        "post_delay": 300,
         "next": [
+            "[Anchor]ArmringStuck",
+            "[Anchor]ArmringStuckNext",
             "战斗中"
+        ],
+        "on_error": [
+            "延迟箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1194,
-                "y": 1523
+                "x": -1419,
+                "y": 1546
             }
         }
     }
