@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795011572643,
+            "lastSyncTime": 1795618812993,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\地图场景.json",
             "savedViewport": {
-                "x": 1298,
-                "y": 162,
-                "zoom": 0.87
+                "x": 1220,
+                "y": 152,
+                "zoom": 0.57
             },
             "filename": "地图场景",
             "version": "v2.1.0"
@@ -190,8 +190,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1080,
-                "y": 316
+                "x": -1437,
+                "y": 302
             }
         }
     },
@@ -269,7 +269,15 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    76,
+                    -48,
+                    -179,
+                    -10
+                ]
+            }
         },
         "repeat": 2,
         "post_delay": 800,
@@ -333,7 +341,15 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    76,
+                    -48,
+                    -179,
+                    -10
+                ]
+            }
         },
         "repeat": 2,
         "post_delay": 800,

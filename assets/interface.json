@@ -60,7 +60,8 @@
                 "更改任务",
                 "领取任务",
                 "VIP每日异界赠礼",
-                "升格之旅"
+                "升格之旅",
+                "邮件奖励"
             ],
             "default_check": true,
             "group": [
@@ -95,11 +96,11 @@
                 "官服"
             ],
             "option": [
+                "不更改难度",
                 "永久VIP",
                 "是否有火斧",
                 "每日挑战",
-                "狭缝角色祝福",
-                "不更改难度"
+                "狭缝角色祝福"
             ],
             "group": [
                 "百战方案"
@@ -176,7 +177,9 @@
                     "name": "No",
                     "pipeline_override": {
                         "锻造场景": {
-                            "anchor": "CardUpgrade"
+                            "anchor": {
+                                "ForgeNext": "CardUpgrade"
+                            }
                         }
                     }
                 }
@@ -948,6 +951,31 @@
                         }
                     }
                 }
+            ]
+        },
+        "邮件奖励": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "前往大厅4": {
+                            "next": [
+                                "邮件"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No"
+                }
+            ],
+            "default_case": "No",
+            "controller": [
+                "安卓端"
+            ],
+            "resource": [
+                "官服"
             ]
         }
     },

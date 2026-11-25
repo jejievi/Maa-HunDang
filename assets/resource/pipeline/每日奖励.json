@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795604832035,
-            "isModifiedExternally": false,
+            "lastSyncTime": 1795617462749,
+            "isModifiedExternally": true,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\每日奖励.json",
             "savedViewport": {
-                "x": -109,
-                "y": -474,
-                "zoom": 0.54
+                "x": -277,
+                "y": -577,
+                "zoom": 0.52
             },
             "filename": "每日奖励",
             "version": "v2.1.0"
@@ -339,8 +339,8 @@
             "type": "Click"
         },
         "timeout": 5000,
-        "on_error": [
-            "每日奖励事件结束"
+        "next": [
+            "前往大厅4"
         ],
         "$__mpe_code": {
             "position": {
@@ -377,6 +377,46 @@
             "position": {
                 "x": 1232,
                 "y": 272
+            }
+        }
+    },
+    "升格_奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    323,
+                    247,
+                    749,
+                    57
+                ],
+                "template": [
+                    "每日奖励/升格之旅_奖励.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -44,
+                    57,
+                    -6,
+                    -2
+                ]
+            }
+        },
+        "timeout": 8000,
+        "next": [
+            "升旅_点击任意空白关闭"
+        ],
+        "on_error": [
+            "升格之旅_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3648,
+                "y": 932
             }
         }
     },
@@ -562,6 +602,42 @@
             }
         }
     },
+    "升格之旅_存在奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    22,
+                    178,
+                    84,
+                    52
+                ],
+                "template": [
+                    "每日奖励/升格之旅_存在奖励.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    46,
+                    209,
+                    36,
+                    27
+                ]
+            }
+        },
+        "next": [
+            "回到最开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2870,
+                "y": 1114
+            }
+        }
+    },
     "升格之旅_退出": {
         "recognition": {
             "type": "TemplateMatch",
@@ -582,12 +658,12 @@
         },
         "next": [
             "升格之旅_退出",
-            "每日奖励事件结束"
+            "前往大厅4"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2394,
-                "y": 1606
+                "x": 2418,
+                "y": 1658
             }
         }
     },
@@ -650,6 +726,78 @@
             "position": {
                 "x": 1309,
                 "y": 587
+            }
+        }
+    },
+    "回到最开始": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    382,
+                    219,
+                    8,
+                    8
+                ],
+                "end": [
+                    [
+                        886,
+                        214,
+                        5,
+                        6
+                    ]
+                ],
+                "duration": [
+                    300
+                ]
+            }
+        },
+        "repeat": 8,
+        "repeat_delay": 300,
+        "next": [
+            "升格_奖励",
+            "奖励滑动"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3134,
+                "y": 1112
+            }
+        }
+    },
+    "奖励滑动": {
+        "max_hit": 15,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    716,
+                    208,
+                    14,
+                    6
+                ],
+                "end": [
+                    [
+                        358,
+                        218,
+                        11,
+                        6
+                    ]
+                ],
+                "duration": [
+                    1200
+                ]
+            }
+        },
+        "next": [
+            "升格_奖励",
+            "奖励滑动",
+            "升格之旅_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3446,
+                "y": 1276
             }
         }
     },
@@ -726,8 +874,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1197,
-                "y": 1585
+                "x": 1189,
+                "y": 2326
             }
         }
     },
@@ -934,53 +1082,73 @@
             }
         }
     },
-    "升格_奖励": {
+    "升旅_点击任意空白关闭": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    323,
-                    247,
-                    749,
-                    57
+                    498,
+                    663,
+                    294,
+                    55
                 ],
-                "template": [
-                    "每日奖励/升格之旅_奖励.png"
+                "expected": [
+                    "点击任意空白处关闭"
                 ]
             }
         },
+        "pre_delay": 400,
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -44,
-                    57,
-                    -6,
-                    -2
-                ]
-            }
+            "type": "Click"
         },
-        "repeat": 2,
-        "repeat_delay": 350,
         "next": [
             "升格之旅_退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3526,
-                "y": 952
+                "x": 3974,
+                "y": 930
             }
         }
     },
-    "升格之旅_存在奖励": {
+    "前往大厅4": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    22,
-                    178,
-                    84,
-                    52
+                    1125,
+                    536,
+                    126,
+                    97
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "on_error": [
+            "每日奖励事件结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 773,
+                "y": 1638
+            }
+        }
+    },
+    "邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    233,
+                    16,
+                    54,
+                    59
                 ],
                 "template": [
                     "每日奖励/升格之旅_存在奖励.png"
@@ -990,93 +1158,154 @@
         "action": {
             "type": "Click",
             "param": {
-                "target": [
-                    46,
-                    209,
+                "target_offset": [
+                    -13,
+                    22,
+                    -6,
+                    -3
+                ]
+            }
+        },
+        "next": [
+            "邮件",
+            "领取邮件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1314,
+                "y": 1656
+            }
+        }
+    },
+    "领取邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    278,
+                    48,
+                    226,
+                    632
+                ],
+                "template": [
+                    "每日奖励/邮件_存在奖励.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -140,
                     36,
-                    27
+                    -11,
+                    -7
                 ]
             }
         },
+        "timeout": 3000,
         "next": [
-            "回到最开始"
+            "领取_点击"
+        ],
+        "on_error": [
+            "邮箱_退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2870,
-                "y": 1114
+                "x": 1633,
+                "y": 1726
             }
         }
     },
-    "奖励滑动": {
-        "max_hit": 15,
-        "action": {
-            "type": "Swipe",
+    "领取_点击": {
+        "recognition": {
+            "type": "OCR",
             "param": {
-                "begin": [
-                    716,
-                    208,
-                    14,
-                    6
+                "roi": [
+                    955,
+                    485,
+                    229,
+                    134
                 ],
-                "end": [
-                    [
-                        358,
-                        218,
-                        11,
-                        6
-                    ]
-                ],
-                "duration": [
-                    1200
+                "expected": [
+                    "领取"
                 ]
             }
         },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 3000,
         "next": [
-            "升格_奖励",
-            "奖励滑动",
-            "升格之旅_退出"
+            "领取_空白"
+        ],
+        "on_error": [
+            "邮箱_退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3381,
-                "y": 1226
+                "x": 1872,
+                "y": 1701
             }
         }
     },
-    "回到最开始": {
-        "action": {
-            "type": "Swipe",
+    "领取_空白": {
+        "recognition": {
+            "type": "OCR",
             "param": {
-                "begin": [
-                    382,
-                    219,
-                    8,
-                    8
+                "roi": [
+                    524,
+                    671,
+                    235,
+                    34
                 ],
-                "end": [
-                    [
-                        886,
-                        214,
-                        5,
-                        6
-                    ]
-                ],
-                "duration": [
-                    300
+                "expected": [
+                    "点击任意空白处关闭"
                 ]
             }
         },
-        "repeat": 8,
-        "repeat_delay": 300,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 3000,
         "next": [
-            "升格_奖励",
-            "奖励滑动"
+            "领取邮件"
+        ],
+        "on_error": [
+            "邮箱_退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3134,
-                "y": 1112
+                "x": 2164,
+                "y": 1724
+            }
+        }
+    },
+    "邮箱_退出": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    41,
+                    9,
+                    86,
+                    54
+                ],
+                "template": [
+                    "每日奖励/邮箱_退出.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "每日奖励事件结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1865,
+                "y": 2131
             }
         }
     }

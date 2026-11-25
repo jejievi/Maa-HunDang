@@ -1,100 +1,114 @@
 {
-    "$__mpe_config_锻造间升级卡牌": {
+    "$__mpe_config_forgeUpgrade": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795626297324,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\tasks\\forgeUpgrade.json",
             "savedViewport": {
-                "x": -3738,
-                "y": -2115,
-                "zoom": 0.73
+                "x": -903,
+                "y": -859,
+                "zoom": 0.36
             },
-            "filename": "锻造间升级卡牌",
-            "version": "v2.1.3"
+            "filename": "forgeUpgrade",
+            "version": "v2.1.0"
         }
     },
-    "upgradeClick": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    298,
-                    593,
-                    174,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "label": "点击升级按钮",
-        "next": [
-            "Upgraded",
-            "[Anchor]upgradeConfirmNext(1,2)",
-            "[Anchor]upgradeConfirmNext(1,3)",
-            "[Anchor]upgradeConfirmNext(1,4)",
-            "[Anchor]upgradeConfirmNext(2,1)",
-            "[Anchor]upgradeConfirmNext(2,2)",
-            "[Anchor]upgradeConfirmNext(2,3)",
-            "[Anchor]upgradeConfirmNext(2,4)",
-            "[Anchor]upgradeConfirmNext(3,1)",
-            "[Anchor]upgradeConfirmNext(3,2)",
-            "[Anchor]upgradeConfirmNext(3,3)",
-            "[Anchor]upgradeConfirmNext(3,4)"
-        ],
-        "on_error": [
-            "返回锻造间大厅"
-        ],
+    "$__mpe_anchor_upgradeConfirmNext(1,2)_forgeUpgrade": {
         "$__mpe_code": {
             "position": {
-                "x": 6047,
-                "y": 2840
+                "x": 0,
+                "y": 0
             }
         }
     },
-    "CardUpgrade": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    133,
-                    450,
-                    132,
-                    54
-                ],
-                "template": [
-                    "锻造间/升级卡牌.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "repeat": 3,
-        "repeat_delay": 300,
-        "timeout": 1500,
-        "label": "升级卡牌",
-        "next": [
-            "GuardianCardUpgrade"
-        ],
-        "on_error": [
-            "detectAxe(1,1)",
-            "detectAxe(1,2)",
-            "detectAxe(1,3)",
-            "detectAxe(1,4)",
-            "detectAxe(2,1)",
-            "detectAxe(2,2)",
-            "detectAxe(2,3)",
-            "detectAxe(2,4)",
-            "detectAxe(3,1)",
-            "detectAxe(3,2)",
-            "detectAxe(3,3)",
-            "detectAxe(3,4)",
-            "返回锻造间大厅"
-        ],
+    "$__mpe_anchor_upgradeConfirmNext(1,3)_forgeUpgrade": {
         "$__mpe_code": {
             "position": {
-                "x": 4694,
-                "y": 3679
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(1,4)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(2,1)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(2,2)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(2,3)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(2,4)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(3,1)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(3,2)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(3,3)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_anchor_upgradeConfirmNext(3,4)_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_external_返回锻造间大厅_forgeUpgrade": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
             }
         }
     },
@@ -627,99 +641,89 @@
             }
         }
     },
-    "$__mpe_external_返回锻造间大厅_锻造间升级卡牌": {
+    "CardUpgrade": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    133,
+                    450,
+                    132,
+                    54
+                ],
+                "template": [
+                    "锻造间/升级卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "repeat_delay": 300,
+        "timeout": 1500,
+        "label": "升级卡牌",
+        "next": [
+            "GuardianCardUpgrade"
+        ],
+        "on_error": [
+            "detectAxe(1,1)",
+            "detectAxe(1,2)",
+            "detectAxe(1,3)",
+            "detectAxe(1,4)",
+            "detectAxe(2,1)",
+            "detectAxe(2,2)",
+            "detectAxe(2,3)",
+            "detectAxe(2,4)",
+            "detectAxe(3,1)",
+            "detectAxe(3,2)",
+            "detectAxe(3,3)",
+            "detectAxe(3,4)",
+            "返回锻造间大厅"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 0,
-                "y": 0
+                "x": 4694,
+                "y": 3679
             }
         }
     },
-    "$__mpe_anchor_upgradeConfirmNext(1,2)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
+    "upgradeClick": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    298,
+                    593,
+                    174,
+                    22
+                ]
             }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(1,3)_锻造间升级卡牌": {
+        },
+        "post_delay": 1500,
+        "timeout": 3000,
+        "label": "点击升级按钮",
+        "next": [
+            "Upgraded",
+            "[Anchor]upgradeConfirmNext(1,2)",
+            "[Anchor]upgradeConfirmNext(1,3)",
+            "[Anchor]upgradeConfirmNext(1,4)",
+            "[Anchor]upgradeConfirmNext(2,1)",
+            "[Anchor]upgradeConfirmNext(2,2)",
+            "[Anchor]upgradeConfirmNext(2,3)",
+            "[Anchor]upgradeConfirmNext(2,4)",
+            "[Anchor]upgradeConfirmNext(3,1)",
+            "[Anchor]upgradeConfirmNext(3,2)",
+            "[Anchor]upgradeConfirmNext(3,3)",
+            "[Anchor]upgradeConfirmNext(3,4)"
+        ],
+        "on_error": [
+            "返回锻造间大厅"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(1,4)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(2,1)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(2,2)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(2,3)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(2,4)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(3,1)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(3,2)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(3,3)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        }
-    },
-    "$__mpe_anchor_upgradeConfirmNext(3,4)_锻造间升级卡牌": {
-        "$__mpe_code": {
-            "position": {
-                "x": 0,
-                "y": 0
+                "x": 6047,
+                "y": 2840
             }
         }
     }
