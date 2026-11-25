@@ -99,7 +99,8 @@
                 "永久VIP",
                 "是否有火斧",
                 "每日挑战",
-                "狭缝角色祝福"
+                "狭缝角色祝福",
+                "当前难度"
             ],
             "group": [
                 "百战方案"
@@ -875,6 +876,38 @@
                 }
             ],
             "default_case": "Yes"
+        },
+        "当前难度": {
+            "type": "switch",
+            "cases": [
+                {
+                    "name": "Yes"
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "滑动难度": {
+                            "action": "Swipe",
+                            "specificRect": [
+                                1000,
+                                500,
+                                10,
+                                10
+                            ],
+                            "rectMove": [
+                                100,
+                                500,
+                                10,
+                                10
+                            ],
+                            "special_params": [
+                                300,
+                                3
+                            ]
+                        }
+                    }
+                }
+            ]
         }
     },
     "group": [

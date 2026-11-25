@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794844602510,
+            "lastSyncTime": 1795565482138,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 479,
-                "y": -2,
-                "zoom": 0.75
+                "x": -340,
+                "y": 350,
+                "zoom": 0.86
             },
             "filename": "开始游戏",
             "version": "v2.1.0"
@@ -422,25 +422,6 @@
         }
     },
     "滑动难度": {
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    1000,
-                    500,
-                    10,
-                    10
-                ],
-                "end": [
-                    [
-                        100,
-                        500,
-                        10,
-                        10
-                    ]
-                ]
-            }
-        },
         "repeat": 3,
         "repeat_delay": 1000,
         "timeout": 1800,
