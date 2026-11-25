@@ -176,7 +176,7 @@
                     "name": "No",
                     "pipeline_override": {
                         "锻造场景": {
-                            "next": "升级卡牌"
+                            "anchor": "CardUpgrade"
                         }
                     }
                 }
