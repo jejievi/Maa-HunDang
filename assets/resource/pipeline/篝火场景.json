@@ -3,24 +3,20 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793872120226,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\篝火场景.json",
             "savedViewport": {
-                "x": 374,
-                "y": 237,
-                "zoom": 0.56
+                "x": -3,
+                "y": 352,
+                "zoom": 0.49
             },
             "filename": "篝火场景",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "$__mpe_external_离开地点_直接_篝火场景": {
         "$__mpe_code": {
             "position": {
-                "x": 2959,
-                "y": 709
+                "x": 3014,
+                "y": 767
             }
         }
     },
@@ -74,18 +70,21 @@
                 ]
             }
         },
+        "anchor": {
+            "charmChoose": "护符2"
+        },
         "timeout": 800,
         "next": [
             "激活1"
         ],
         "on_error": [
-            "护符2",
+            "[Anchor]charmChoose",
             "坐下休息"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1594,
-                "y": 69
+                "x": 1643,
+                "y": 57
             }
         }
     },
@@ -115,17 +114,20 @@
                 ]
             }
         },
+        "anchor": {
+            "charmChoose": "护符3"
+        },
         "timeout": 800,
         "next": [
-            "激活2"
+            "激活1"
         ],
         "on_error": [
-            "护符3"
+            "[Anchor]charmChoose"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2486,
-                "y": -72
+                "x": 1969,
+                "y": 26
             }
         }
     },
@@ -155,17 +157,20 @@
                 ]
             }
         },
+        "anchor": {
+            "charmChoose": "护符4"
+        },
         "timeout": 800,
         "next": [
-            "激活3"
+            "激活1"
         ],
         "on_error": [
-            "护符4"
+            "[Anchor]charmChoose"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3032,
-                "y": -40
+                "x": 2229,
+                "y": 39
             }
         }
     },
@@ -195,17 +200,20 @@
                 ]
             }
         },
+        "anchor": {
+            "charmChoose": ""
+        },
         "timeout": 800,
-        "next": [
-            "激活4"
-        ],
         "on_error": [
             "退出护符选择"
         ],
+        "next": [
+            "激活1"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 3446,
-                "y": 7
+                "x": 2487,
+                "y": 25
             }
         }
     },
@@ -233,102 +241,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2032,
-                "y": -114
+                "x": 2648,
+                "y": 386
             }
         }
     },
-    "激活2": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    312,
-                    121,
-                    921,
-                    596
-                ],
-                "template": [
-                    "护符逻辑/激活.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "timeout": 1500,
-        "next": [
-            "离开地点_直接"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2750,
-                "y": -55
-            }
-        }
-    },
-    "激活3": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    312,
-                    121,
-                    921,
-                    596
-                ],
-                "template": [
-                    "护符逻辑/激活.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "timeout": 1500,
-        "next": [
-            "离开地点_直接"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3272,
-                "y": -38
-            }
-        }
-    },
-    "激活4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    312,
-                    121,
-                    921,
-                    596
-                ],
-                "template": [
-                    "护符逻辑/激活.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "timeout": 1500,
-        "next": [
-            "离开地点_直接"
-        ],
-        "on_error": [
-            "退出护符选择"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3782,
-                "y": 71
-            }
-        }
-    },
-    "篝火-升级": {
+    "篝火-升级(1,1)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -354,17 +272,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(1,2)"
+        },
         "next": [
             "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1223,
-                "y": -349
+                "x": 1406,
+                "y": -239
             }
         }
     },
-    "篝火-升级_副本1": {
+    "篝火-升级(1,2)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -390,17 +311,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(1,3)"
+        },
         "next": [
-            "篝火-确认_副本1"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1816,
-                "y": -345
+                "x": 1656,
+                "y": -226
             }
         }
     },
-    "篝火-升级_副本1_副本1": {
+    "篝火-升级(1,3)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -426,17 +350,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(1,4)"
+        },
         "next": [
-            "篝火-确认_副本1_副本1"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2509,
-                "y": -281
+                "x": 1955,
+                "y": -233
             }
         }
     },
-    "篝火-升级_副本1_副本1_副本1": {
+    "篝火-升级(1,4)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -462,17 +389,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(1,5)"
+        },
         "next": [
-            "篝火-确认_副本1_副本1_副本1"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3234,
-                "y": -262
+                "x": 2257,
+                "y": -250
             }
         }
     },
-    "篝火-升级_副本2": {
+    "篝火-升级(2,1)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -498,17 +428,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(2,2)"
+        },
         "next": [
-            "篝火-确认_副本2"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1230,
-                "y": -581
+                "x": 1405,
+                "y": -532
             }
         }
     },
-    "篝火-升级_副本2_副本1": {
+    "篝火-升级(2,2)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -534,17 +467,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(2,3)"
+        },
         "next": [
-            "篝火-确认_副本3"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1893,
-                "y": -539
+                "x": 1677,
+                "y": -525
             }
         }
     },
-    "篝火-升级_副本2_副本2": {
+    "篝火-升级(2,3)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -570,17 +506,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(2,4)"
+        },
         "next": [
-            "篝火-确认_副本4"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2497,
-                "y": -510
+                "x": 1961,
+                "y": -532
             }
         }
     },
-    "篝火-升级_副本2_副本3": {
+    "篝火-升级(2,4)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -606,17 +545,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(2,5)"
+        },
         "next": [
-            "篝火-确认_副本5"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3228,
-                "y": -491
+                "x": 2236,
+                "y": -512
             }
         }
     },
-    "篝火-升级_副本2_副本3_副本1": {
+    "篝火-升级(2,5)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -642,17 +584,20 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": ""
+        },
         "next": [
-            "篝火-确认_副本5_副本1"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3918,
-                "y": -450
+                "x": 2477,
+                "y": -504
             }
         }
     },
-    "篝火-升级_副本2_副本3_副本1_副本1": {
+    "篝火-升级(1,5)": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -678,13 +623,16 @@
                 ]
             }
         },
+        "anchor": {
+            "campfireChoose": "篝火-升级(2,1)"
+        },
         "next": [
-            "篝火-确认_副本5_副本2"
+            "篝火-确认"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3955,
-                "y": -173
+                "x": 2467,
+                "y": -259
             }
         }
     },
@@ -704,236 +652,12 @@
         "timeout": 3000,
         "next": [
             "篝火场景点击",
-            "篝火-升级_副本1"
+            "[Anchor]campfireChoose"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1499,
-                "y": -358
-            }
-        }
-    },
-    "篝火-确认_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火场景点击",
-            "篝火-升级_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2161,
-                "y": -333
-            }
-        }
-    },
-    "篝火-确认_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火场景点击",
-            "篝火-升级_副本1_副本1_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2881,
-                "y": -279
-            }
-        }
-    },
-    "篝火-确认_副本1_副本1_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火-升级_副本2_副本3_副本1_副本1",
-            "篝火场景点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3577,
-                "y": -270
-            }
-        }
-    },
-    "篝火-确认_副本2": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火场景点击",
-            "篝火-升级_副本2_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1543,
-                "y": -593
-            }
-        }
-    },
-    "篝火-确认_副本3": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火场景点击",
-            "篝火-升级_副本2_副本2"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2160,
-                "y": -535
-            }
-        }
-    },
-    "篝火-确认_副本4": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火场景点击",
-            "篝火-升级_副本2_副本3"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2869,
-                "y": -493
-            }
-        }
-    },
-    "篝火-确认_副本5": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火-升级_副本2_副本3_副本1",
-            "篝火场景点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3588,
-                "y": -491
-            }
-        }
-    },
-    "篝火-确认_副本5_副本1": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火场景点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4256,
-                "y": -445
-            }
-        }
-    },
-    "篝火-确认_副本5_副本2": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    899,
-                    659,
-                    46,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1500,
-        "timeout": 3000,
-        "next": [
-            "篝火-升级_副本2",
-            "篝火场景点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4308,
-                "y": -160
+                "x": 2327,
+                "y": -986
             }
         }
     },
@@ -968,12 +692,12 @@
         "repeat_delay": 300,
         "next": [
             "篝火场景点击",
-            "篝火-升级"
+            "篝火-升级(1,1)"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 703,
-                "y": 192
+                "x": 648,
+                "y": 283
             }
         }
     },
@@ -1008,15 +732,15 @@
         "timeout": 1500,
         "next": [
             "护符1",
-            "篝火-升级"
+            "篝火-升级(1,1)"
         ],
         "on_error": [
             "坐下休息"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1088,
-                "y": 154
+                "x": 1143,
+                "y": 270
             }
         }
     },
@@ -1043,8 +767,24 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1539,
-                "y": 694
+                "x": 1408,
+                "y": 754
+            }
+        }
+    },
+    "$__mpe_external_[Anchor]charmChoose_篝火场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2647,
+                "y": 623
+            }
+        }
+    },
+    "$__mpe_anchor_campfireChoose_篝火场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2842,
+                "y": -894
             }
         }
     }
