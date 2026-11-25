@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794051195844,
+            "lastSyncTime": 1795606682899,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\统合.json",
             "savedViewport": {
-                "x": -276,
-                "y": -134,
-                "zoom": 0.99
+                "x": 65,
+                "y": 115,
+                "zoom": 0.47
             },
             "filename": "统合",
             "version": "v2.1.0"
@@ -56,6 +56,14 @@
             }
         }
     },
+    "$__mpe_external_离开地点_统合": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1391,
+                "y": 733
+            }
+        }
+    },
     "$__mpe_external_移除卡牌_统合": {
         "$__mpe_code": {
             "position": {
@@ -75,12 +83,13 @@
             "奖励事件",
             "游艺事件",
             "事件逻辑",
-            "移除卡牌"
+            "移除卡牌",
+            "离开地点"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 663,
-                "y": 349
+                "x": 631,
+                "y": 387
             }
         }
     }

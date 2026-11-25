@@ -3,20 +3,20 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793805329198,
+            "lastSyncTime": 1795603901035,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\未知事件.json",
             "savedViewport": {
-                "x": 296,
-                "y": 282,
-                "zoom": 0.86
+                "x": 224,
+                "y": 272,
+                "zoom": 0.62
             },
             "filename": "未知事件",
             "version": "v2.1.0"
         }
     },
-    "$__mpe_external_印记刻印(1.1)_未知事件": {
+    "$__mpe_external_印记刻印(1,1)_未知事件": {
         "$__mpe_code": {
             "position": {
                 "x": 767,
@@ -104,7 +104,7 @@
             "离开地点_直接",
             "选择卡牌移除",
             "选择卡片",
-            "印记刻印(1.1)",
+            "印记刻印(1,1)",
             "战斗场景",
             "地图场景",
             "终结",
@@ -150,7 +150,7 @@
             "选择卡牌移除",
             "选择卡片",
             "离开地点_直接",
-            "印记刻印(1.1)",
+            "印记刻印(1,1)",
             "战斗场景",
             "地图场景",
             "终结"
@@ -158,7 +158,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 109,
-                "y": 149
+                "y": -110
             }
         }
     }

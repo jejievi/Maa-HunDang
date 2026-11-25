@@ -99,7 +99,7 @@
                 "是否有火斧",
                 "每日挑战",
                 "狭缝角色祝福",
-                "当前难度"
+                "不更改难度"
             ],
             "group": [
                 "百战方案"
@@ -388,40 +388,47 @@
                     "name": "三级宝石",
                     "pipeline_override": {
                         "滑到最底": {
+                            "ahchor": {
+                                "gemClass1": "三级红1",
+                                "gemClass2": "三级白1",
+                                "gemClass3": "三级黄1",
+                                "gemClass4": "三级绿1",
+                                "gemClass5": "三级绿2"
+                            },
                             "next": [
-                                "三级红1",
-                                "三级白1",
-                                "三级黄1",
-                                "三级绿1",
-                                "三级绿2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         },
                         "上翻页": {
                             "next": [
-                                "三级红1",
-                                "三级白1",
-                                "三级黄1",
-                                "三级绿1",
-                                "三级绿2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         },
                         "宝石合成格子": {
                             "next": [
-                                "三级红1",
-                                "三级白1",
-                                "三级黄1",
-                                "三级绿1",
-                                "三级绿2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         },
                         "宝石_空白处关闭": {
                             "next": [
                                 "[Anchor]gemGrade",
-                                "三级红1",
-                                "三级白1",
-                                "三级黄1",
-                                "三级绿1",
-                                "三级绿2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         }
                     }
@@ -430,72 +437,87 @@
                     "name": "四级宝石",
                     "pipeline_override": {
                         "滑到最底": {
+                            "ahchor": {
+                                "gemClass1": "四级红1",
+                                "gemClass2": "四级红2",
+                                "gemClass3": "四级白1",
+                                "gemClass4": "四级黄1",
+                                "gemClass5": "四级黄2",
+                                "gemClass6": "四级黄3",
+                                "gemClass7": "四级绿1",
+                                "gemClass8": "四级绿2",
+                                "gemClass9": "四级绿3",
+                                "gemClass10": "四级绿4",
+                                "gemClass11": "四级绿5",
+                                "gemClass12": "四级绿6",
+                                "gemClass13": "四级紫1"
+                            },
                             "next": [
-                                "四级红1",
-                                "四级红2",
-                                "四级白1",
-                                "四级黄1",
-                                "四级黄2",
-                                "四级黄3",
-                                "四级绿1",
-                                "四级绿2",
-                                "四级绿3",
-                                "四级绿4",
-                                "四级绿5",
-                                "四级绿6",
-                                "四级紫1"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7",
+                                "[Anchor]gemClass8",
+                                "[Anchor]gemClass9",
+                                "[Anchor]gemClass10",
+                                "[Anchor]gemClass11",
+                                "[Anchor]gemClass12",
+                                "[Anchor]gemClass13"
                             ]
                         },
                         "上翻页": {
                             "next": [
-                                "四级红1",
-                                "四级红2",
-                                "四级白1",
-                                "四级黄1",
-                                "四级黄2",
-                                "四级黄3",
-                                "四级绿1",
-                                "四级绿2",
-                                "四级绿3",
-                                "四级绿4",
-                                "四级绿5",
-                                "四级绿6",
-                                "四级紫1"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7",
+                                "[Anchor]gemClass8",
+                                "[Anchor]gemClass9",
+                                "[Anchor]gemClass10",
+                                "[Anchor]gemClass11",
+                                "[Anchor]gemClass12",
+                                "[Anchor]gemClass13"
                             ]
                         },
                         "宝石合成格子": {
                             "next": [
-                                "四级红1",
-                                "四级红2",
-                                "四级白1",
-                                "四级黄1",
-                                "四级黄2",
-                                "四级黄3",
-                                "四级绿1",
-                                "四级绿2",
-                                "四级绿3",
-                                "四级绿4",
-                                "四级绿5",
-                                "四级绿6",
-                                "四级紫1"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7",
+                                "[Anchor]gemClass8",
+                                "[Anchor]gemClass9",
+                                "[Anchor]gemClass10",
+                                "[Anchor]gemClass11",
+                                "[Anchor]gemClass12",
+                                "[Anchor]gemClass13"
                             ]
                         },
                         "宝石_空白处关闭": {
                             "next": [
                                 "[Anchor]gemGrade",
-                                "四级红1",
-                                "四级红2",
-                                "四级白1",
-                                "四级黄1",
-                                "四级黄2",
-                                "四级黄3",
-                                "四级绿1",
-                                "四级绿2",
-                                "四级绿3",
-                                "四级绿4",
-                                "四级绿5",
-                                "四级绿6",
-                                "四级紫1"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7",
+                                "[Anchor]gemClass8",
+                                "[Anchor]gemClass9",
+                                "[Anchor]gemClass10",
+                                "[Anchor]gemClass11",
+                                "[Anchor]gemClass12",
+                                "[Anchor]gemClass13"
                             ]
                         }
                     }
@@ -663,40 +685,47 @@
                     "name": "五级黄色宝石",
                     "pipeline_override": {
                         "滑到最底": {
+                            "ahchor": {
+                                "gemClass1": "五级黄1",
+                                "gemClass2": "五级黄2",
+                                "gemClass3": "五级黄3",
+                                "gemClass4": "五级黄4",
+                                "gemClass5": "五级黄5"
+                            },
                             "next": [
-                                "五级黄1",
-                                "五级黄2",
-                                "五级黄3",
-                                "五级黄4",
-                                "五级黄5"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         },
                         "上翻页": {
                             "next": [
-                                "五级黄1",
-                                "五级黄2",
-                                "五级黄3",
-                                "五级黄4",
-                                "五级黄5"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         },
                         "宝石合成格子": {
                             "next": [
-                                "五级黄1",
-                                "五级黄2",
-                                "五级黄3",
-                                "五级黄4",
-                                "五级黄5"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         },
                         "宝石_空白处关闭": {
                             "next": [
                                 "[Anchor]gemGrade",
-                                "五级黄1",
-                                "五级黄2",
-                                "五级黄3",
-                                "五级黄4",
-                                "五级黄5"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5"
                             ]
                         }
                     }
@@ -705,48 +734,57 @@
                     "name": "五级白色宝石",
                     "pipeline_override": {
                         "滑到最底": {
+                            "ahchor": {
+                                "gemClass1": "五级白1",
+                                "gemClass2": "五级白2",
+                                "gemClass3": "五级白3",
+                                "gemClass4": "五级白4",
+                                "gemClass5": "五级白5",
+                                "gemClass6": "五级白6",
+                                "gemClass7": "五级白7"
+                            },
                             "next": [
-                                "五级白1",
-                                "五级白2",
-                                "五级白3",
-                                "五级白4",
-                                "五级白5",
-                                "五级白6",
-                                "五级白7"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7"
                             ]
                         },
                         "上翻页": {
                             "next": [
-                                "五级白1",
-                                "五级白2",
-                                "五级白3",
-                                "五级白4",
-                                "五级白5",
-                                "五级白6",
-                                "五级白7"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7"
                             ]
                         },
                         "宝石合成格子": {
                             "next": [
-                                "五级白1",
-                                "五级白2",
-                                "五级白3",
-                                "五级白4",
-                                "五级白5",
-                                "五级白6",
-                                "五级白7"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7"
                             ]
                         },
                         "宝石_空白处关闭": {
                             "next": [
                                 "[Anchor]gemGrade",
-                                "五级白1",
-                                "五级白2",
-                                "五级白3",
-                                "五级白4",
-                                "五级白5",
-                                "五级白6",
-                                "五级白7"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2",
+                                "[Anchor]gemClass3",
+                                "[Anchor]gemClass4",
+                                "[Anchor]gemClass5",
+                                "[Anchor]gemClass6",
+                                "[Anchor]gemClass7"
                             ]
                         }
                     }
@@ -755,28 +793,32 @@
                     "name": "五级红色宝石",
                     "pipeline_override": {
                         "滑到最底": {
+                            "ahchor": {
+                                "gemClass1": "五级红1",
+                                "gemClass2": "五级红2"
+                            },
                             "next": [
-                                "五级红1",
-                                "五级红2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2"
                             ]
                         },
                         "上翻页": {
                             "next": [
-                                "五级红1",
-                                "五级红2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2"
                             ]
                         },
                         "宝石合成格子": {
                             "next": [
-                                "五级红1",
-                                "五级红2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2"
                             ]
                         },
                         "宝石_空白处关闭": {
                             "next": [
                                 "[Anchor]gemGrade",
-                                "五级红1",
-                                "五级红2"
+                                "[Anchor]gemClass1",
+                                "[Anchor]gemClass2"
                             ]
                         }
                     }
@@ -876,7 +918,7 @@
             ],
             "default_case": "Yes"
         },
-        "当前难度": {
+        "不更改难度": {
             "type": "switch",
             "cases": [
                 {

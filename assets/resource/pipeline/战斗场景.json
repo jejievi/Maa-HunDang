@@ -1,18 +1,30 @@
 {
-    "$__mpe_config_新建Pipeline3": {
+    "$__mpe_config_战斗场景": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795607191498,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 925,
-                "y": -160,
-                "zoom": 0.44
+                "x": 1126,
+                "y": -272,
+                "zoom": 0.62
             },
-            "filename": "新建Pipeline3",
-            "version": "v2.1.3"
+            "filename": "战斗场景",
+            "version": "v2.1.0"
         }
     },
-    "$__mpe_anchor_ArmringStuck_新建Pipeline3": {
+    "$__mpe_anchor_ArmringStuckNext_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": -958,
+                "y": 1561
+            }
+        }
+    },
+    "$__mpe_anchor_ArmringStuck_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": -963,
@@ -20,7 +32,7 @@
             }
         }
     },
-    "$__mpe_anchor_Armring_新建Pipeline3": {
+    "$__mpe_anchor_Armring_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": -1049,
@@ -28,7 +40,7 @@
             }
         }
     },
-    "$__mpe_anchor_QuickCharmSettings_新建Pipeline3": {
+    "$__mpe_anchor_QuickCharmSettings_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": -1073,
@@ -36,7 +48,7 @@
             }
         }
     },
-    "$__mpe_anchor_SettingsNext_新建Pipeline3": {
+    "$__mpe_anchor_SettingsNext_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": 32,
@@ -44,7 +56,7 @@
             }
         }
     },
-    "$__mpe_external_奖励场景_新建Pipeline3": {
+    "$__mpe_external_奖励场景_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": 1186,
@@ -52,7 +64,7 @@
             }
         }
     },
-    "$__mpe_external_终结_新建Pipeline3": {
+    "$__mpe_external_终结_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": 1186,
@@ -60,7 +72,7 @@
             }
         }
     },
-    "$__mpe_external_继续_新建Pipeline3": {
+    "$__mpe_external_继续_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": 1198,
@@ -74,7 +86,7 @@
             ]
         }
     },
-    "$__mpe_external_黑终结_新建Pipeline3": {
+    "$__mpe_external_黑终结_战斗场景": {
         "$__mpe_code": {
             "position": {
                 "x": 1201,
@@ -419,21 +431,22 @@
         },
         "pre_delay": 200,
         "anchor": {
-            "ArmringStuck": "铁臂",
+            "ArmringStuck": "铁臂_点击",
             "ArmringStuckNext": "自动战斗"
         },
         "post_delay": 0,
         "next": [
             "[Anchor]QuickCharmSettings",
-            "[Anchor]Armring"
+            "[Anchor]Armring",
+            "自动战斗"
         ],
         "on_error": [
             "延迟箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1813,
-                "y": 948
+                "x": -1898,
+                "y": 950
             }
         }
     },
@@ -878,6 +891,32 @@
             }
         }
     },
+    "铁臂": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    121,
+                    214,
+                    460
+                ],
+                "template": [
+                    "战斗场景/铁臂.png"
+                ]
+            }
+        },
+        "pre_delay": 1200,
+        "next": [
+            "铁臂_点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1749,
+                "y": 1577
+            }
+        }
+    },
     "铁臂_点击": {
         "recognition": {
             "type": "TemplateMatch",
@@ -912,45 +951,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1419,
-                "y": 1546
-            }
-        }
-    },
-    "铁臂": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    3,
-                    121,
-                    214,
-                    460
-                ],
-                "template": [
-                    "战斗场景/铁臂.png"
-                ]
-            }
-        },
-        "pre_delay": 1200,
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "铁臂_点击"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1749,
-                "y": 1577
-            }
-        }
-    },
-    "$__mpe_anchor_ArmringStuckNext_新建Pipeline3": {
-        "$__mpe_code": {
-            "position": {
-                "x": -958,
-                "y": 1561
+                "x": -1432,
+                "y": 1426
             }
         }
     }

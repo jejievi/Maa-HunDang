@@ -3,13 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795603535802,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\篝火场景.json",
             "savedViewport": {
-                "x": -3,
-                "y": 352,
-                "zoom": 0.49
+                "x": -667,
+                "y": 153,
+                "zoom": 0.62
             },
             "filename": "篝火场景",
-            "version": "v2.1.3"
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_anchor_campfireChoose_篝火场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2842,
+                "y": -894
+            }
         }
     },
     "$__mpe_external_离开地点_直接_篝火场景": {
@@ -39,8 +51,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2137,
-                "y": 770
+                "x": 2139,
+                "y": 762
             }
         }
     },
@@ -83,8 +95,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1643,
-                "y": 57
+                "x": 1601,
+                "y": 41
             }
         }
     },
@@ -126,8 +138,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1969,
-                "y": 26
+                "x": 1950,
+                "y": 18
             }
         }
     },
@@ -201,19 +213,19 @@
             }
         },
         "anchor": {
-            "charmChoose": ""
+            "charmChoose": "退出护符选择"
         },
         "timeout": 800,
-        "on_error": [
-            "退出护符选择"
-        ],
         "next": [
             "激活1"
         ],
+        "on_error": [
+            "退出护符选择"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2487,
-                "y": 25
+                "x": 2466,
+                "y": 39
             }
         }
     },
@@ -241,8 +253,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2648,
-                "y": 386
+                "x": 2658,
+                "y": 370
             }
         }
     },
@@ -399,6 +411,45 @@
             "position": {
                 "x": 2257,
                 "y": -250
+            }
+        }
+    },
+    "篝火-升级(1,5)": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    756,
+                    22,
+                    336,
+                    81
+                ],
+                "template": [
+                    "事件逻辑/选择卡牌.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1140,
+                    216,
+                    10,
+                    8
+                ]
+            }
+        },
+        "anchor": {
+            "campfireChoose": "篝火-升级(2,1)"
+        },
+        "next": [
+            "篝火-确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2467,
+                "y": -259
             }
         }
     },
@@ -597,45 +648,6 @@
             }
         }
     },
-    "篝火-升级(1,5)": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    756,
-                    22,
-                    336,
-                    81
-                ],
-                "template": [
-                    "事件逻辑/选择卡牌.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1140,
-                    216,
-                    10,
-                    8
-                ]
-            }
-        },
-        "anchor": {
-            "campfireChoose": "篝火-升级(2,1)"
-        },
-        "next": [
-            "篝火-确认"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2467,
-                "y": -259
-            }
-        }
-    },
     "篝火-确认": {
         "action": {
             "type": "Click",
@@ -731,16 +743,17 @@
         "repeat_delay": 500,
         "timeout": 1500,
         "next": [
-            "护符1",
-            "篝火-升级(1,1)"
+            "篝火-升级(1,1)",
+            "[Anchor]charmChoose"
         ],
         "on_error": [
+            "护符1",
             "坐下休息"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1143,
-                "y": 270
+                "x": 1145,
+                "y": 278
             }
         }
     },
@@ -772,19 +785,11 @@
             }
         }
     },
-    "$__mpe_external_[Anchor]charmChoose_篝火场景": {
+    "$__mpe_anchor_charmChoose_篝火场景": {
         "$__mpe_code": {
             "position": {
-                "x": 2647,
-                "y": 623
-            }
-        }
-    },
-    "$__mpe_anchor_campfireChoose_篝火场景": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2842,
-                "y": -894
+                "x": 1689,
+                "y": 451
             }
         }
     }
