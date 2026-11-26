@@ -1,0 +1,293 @@
+{
+    "$__mpe_config_结算逻辑": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1282,
+                "y": 291,
+                "zoom": 0.61
+            },
+            "filename": "结算逻辑",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_前往主仪式间_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4391,
+                "y": 378
+            }
+        }
+    },
+    "$__mpe_external_地图场景_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2832,
+                "y": -172
+            }
+        }
+    },
+    "$__mpe_external_奖励场景_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2809,
+                "y": -58
+            }
+        }
+    },
+    "$__mpe_external_开始游戏_点空白处关闭_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4354,
+                "y": 539
+            }
+        }
+    },
+    "$__mpe_external_战斗中_结算逻辑": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2875,
+                "y": -261
+            }
+        }
+    },
+    "战斗结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4355,
+                "y": 680
+            }
+        }
+    },
+    "点击空白关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    474,
+                    639,
+                    339,
+                    75
+                ],
+                "template": [
+                    "结算逻辑/点击空白关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "repeat_delay": 400,
+        "post_delay": 1000,
+        "timeout": -1,
+        "next": [
+            "结束探索",
+            "点击空白关闭",
+            "前往主仪式间",
+            "开始游戏_点空白处关闭"
+        ],
+        "on_error": [
+            "战斗结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3679,
+                "y": 588
+            }
+        }
+    },
+    "留下遗物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    354,
+                    557,
+                    241,
+                    70
+                ],
+                "template": [
+                    "结算逻辑/遗物.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "继续",
+            "点击空白关闭",
+            "结束探索"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3203,
+                "y": 117
+            }
+        }
+    },
+    "终结": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "结算逻辑/终结.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    299,
+                    30,
+                    21
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_delay": 300,
+        "next": [
+            "留下遗物",
+            "继续",
+            "黑屏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2491,
+                "y": 281
+            }
+        }
+    },
+    "结束探索": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1020,
+                    34,
+                    241,
+                    79
+                ],
+                "template": [
+                    "结算逻辑/结束探索.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 7000,
+        "timeout": -1,
+        "focus": "游戏结束",
+        "next": [
+            "前往主仪式间",
+            "点击空白关闭",
+            "结束探索",
+            "开始游戏_点空白处关闭"
+        ],
+        "on_error": [
+            "战斗结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4008,
+                "y": 97
+            }
+        }
+    },
+    "继续": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    996,
+                    29,
+                    268,
+                    73
+                ],
+                "template": [
+                    "结算逻辑/继续.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 500,
+        "next": [
+            "点击空白关闭",
+            "结束探索",
+            "继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3302,
+                "y": 642
+            }
+        }
+    },
+    "黑屏": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    886,
+                    346,
+                    75,
+                    41
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_delay": 500,
+        "next": [
+            "留下遗物",
+            "继续",
+            "点击空白关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2790,
+                "y": 594
+            }
+        }
+    },
+    "黑终结": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    299,
+                    30,
+                    21
+                ]
+            }
+        },
+        "repeat": 3,
+        "repeat_delay": 400,
+        "timeout": 8000,
+        "focus": "成就：遇到了百战克星",
+        "next": [
+            "继续",
+            "战斗中",
+            "留下遗物",
+            "奖励场景",
+            "地图场景"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2386,
+                "y": -61
+            }
+        }
+    }
+}

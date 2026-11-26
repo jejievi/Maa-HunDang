@@ -3,40 +3,36 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795622970975,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\战斗场景.json",
             "savedViewport": {
-                "x": 1396,
-                "y": -27,
-                "zoom": 0.47
+                "x": 721,
+                "y": 94,
+                "zoom": 0.32
             },
             "filename": "战斗场景",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "$__mpe_anchor_ArmringStuckNext_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": -958,
-                "y": 1561
+                "x": -1524,
+                "y": 1782
             }
         }
     },
     "$__mpe_anchor_ArmringStuck_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": -963,
-                "y": 1633
+                "x": -1519,
+                "y": 1928
             }
         }
     },
     "$__mpe_anchor_Armring_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": -1049,
-                "y": 434
+                "x": -1028,
+                "y": 444
             }
         }
     },
@@ -51,8 +47,8 @@
     "$__mpe_anchor_SettingsNext_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 32,
-                "y": -890
+                "x": -2293,
+                "y": -779
             }
         }
     },
@@ -75,13 +71,13 @@
     "$__mpe_external_继续_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1198,
-                "y": -202
+                "x": 1297,
+                "y": 467
             },
             "extra_positions": [
                 {
-                    "x": 1183,
-                    "y": 1721
+                    "x": 1185,
+                    "y": 1712
                 }
             ]
         }
@@ -89,8 +85,8 @@
     "$__mpe_external_黑终结_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": 1201,
-                "y": 1493
+                "x": 1455,
+                "y": 2531
             }
         }
     },
@@ -118,8 +114,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 231,
-                "y": 276
+                "x": 59,
+                "y": 16
             }
         }
     },
@@ -159,8 +155,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -354,
-                "y": 1763
+                "x": -1419,
+                "y": 2430
             }
         }
     },
@@ -182,8 +178,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -281,
-                "y": 452
+                "x": -988,
+                "y": -98
             }
         }
     },
@@ -204,8 +200,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -187,
-                "y": 280
+                "x": -559,
+                "y": -63
             }
         }
     },
@@ -240,8 +236,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -537,
-                "y": 164
+                "x": -1253,
+                "y": -374
             }
         }
     },
@@ -276,8 +272,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -476,
-                "y": 185
+                "x": -762,
+                "y": -376
             }
         }
     },
@@ -296,8 +292,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 456,
-                "y": 1500
+                "x": 278,
+                "y": 2256
             }
         }
     },
@@ -319,13 +315,16 @@
         "action": {
             "type": "Click"
         },
+        "anchor": {
+            "SettingsNext": "战斗-设置3"
+        },
         "next": [
             "战斗-设置2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -341,
-                "y": -499
+                "x": -2238,
+                "y": -551
             }
         }
     },
@@ -346,8 +345,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -255,
-                "y": -785
+                "x": -2649,
+                "y": -744
             }
         }
     },
@@ -368,8 +367,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 218,
-                "y": 14
+                "x": 753,
+                "y": -263
             }
         }
     },
@@ -409,8 +408,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -84,
-                "y": 1664
+                "x": -1335,
+                "y": 2336
             }
         }
     },
@@ -430,23 +429,19 @@
             }
         },
         "pre_delay": 200,
-        "anchor": {
-            "ArmringStuck": "铁臂_点击",
-            "ArmringStuckNext": "自动战斗"
-        },
         "post_delay": 0,
         "next": [
             "[Anchor]QuickCharmSettings",
-            "[Anchor]Armring",
-            "自动战斗"
+            "[Anchor]BattleStart",
+            "[Anchor]Armring"
         ],
         "on_error": [
             "延迟箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1898,
-                "y": 950
+                "x": -2127,
+                "y": 783
             }
         }
     },
@@ -482,10 +477,10 @@
         "timeout": 3000,
         "next": [
             "[Anchor]Armring",
-            "自动战斗"
+            "自动战斗",
+            "[Anchor]BattleChoose"
         ],
         "on_error": [
-            "选择一项",
             "继续",
             "复活",
             "战斗中",
@@ -495,8 +490,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1068,
-                "y": 920
+                "x": -1381,
+                "y": 795
             }
         }
     },
@@ -517,7 +512,10 @@
         },
         "anchor": {
             "Armring": "铁臂_点击",
-            "QuickCharmSettings": "设置_快速符饰"
+            "QuickCharmSettings": "设置_快速符饰",
+            "ArmringStuck": "铁臂_点击",
+            "ArmringStuckNext": "自动战斗",
+            "BattleStart": "自动战斗"
         },
         "timeout": 1200,
         "next": [
@@ -528,8 +526,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2548,
-                "y": 645
+                "x": -2905,
+                "y": 619
             }
         }
     },
@@ -564,8 +562,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2009,
-                "y": 145
+                "x": -2549,
+                "y": 48
             }
         }
     },
@@ -601,8 +599,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1056,
-                "y": 624
+                "x": 1003,
+                "y": 767
             }
         }
     },
@@ -619,21 +617,21 @@
                 "expected": [
                     "极星水母",
                     "遣学士",
-                    "行医"
+                    "行医",
+                    "贪婪",
+                    "夜巡人"
                 ]
             }
         },
-        "anchor": {
-            "SettingsNext": "战斗-设置3"
-        },
-        "focus": "遇到粪怪了，跑路跑路",
+        "focus": "遇到粪怪了，退出游戏",
         "next": [
+            "开启选择项",
             "战斗-设置"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -715,
-                "y": -82
+                "x": -2644,
+                "y": -300
             }
         }
     },
@@ -665,8 +663,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 797,
-                "y": 378
+                "x": 704,
+                "y": 492
             }
         }
     },
@@ -691,7 +689,7 @@
         },
         "anchor": {
             "Armring": "铁臂",
-            "ArmringStuckNext": ""
+            "ArmringStuckNext": "自动战斗"
         },
         "post_delay": 0,
         "timeout": 8000,
@@ -709,8 +707,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -272,
-                "y": 766
+                "x": -104,
+                "y": 387
             }
         }
     },
@@ -744,8 +742,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -142,
-                "y": 1682
+                "x": -1421,
+                "y": 2449
             }
         }
     },
@@ -776,8 +774,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -905,
-                "y": -305
+                "x": -3050,
+                "y": -540
             }
         }
     },
@@ -798,8 +796,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1728,
-                "y": 136
+                "x": -2289,
+                "y": 67
             }
         }
     },
@@ -816,12 +814,13 @@
             }
         },
         "next": [
+            "铁臂_副本1",
             "战斗_首次攻击"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1482,
-                "y": 104
+                "x": -2041,
+                "y": 66
             }
         }
     },
@@ -853,7 +852,7 @@
         },
         "timeout": 3000,
         "next": [
-            "选择一项",
+            "[Anchor]BattleChoose",
             "战斗中"
         ],
         "on_error": [
@@ -866,8 +865,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 699,
-                "y": 852
+                "x": 251,
+                "y": 876
             }
         }
     },
@@ -897,8 +896,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1400,
-                "y": 1127
+                "x": -1402,
+                "y": 2457
             }
         }
     },
@@ -923,8 +922,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1749,
-                "y": 1577
+                "x": -2249,
+                "y": 1796
             }
         }
     },
@@ -954,16 +953,91 @@
         "timeout": 20000,
         "next": [
             "[Anchor]ArmringStuck",
-            "[Anchor]ArmringStuckNext",
-            "战斗中"
+            "[Anchor]ArmringStuckNext"
         ],
         "on_error": [
             "延迟箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1432,
-                "y": 1426
+                "x": -1870,
+                "y": 1825
+            }
+        }
+    },
+    "铁臂_副本1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    3,
+                    121,
+                    214,
+                    460
+                ],
+                "template": [
+                    "战斗场景/铁臂.png"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "anchor": {
+            "BattleStart": "",
+            "BattleChoose": "选择一项"
+        },
+        "post_delay": 0,
+        "focus": "存在铁臂符饰",
+        "next": [
+            "战斗_首次攻击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1731,
+                "y": 20
+            }
+        }
+    },
+    "开启选择项": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    382,
+                    39,
+                    296,
+                    41
+                ],
+                "expected": [
+                    "贪婪",
+                    "夜巡人"
+                ]
+            }
+        },
+        "anchor": "{\"SettingsNext\":\"\",}",
+        "focus": "开启选择节点",
+        "next": [
+            "战斗_首次攻击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2327,
+                "y": -309
+            }
+        }
+    },
+    "$__mpe_anchor_BattleStart_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": -902,
+                "y": 719
+            }
+        }
+    },
+    "$__mpe_anchor_BattleChoose_战斗场景": {
+        "$__mpe_code": {
+            "position": {
+                "x": -93,
+                "y": 1232
             }
         }
     }

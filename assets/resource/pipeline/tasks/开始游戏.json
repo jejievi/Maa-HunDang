@@ -1,0 +1,534 @@
+{
+    "$__mpe_config_开始游戏": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 643,
+                "y": 451,
+                "zoom": 0.55
+            },
+            "filename": "开始游戏",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_事件逻辑_开始游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 58,
+                "y": -718
+            }
+        }
+    },
+    "$__mpe_external_地图场景_开始游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 51,
+                "y": -648
+            }
+        }
+    },
+    "$__mpe_external_战斗场景_开始游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 68,
+                "y": -790
+            }
+        }
+    },
+    "$__mpe_external_离开地点2_开始游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1701,
+                "y": -88
+            }
+        }
+    },
+    "===开始===": {
+        "timeout": 60000,
+        "next": [
+            "前往主仪式间",
+            "地图场景",
+            "战斗场景",
+            "事件逻辑"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -486,
+                "y": -470
+            }
+        }
+    },
+    "==启动游戏==": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.chillyroom.containerofsoul.yw"
+            }
+        },
+        "timeout": 25000,
+        "next": [
+            "返回公告",
+            "进入游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -767,
+                "y": 629
+            }
+        }
+    },
+    "前往主仪式间": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1110,
+                    569,
+                    151,
+                    78
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "启动祭坛",
+            "前往主仪式间",
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 156,
+                "y": -152
+            }
+        }
+    },
+    "前往观星室": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1136,
+                    225,
+                    110,
+                    64
+                ],
+                "template": [
+                    "开始游戏/观星室.png"
+                ]
+            }
+        },
+        "pre_delay": 800,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1178,
+                    217,
+                    19,
+                    9
+                ]
+            }
+        },
+        "next": [
+            "每日挑战",
+            "前往观星室",
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 257,
+                "y": -553
+            }
+        }
+    },
+    "启动游戏_关闭窗口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始游戏/活动_关闭窗口.png",
+                    "开始游戏/关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "next": [
+            "自动游戏_点空白处关闭",
+            "启动游戏_关闭窗口"
+        ],
+        "on_error": [
+            "启动游戏结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 81,
+                "y": 367
+            }
+        }
+    },
+    "启动游戏结束": {
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 423,
+                "y": 643
+            }
+        }
+    },
+    "启动祭坛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    677,
+                    427,
+                    244,
+                    152
+                ],
+                "template": "启动祭坛.png"
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    773,
+                    481,
+                    62,
+                    38
+                ]
+            }
+        },
+        "rate_limit": 3000,
+        "next": [
+            "滑动难度"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 463,
+                "y": -24
+            }
+        }
+    },
+    "坠入深境": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    534,
+                    289,
+                    222,
+                    90
+                ],
+                "template": [
+                    "坠入深境.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    625,
+                    319,
+                    36,
+                    40
+                ]
+            }
+        },
+        "repeat": 2,
+        "post_delay": 8000,
+        "timeout": -1,
+        "focus": "开始游戏",
+        "next": [
+            "离开地点2",
+            "坠入深境"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1288,
+                "y": -206
+            }
+        }
+    },
+    "坠入深境_ocr识别": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    542,
+                    297,
+                    213,
+                    82
+                ],
+                "expected": [
+                    "坠入深境"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    625,
+                    319,
+                    36,
+                    40
+                ]
+            }
+        },
+        "repeat": 2,
+        "post_delay": 8000,
+        "timeout": -1,
+        "focus": "开始游戏",
+        "next": [
+            "离开地点2",
+            "坠入深境_ocr识别"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1279,
+                "y": 225
+            }
+        }
+    },
+    "开始游戏_关闭窗口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始游戏/关闭窗口.png",
+                    "开始游戏/活动_关闭窗口.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始游戏_关闭窗口",
+            "前往主仪式间"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 103,
+                "y": 109
+            }
+        }
+    },
+    "开始游戏_点空白处关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    515,
+                    665,
+                    254,
+                    41
+                ],
+                "template": [
+                    "结算逻辑/点击空白关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始游戏_关闭窗口",
+            "开始游戏_点空白处关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -393,
+                "y": -91
+            }
+        }
+    },
+    "每日挑战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    884,
+                    513,
+                    115,
+                    45
+                ],
+                "template": [
+                    "开始游戏/每日挑战.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "每日挑战-开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 719,
+                "y": -505
+            }
+        }
+    },
+    "每日挑战-开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始游戏/每日挑战-开始.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    622,
+                    590,
+                    17,
+                    20
+                ]
+            }
+        },
+        "next": [
+            "滑动难度"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1007,
+                "y": -500
+            }
+        }
+    },
+    "滑动难度": {
+        "anchor": {
+            "charmChoose": "护符1",
+            "StoryNode": "StoryEvent"
+        },
+        "repeat": 3,
+        "repeat_delay": 300,
+        "timeout": 1800,
+        "next": [
+            "坠入深境",
+            "开始游戏_点空白处关闭",
+            "开始游戏_关闭窗口"
+        ],
+        "on_error": [
+            "启动祭坛",
+            "坠入深境_ocr识别"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 826,
+                "y": -141
+            }
+        }
+    },
+    "自动游戏_点空白处关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    515,
+                    665,
+                    254,
+                    41
+                ],
+                "template": [
+                    "结算逻辑/点击空白关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "next": [
+            "自动游戏_点空白处关闭",
+            "启动游戏_关闭窗口"
+        ],
+        "on_error": [
+            "启动游戏结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -61,
+                "y": 782
+            }
+        }
+    },
+    "返回公告": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "返回.png"
+            }
+        },
+        "pre_delay": 2000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 25000,
+        "next": [
+            "返回公告",
+            "进入游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -416,
+                "y": 672
+            }
+        }
+    },
+    "进入游戏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    285,
+                    218,
+                    693,
+                    201
+                ],
+                "template": [
+                    "进入游戏.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 25000,
+        "next": [
+            "进入游戏",
+            "启动游戏_关闭窗口",
+            "自动游戏_点空白处关闭"
+        ],
+        "on_error": [
+            "启动游戏结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -299,
+                "y": 281
+            }
+        }
+    }
+}

@@ -342,7 +342,7 @@
             "type": "checkbox",
             "cases": [
                 {
-                    "name": "万法",
+                    "name": "万法/唤灵/戍军",
                     "pipeline_override": {
                         "狭缝": {
                             "next": [

@@ -1,0 +1,10 @@
+{
+    "$__mpe_config_CombatModule": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "filename": "CombatModule",
+            "version": "v2.1.3"
+        }
+    }
+}
