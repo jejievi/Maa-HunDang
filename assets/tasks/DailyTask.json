@@ -1,0 +1,488 @@
+{
+  "task": [
+    {
+      "name": "每日奖励",
+      "entry": "==每日奖励==",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "option": [
+        "更改任务",
+        "领取任务",
+        "VIP每日异界赠礼",
+        "升格之旅",
+        "邮件奖励"
+      ],
+      "default_check": true,
+      "group": [
+        "每日大厅"
+      ]
+    },
+    {
+      "name": "宝石合成",
+      "entry": "宝石合成",
+      "group": [
+        "每日大厅"
+      ],
+      "default_check": false,
+      "option": [
+        "消耗宝石等级"
+      ]
+    },
+    {
+      "name": "密闻抽卡",
+      "entry": "==密闻抽卡==",
+      "group": [
+        "每日大厅"
+      ]
+    }
+  ],
+  "option": {
+    "更改任务": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "前往大厅": {
+              "next": [
+                "更改任务",
+                "前往大厅1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No"
+        }
+      ],
+      "default_case": "No",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "description": "刷掉50微光的任务"
+    },
+    "VIP每日异界赠礼": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "前往大厅2": {
+              "next": [
+                "商店异界赠礼(仅VIP可用)"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No"
+        }
+      ],
+      "label": "VIP每日异界赠礼",
+      "default_case": "No",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ]
+    },
+    "领取任务": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "前往大厅1": {
+              "next": [
+                "前往领取任务",
+                "前往大厅2"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No"
+        }
+      ],
+      "default_case": "No",
+      "resource": [
+        "官服"
+      ],
+      "controller": [
+        "安卓端"
+      ]
+    },
+    "消耗宝石等级": {
+      "type": "select",
+      "cases": [
+        {
+          "name": "二级宝石"
+        },
+        {
+          "name": "三级宝石",
+          "pipeline_override": {
+            "滑到最底": {
+              "ahchor": {
+                "gemClass1": "三级红1",
+                "gemClass2": "三级白1",
+                "gemClass3": "三级黄1",
+                "gemClass4": "三级绿1",
+                "gemClass5": "三级绿2"
+              },
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            },
+            "上翻页": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            },
+            "宝石合成格子": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            },
+            "宝石_空白处关闭": {
+              "next": [
+                "[Anchor]gemGrade",
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            }
+          }
+        },
+        {
+          "name": "四级宝石",
+          "pipeline_override": {
+            "滑到最底": {
+              "ahchor": {
+                "gemClass1": "四级红1",
+                "gemClass2": "四级红2",
+                "gemClass3": "四级白1",
+                "gemClass4": "四级黄1",
+                "gemClass5": "四级黄2",
+                "gemClass6": "四级黄3",
+                "gemClass7": "四级绿1",
+                "gemClass8": "四级绿2",
+                "gemClass9": "四级绿3",
+                "gemClass10": "四级绿4",
+                "gemClass11": "四级绿5",
+                "gemClass12": "四级绿6",
+                "gemClass13": "四级紫1"
+              },
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7",
+                "[Anchor]gemClass8",
+                "[Anchor]gemClass9",
+                "[Anchor]gemClass10",
+                "[Anchor]gemClass11",
+                "[Anchor]gemClass12",
+                "[Anchor]gemClass13"
+              ]
+            },
+            "上翻页": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7",
+                "[Anchor]gemClass8",
+                "[Anchor]gemClass9",
+                "[Anchor]gemClass10",
+                "[Anchor]gemClass11",
+                "[Anchor]gemClass12",
+                "[Anchor]gemClass13"
+              ]
+            },
+            "宝石合成格子": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7",
+                "[Anchor]gemClass8",
+                "[Anchor]gemClass9",
+                "[Anchor]gemClass10",
+                "[Anchor]gemClass11",
+                "[Anchor]gemClass12",
+                "[Anchor]gemClass13"
+              ]
+            },
+            "宝石_空白处关闭": {
+              "next": [
+                "[Anchor]gemGrade",
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7",
+                "[Anchor]gemClass8",
+                "[Anchor]gemClass9",
+                "[Anchor]gemClass10",
+                "[Anchor]gemClass11",
+                "[Anchor]gemClass12",
+                "[Anchor]gemClass13"
+              ]
+            }
+          }
+        },
+        {
+          "name": "五级宝石",
+          "option": [
+            "宝石分类"
+          ]
+        }
+      ],
+      "label": "消耗宝石等级",
+      "default_case": "二级宝石",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ]
+    },
+    "宝石分类": {
+      "type": "select",
+      "cases": [
+        {
+          "name": "五级黄色宝石",
+          "pipeline_override": {
+            "滑到最底": {
+              "ahchor": {
+                "gemClass1": "五级黄1",
+                "gemClass2": "五级黄2",
+                "gemClass3": "五级黄3",
+                "gemClass4": "五级黄4",
+                "gemClass5": "五级黄5"
+              },
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            },
+            "上翻页": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            },
+            "宝石合成格子": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            },
+            "宝石_空白处关闭": {
+              "next": [
+                "[Anchor]gemGrade",
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5"
+              ]
+            }
+          }
+        },
+        {
+          "name": "五级白色宝石",
+          "pipeline_override": {
+            "滑到最底": {
+              "ahchor": {
+                "gemClass1": "五级白1",
+                "gemClass2": "五级白2",
+                "gemClass3": "五级白3",
+                "gemClass4": "五级白4",
+                "gemClass5": "五级白5",
+                "gemClass6": "五级白6",
+                "gemClass7": "五级白7"
+              },
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7"
+              ]
+            },
+            "上翻页": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7"
+              ]
+            },
+            "宝石合成格子": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7"
+              ]
+            },
+            "宝石_空白处关闭": {
+              "next": [
+                "[Anchor]gemGrade",
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2",
+                "[Anchor]gemClass3",
+                "[Anchor]gemClass4",
+                "[Anchor]gemClass5",
+                "[Anchor]gemClass6",
+                "[Anchor]gemClass7"
+              ]
+            }
+          }
+        },
+        {
+          "name": "五级红色宝石",
+          "pipeline_override": {
+            "滑到最底": {
+              "ahchor": {
+                "gemClass1": "五级红1",
+                "gemClass2": "五级红2"
+              },
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2"
+              ]
+            },
+            "上翻页": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2"
+              ]
+            },
+            "宝石合成格子": {
+              "next": [
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2"
+              ]
+            },
+            "宝石_空白处关闭": {
+              "next": [
+                "[Anchor]gemGrade",
+                "[Anchor]gemClass1",
+                "[Anchor]gemClass2"
+              ]
+            }
+          }
+        }
+      ],
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "description": "五级宝石仍在测试中、若卡住、请导出日志、联系群主进行修复"
+    },
+    "升格之旅": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "前往大厅3": {
+              "next": [
+                "升格之旅"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No"
+        }
+      ],
+      "default_case": "Yes"
+    },
+    "邮件奖励": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "前往大厅4": {
+              "next": [
+                "邮件"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No"
+        }
+      ],
+      "default_case": "No",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ]
+    }
+  },
+  "group": [
+    {
+      "name": "每日大厅",
+      "default_expand": true
+    }
+  ]
+}

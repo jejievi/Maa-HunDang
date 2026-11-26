@@ -1,0 +1,554 @@
+{
+    "[永久VIP/No] 复活": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    434,
+                    581,
+                    117,
+                    46
+                ],
+                "template": [
+                    "战斗场景/放弃挣扎.png"
+                ]
+            }
+        },
+        "_from": "option[永久VIP] case[No]"
+    },
+    "[是否有火斧/No] 锻造场景": {
+        "anchor": {
+            "ForgeNext": "CardUpgrade"
+        },
+        "_from": "option[是否有火斧] case[No]"
+    },
+    "[每日挑战/Yes] 结束探索": {
+        "next": [
+            "前往观星室",
+            "[每日挑战/Yes] 点击空白关闭",
+            "[每日挑战/Yes] 结束探索",
+            "开始游戏_点空白处关闭"
+        ],
+        "_from": "option[每日挑战] case[Yes]"
+    },
+    "[每日挑战/Yes] 点击空白关闭": {
+        "next": [
+            "[每日挑战/Yes] 结束探索",
+            "[每日挑战/Yes] 点击空白关闭",
+            "前往观星室",
+            "开始游戏_点空白处关闭"
+        ],
+        "_from": "option[每日挑战] case[Yes]"
+    },
+    "[每日挑战/Yes] ===开始===": {
+        "next": [
+            "前往观星室",
+            "每日挑战-开始",
+            "每日挑战",
+            "统合"
+        ],
+        "_from": "option[每日挑战] case[Yes]"
+    },
+    "[每日挑战/Yes] 滑动难度": {
+        "on_error": [
+            "每日挑战-开始"
+        ],
+        "_from": "option[每日挑战] case[Yes]"
+    },
+    "[每日挑战/Yes] 开始游戏_关闭窗口": {
+        "next": [
+            "[每日挑战/Yes] 开始游戏_关闭窗口",
+            "前往观星室"
+        ],
+        "_from": "option[每日挑战] case[Yes]"
+    },
+    "[更改任务/Yes] 前往大厅": {
+        "next": [
+            "更改任务",
+            "前往大厅1"
+        ],
+        "_from": "option[更改任务] case[Yes]"
+    },
+    "[VIP每日异界赠礼/Yes] 前往大厅2": {
+        "next": [
+            "商店异界赠礼(仅VIP可用)"
+        ],
+        "_from": "option[VIP每日异界赠礼] case[Yes]"
+    },
+    "[领取任务/Yes] 前往大厅1": {
+        "next": [
+            "前往领取任务",
+            "前往大厅2"
+        ],
+        "_from": "option[领取任务] case[Yes]"
+    },
+    "[狭缝角色祝福/万法/唤灵/戍军] 狭缝": {
+        "next": [
+            "战斗场景",
+            "选择卡片-复制",
+            "选择卡片",
+            "[狭缝角色祝福/万法/唤灵/戍军] 狭缝",
+            "离开地点_直接"
+        ],
+        "_from": "option[狭缝角色祝福] case[万法/唤灵/戍军]"
+    },
+    "[狭缝角色祝福/复仇者/舞娘] 战斗_首次攻击": {
+        "next": [
+            "[Anchor]QuickCharmSettings",
+            "[Anchor]Armring",
+            "自动战斗",
+            "夺魄_祝福"
+        ],
+        "_from": "option[狭缝角色祝福] case[复仇者/舞娘]"
+    },
+    "[消耗宝石等级/三级宝石] 滑到最底": {
+        "ahchor": {
+            "gemClass1": "三级红1",
+            "gemClass2": "三级白1",
+            "gemClass3": "三级黄1",
+            "gemClass4": "三级绿1",
+            "gemClass5": "三级绿2"
+        },
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[消耗宝石等级] case[三级宝石]"
+    },
+    "[消耗宝石等级/三级宝石] 上翻页": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[消耗宝石等级] case[三级宝石]"
+    },
+    "[消耗宝石等级/三级宝石] 宝石合成格子": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[消耗宝石等级] case[三级宝石]"
+    },
+    "[消耗宝石等级/三级宝石] 宝石_空白处关闭": {
+        "next": [
+            "[Anchor]gemGrade",
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[消耗宝石等级] case[三级宝石]"
+    },
+    "[消耗宝石等级/四级宝石] 滑到最底": {
+        "ahchor": {
+            "gemClass1": "四级红1",
+            "gemClass2": "四级红2",
+            "gemClass3": "四级白1",
+            "gemClass4": "四级黄1",
+            "gemClass5": "四级黄2",
+            "gemClass6": "四级黄3",
+            "gemClass7": "四级绿1",
+            "gemClass8": "四级绿2",
+            "gemClass9": "四级绿3",
+            "gemClass10": "四级绿4",
+            "gemClass11": "四级绿5",
+            "gemClass12": "四级绿6",
+            "gemClass13": "四级紫1"
+        },
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7",
+            "[Anchor]gemClass8",
+            "[Anchor]gemClass9",
+            "[Anchor]gemClass10",
+            "[Anchor]gemClass11",
+            "[Anchor]gemClass12",
+            "[Anchor]gemClass13"
+        ],
+        "_from": "option[消耗宝石等级] case[四级宝石]"
+    },
+    "[消耗宝石等级/四级宝石] 上翻页": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7",
+            "[Anchor]gemClass8",
+            "[Anchor]gemClass9",
+            "[Anchor]gemClass10",
+            "[Anchor]gemClass11",
+            "[Anchor]gemClass12",
+            "[Anchor]gemClass13"
+        ],
+        "_from": "option[消耗宝石等级] case[四级宝石]"
+    },
+    "[消耗宝石等级/四级宝石] 宝石合成格子": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7",
+            "[Anchor]gemClass8",
+            "[Anchor]gemClass9",
+            "[Anchor]gemClass10",
+            "[Anchor]gemClass11",
+            "[Anchor]gemClass12",
+            "[Anchor]gemClass13"
+        ],
+        "_from": "option[消耗宝石等级] case[四级宝石]"
+    },
+    "[消耗宝石等级/四级宝石] 宝石_空白处关闭": {
+        "next": [
+            "[Anchor]gemGrade",
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7",
+            "[Anchor]gemClass8",
+            "[Anchor]gemClass9",
+            "[Anchor]gemClass10",
+            "[Anchor]gemClass11",
+            "[Anchor]gemClass12",
+            "[Anchor]gemClass13"
+        ],
+        "_from": "option[消耗宝石等级] case[四级宝石]"
+    },
+    "[和平模式/Yes] 自动战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1151,
+                    324,
+                    121,
+                    60
+                ],
+                "template": [
+                    "战斗场景/卡死-结束回合.png"
+                ]
+            }
+        },
+        "_from": "option[和平模式] case[Yes]"
+    },
+    "[自动签到(每日挑战)/Yes] 结束探索": {
+        "next": [
+            "前往观星室",
+            "[自动签到(每日挑战)/Yes] 点击空白关闭",
+            "[自动签到(每日挑战)/Yes] 结束探索",
+            "开始游戏_点空白处关闭",
+            "[自动签到(每日挑战)/Yes] 开始游戏_关闭窗口"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[Yes]"
+    },
+    "[自动签到(每日挑战)/Yes] 点击空白关闭": {
+        "next": [
+            "[自动签到(每日挑战)/Yes] 结束探索",
+            "[自动签到(每日挑战)/Yes] 点击空白关闭",
+            "前往观星室",
+            "开始游戏_点空白处关闭",
+            "[自动签到(每日挑战)/Yes] 开始游戏_关闭窗口"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[Yes]"
+    },
+    "[自动签到(每日挑战)/Yes] ===开始===": {
+        "next": [
+            "前往观星室",
+            "每日挑战-开始",
+            "每日挑战",
+            "战斗场景",
+            "事件逻辑",
+            "地图场景"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[Yes]"
+    },
+    "[自动签到(每日挑战)/Yes] 滑动难度": {
+        "on_error": [
+            "每日挑战-开始",
+            "坠入深境_ocr识别"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[Yes]"
+    },
+    "[自动签到(每日挑战)/Yes] 开始游戏_关闭窗口": {
+        "next": [
+            "[自动签到(每日挑战)/Yes] 开始游戏_关闭窗口",
+            "前往观星室"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[Yes]"
+    },
+    "[自动签到(每日挑战)/No] 结束探索": {
+        "next": [
+            "[自动签到(每日挑战)/No] 前往观星室",
+            "[自动签到(每日挑战)/No] 点击空白关闭",
+            "[自动签到(每日挑战)/No] 结束探索"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[No]"
+    },
+    "[自动签到(每日挑战)/No] 点击空白关闭": {
+        "next": [
+            "[自动签到(每日挑战)/No] 结束探索",
+            "[自动签到(每日挑战)/No] 点击空白关闭",
+            "[自动签到(每日挑战)/No] 前往观星室"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[No]"
+    },
+    "[自动签到(每日挑战)/No] ===开始===": {
+        "next": [
+            "[自动签到(每日挑战)/No] 前往观星室",
+            "每日挑战-开始",
+            "每日挑战",
+            "战斗场景",
+            "事件逻辑",
+            "地图场景"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[No]"
+    },
+    "[自动签到(每日挑战)/No] 滑动难度": {
+        "next": [
+            "坠入深境"
+        ],
+        "on_error": [
+            "每日挑战-开始",
+            "坠入深境_ocr识别"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[No]"
+    },
+    "[自动签到(每日挑战)/No] 前往观星室": {
+        "next": [
+            "每日挑战",
+            "[自动签到(每日挑战)/No] 前往观星室"
+        ],
+        "_from": "option[自动签到(每日挑战)] case[No]"
+    },
+    "[宝石分类/五级黄色宝石] 滑到最底": {
+        "ahchor": {
+            "gemClass1": "五级黄1",
+            "gemClass2": "五级黄2",
+            "gemClass3": "五级黄3",
+            "gemClass4": "五级黄4",
+            "gemClass5": "五级黄5"
+        },
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[宝石分类] case[五级黄色宝石]"
+    },
+    "[宝石分类/五级黄色宝石] 上翻页": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[宝石分类] case[五级黄色宝石]"
+    },
+    "[宝石分类/五级黄色宝石] 宝石合成格子": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[宝石分类] case[五级黄色宝石]"
+    },
+    "[宝石分类/五级黄色宝石] 宝石_空白处关闭": {
+        "next": [
+            "[Anchor]gemGrade",
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5"
+        ],
+        "_from": "option[宝石分类] case[五级黄色宝石]"
+    },
+    "[宝石分类/五级白色宝石] 滑到最底": {
+        "ahchor": {
+            "gemClass1": "五级白1",
+            "gemClass2": "五级白2",
+            "gemClass3": "五级白3",
+            "gemClass4": "五级白4",
+            "gemClass5": "五级白5",
+            "gemClass6": "五级白6",
+            "gemClass7": "五级白7"
+        },
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7"
+        ],
+        "_from": "option[宝石分类] case[五级白色宝石]"
+    },
+    "[宝石分类/五级白色宝石] 上翻页": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7"
+        ],
+        "_from": "option[宝石分类] case[五级白色宝石]"
+    },
+    "[宝石分类/五级白色宝石] 宝石合成格子": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7"
+        ],
+        "_from": "option[宝石分类] case[五级白色宝石]"
+    },
+    "[宝石分类/五级白色宝石] 宝石_空白处关闭": {
+        "next": [
+            "[Anchor]gemGrade",
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2",
+            "[Anchor]gemClass3",
+            "[Anchor]gemClass4",
+            "[Anchor]gemClass5",
+            "[Anchor]gemClass6",
+            "[Anchor]gemClass7"
+        ],
+        "_from": "option[宝石分类] case[五级白色宝石]"
+    },
+    "[宝石分类/五级红色宝石] 滑到最底": {
+        "ahchor": {
+            "gemClass1": "五级红1",
+            "gemClass2": "五级红2"
+        },
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2"
+        ],
+        "_from": "option[宝石分类] case[五级红色宝石]"
+    },
+    "[宝石分类/五级红色宝石] 上翻页": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2"
+        ],
+        "_from": "option[宝石分类] case[五级红色宝石]"
+    },
+    "[宝石分类/五级红色宝石] 宝石合成格子": {
+        "next": [
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2"
+        ],
+        "_from": "option[宝石分类] case[五级红色宝石]"
+    },
+    "[宝石分类/五级红色宝石] 宝石_空白处关闭": {
+        "next": [
+            "[Anchor]gemGrade",
+            "[Anchor]gemClass1",
+            "[Anchor]gemClass2"
+        ],
+        "_from": "option[宝石分类] case[五级红色宝石]"
+    },
+    "[自动签到(普通游戏)/No] 结束探索": {
+        "next": [
+            "[自动签到(普通游戏)/No] 前往主仪式间",
+            "[自动签到(普通游戏)/No] 点击空白关闭",
+            "[自动签到(普通游戏)/No] 结束探索"
+        ],
+        "_from": "option[自动签到(普通游戏)] case[No]"
+    },
+    "[自动签到(普通游戏)/No] 点击空白关闭": {
+        "next": [
+            "[自动签到(普通游戏)/No] 结束探索",
+            "[自动签到(普通游戏)/No] 前往主仪式间",
+            "[自动签到(普通游戏)/No] 点击空白关闭"
+        ],
+        "_from": "option[自动签到(普通游戏)] case[No]"
+    },
+    "[自动签到(普通游戏)/No] 滑动难度": {
+        "next": [
+            "坠入深境"
+        ],
+        "_from": "option[自动签到(普通游戏)] case[No]"
+    },
+    "[自动签到(普通游戏)/No] 前往主仪式间": {
+        "next": [
+            "启动祭坛",
+            "[自动签到(普通游戏)/No] 前往主仪式间"
+        ],
+        "_from": "option[自动签到(普通游戏)] case[No]"
+    },
+    "[升格之旅/Yes] 前往大厅3": {
+        "next": [
+            "升格之旅"
+        ],
+        "_from": "option[升格之旅] case[Yes]"
+    },
+    "[连续游戏/No] 结束探索": {
+        "timeout": 3000,
+        "_from": "option[连续游戏] case[No]"
+    },
+    "[连续游戏/No] 点击空白关闭": {
+        "timeout": 3000,
+        "_from": "option[连续游戏] case[No]"
+    },
+    "[不更改难度/No] 滑动难度": {
+        "action": "Swipe",
+        "specificRect": [
+            1000,
+            500,
+            10,
+            10
+        ],
+        "rectMove": [
+            100,
+            500,
+            10,
+            10
+        ],
+        "special_params": [
+            1000,
+            3
+        ],
+        "_from": "option[不更改难度] case[No]"
+    },
+    "[邮件奖励/Yes] 前往大厅4": {
+        "next": [
+            "邮件"
+        ],
+        "_from": "option[邮件奖励] case[Yes]"
+    }
+}

@@ -1,0 +1,472 @@
+{
+  "task": [
+    {
+      "name": "启动游戏",
+      "entry": "==启动游戏==",
+      "group": [
+        "百战方案"
+      ],
+      "option": [],
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "default_check": true
+    },
+    {
+      "name": "开始游戏",
+      "entry": "===开始===",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "option": [
+        "保持该难度",
+        "永久VIP",
+        "是否有火斧",
+        "每日挑战",
+        "狭缝角色祝福"
+      ],
+      "group": [
+        "百战方案"
+      ],
+      "default_check": true
+    },
+    {
+      "name": "退出游戏",
+      "entry": "==退出游戏==",
+      "group": [
+        "百战方案"
+      ],
+      "option": []
+    },
+  ],
+  "option": {
+    "保持该难度": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "滑动难度": {
+              "action": {
+                "type": "Swipe",
+                "param": {
+                  "begin": [
+                    917,
+                    498,
+                    19,
+                    21
+                  ],
+                  "end": [
+                    [
+                      82,
+                      504,
+                      11,
+                      6
+                    ]
+                  ]
+                }
+              },
+              "repeat": 4,
+              "repeat_delay": 300
+            }
+          }
+        }
+      ]
+    },
+    "永久VIP": {
+      "cases": [
+        {
+          "name": "Yes",
+          "option": []
+        },
+        {
+          "name": "No",
+          "option": [],
+          "pipeline_override": {
+            "复活": {
+              "recognition": {
+                "type": "TemplateMatch",
+                "param": {
+                  "roi": [
+                    434,
+                    581,
+                    117,
+                    46
+                  ],
+                  "template": [
+                    "战斗场景/放弃挣扎.png"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "label": "永久VIP",
+      "default_case": "No",
+      "type": "switch",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "description": "用于是否复活判断"
+    },
+    "是否有火斧": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "option": []
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "锻造场景": {
+              "anchor": {
+                "ForgeNext": "CardUpgrade"
+              }
+            }
+          }
+        }
+      ],
+      "label": "无畏斧(火斧)",
+      "default_case": "No",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "description": "用于锻造升变策略"
+    },
+    "每日挑战": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "option": [
+            "自动签到(每日挑战)",
+            "连续游戏",
+            "和平模式"
+          ],
+          "pipeline_override": {
+            "结束探索": {
+              "next": [
+                "前往观星室",
+                "点击空白关闭",
+                "结束探索",
+                "开始游戏_点空白处关闭"
+              ]
+            },
+            "点击空白关闭": {
+              "next": [
+                "结束探索",
+                "点击空白关闭",
+                "前往观星室",
+                "开始游戏_点空白处关闭"
+              ]
+            },
+            "===开始===": {
+              "next": [
+                "前往观星室",
+                "每日挑战-开始",
+                "每日挑战",
+                "统合"
+              ]
+            },
+            "开始游戏_关闭窗口": {
+              "next": [
+                "开始游戏_关闭窗口",
+                "前往观星室"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No",
+          "option": [
+            "自动签到(普通游戏)",
+            "连续游戏"
+          ]
+        }
+      ],
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "label": "每日挑战",
+      "default_case": "No"
+    },
+    "自动签到(普通游戏)": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "结束探索": {
+              "next": [
+                "前往主仪式间",
+                "点击空白关闭",
+                "结束探索"
+              ]
+            },
+            "点击空白关闭": {
+              "next": [
+                "结束探索",
+                "前往主仪式间",
+                "点击空白关闭"
+              ]
+            },
+            "滑动难度": {
+              "next": [
+                "坠入深境"
+              ]
+            },
+            "前往主仪式间": {
+              "next": [
+                "启动祭坛",
+                "前往主仪式间"
+              ]
+            }
+          }
+        }
+      ],
+      "default_case": "No",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "description": "针对凌晨签到中断任务、为耗能优化考虑、非时间段任务可选择不开启",
+      "label": "自动签到(普通)"
+    },
+    "自动签到(每日挑战)": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "结束探索": {
+              "next": [
+                "前往观星室",
+                "点击空白关闭",
+                "结束探索",
+                "开始游戏_点空白处关闭",
+                "开始游戏_关闭窗口"
+              ]
+            },
+            "点击空白关闭": {
+              "next": [
+                "结束探索",
+                "点击空白关闭",
+                "前往观星室",
+                "开始游戏_点空白处关闭",
+                "开始游戏_关闭窗口"
+              ]
+            },
+            "===开始===": {
+              "next": [
+                "前往观星室",
+                "每日挑战-开始",
+                "每日挑战",
+                "战斗场景",
+                "事件逻辑",
+                "地图场景"
+              ]
+            },
+            "滑动难度": {
+              "on_error": [
+                "每日挑战-开始",
+                "坠入深境_ocr识别"
+              ]
+            },
+            "开始游戏_关闭窗口": {
+              "next": [
+                "开始游戏_关闭窗口",
+                "前往观星室"
+              ]
+            }
+          }
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "结束探索": {
+              "next": [
+                "前往观星室",
+                "点击空白关闭",
+                "结束探索"
+              ]
+            },
+            "点击空白关闭": {
+              "next": [
+                "结束探索",
+                "点击空白关闭",
+                "前往观星室"
+              ]
+            },
+            "===开始===": {
+              "next": [
+                "前往观星室",
+                "每日挑战-开始",
+                "每日挑战",
+                "战斗场景",
+                "事件逻辑",
+                "地图场景"
+              ]
+            },
+            "滑动难度": {
+              "next": [
+                "坠入深境"
+              ],
+              "on_error": [
+                "每日挑战-开始",
+                "坠入深境_ocr识别"
+              ]
+            },
+            "前往观星室": {
+              "next": [
+                "每日挑战",
+                "前往观星室"
+              ]
+            }
+          }
+        }
+      ],
+      "description": "针对凌晨签到中断任务、耗能优化考虑、非时间段任务可选择不开启",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "default_case": "No",
+      "label": "自动签到(挑战)"
+    },
+    "狭缝角色祝福": {
+      "type": "checkbox",
+      "cases": [
+        {
+          "name": "万法/唤灵/戍军",
+          "pipeline_override": {
+            "狭缝": {
+              "next": [
+                "战斗场景",
+                "选择卡片-复制",
+                "选择卡片",
+                "狭缝",
+                "离开地点_直接"
+              ]
+            }
+          }
+        },
+        {
+          "name": "复仇者/舞娘",
+          "pipeline_override": {
+            "战斗_首次攻击": {
+              "next": [
+                "[Anchor]QuickCharmSettings",
+                "[Anchor]Armring",
+                "自动战斗",
+                "夺魄_祝福"
+              ]
+            }
+          }
+        }
+      ],
+      "label": "狭缝角色祝福",
+      "resource": [
+        "官服"
+      ],
+      "default_case": [],
+      "min_count": 0,
+      "max_count": 2,
+      "description": "增加识别事件",
+      "controller": [
+        "安卓端"
+      ]
+    },
+    "和平模式": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes",
+          "pipeline_override": {
+            "自动战斗": {
+              "recognition": {
+                "type": "TemplateMatch",
+                "param": {
+                  "roi": [
+                    1151,
+                    324,
+                    121,
+                    60
+                  ],
+                  "template": [
+                    "战斗场景/卡死-结束回合.png"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "No"
+        }
+      ],
+      "label": "和平模式",
+      "controller": [
+        "安卓端"
+      ],
+      "resource": [
+        "官服"
+      ],
+      "default_case": "No"
+    },
+    
+    "连续游戏": {
+      "type": "switch",
+      "cases": [
+        {
+          "name": "Yes"
+        },
+        {
+          "name": "No",
+          "pipeline_override": {
+            "结束探索": {
+              "timeout": 3000
+            },
+            "点击空白关闭": {
+              "timeout": 3000
+            }
+          }
+        }
+      ],
+      "default_case": "Yes"
+    }
+  },
+  "group": [
+    {
+      "name": "百战方案",
+      "default_expand": true,
+      "label": "百战方案"
+    }
+  ]
+}

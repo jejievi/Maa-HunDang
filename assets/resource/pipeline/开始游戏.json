@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795701328031,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\Maa-HunDang\\assets\\resource\\pipeline\\开始游戏.json",
             "savedViewport": {
-                "x": 177,
-                "y": 478,
-                "zoom": 0.37
+                "x": 315,
+                "y": 366,
+                "zoom": 0.4
             },
             "filename": "开始游戏",
-            "version": "v2.1.3"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_事件逻辑_开始游戏": {
@@ -426,10 +430,10 @@
     },
     "滑动难度": {
         "anchor": {
-            "charmChoose": "护符1",
-            "StoryNode": "StoryEvent"
+            "StoryNode": "StoryEvent",
+            "charmChoose": "护符1"
         },
-        "repeat": 3,
+        "repeat": 4,
         "repeat_delay": 300,
         "timeout": 1800,
         "next": [
