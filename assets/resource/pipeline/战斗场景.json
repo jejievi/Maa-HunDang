@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 721,
-                "y": 94,
-                "zoom": 0.32
+                "x": 1507,
+                "y": 282,
+                "zoom": 0.42
             },
             "filename": "战斗场景",
             "version": "v2.1.3"
@@ -490,8 +490,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1381,
-                "y": 795
+                "x": -1324,
+                "y": 780
             }
         }
     },
@@ -982,8 +982,7 @@
         },
         "pre_delay": 0,
         "anchor": {
-            "BattleStart": "",
-            "BattleChoose": "选择一项"
+            "BattleStart": ""
         },
         "post_delay": 0,
         "focus": "存在铁臂符饰",
@@ -1013,7 +1012,9 @@
                 ]
             }
         },
-        "anchor": "{\"SettingsNext\":\"\",}",
+        "anchor": {
+            "BattleChoose": "选择一项"
+        },
         "focus": "开启选择节点",
         "next": [
             "战斗_首次攻击"
@@ -1028,8 +1029,8 @@
     "$__mpe_anchor_BattleStart_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": -902,
-                "y": 719
+                "x": -1687,
+                "y": 895
             }
         }
     },
