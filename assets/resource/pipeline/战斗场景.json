@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 1507,
-                "y": 282,
-                "zoom": 0.42
+                "x": 1231,
+                "y": 258,
+                "zoom": 0.29
             },
             "filename": "战斗场景",
             "version": "v2.1.3"
@@ -515,7 +515,8 @@
             "QuickCharmSettings": "设置_快速符饰",
             "ArmringStuck": "铁臂_点击",
             "ArmringStuckNext": "自动战斗",
-            "BattleStart": "自动战斗"
+            "BattleStart": "自动战斗",
+            "BattleChoose": ""
         },
         "timeout": 1200,
         "next": [

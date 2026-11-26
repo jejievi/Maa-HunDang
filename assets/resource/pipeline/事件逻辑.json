@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 272,
-                "y": -71,
-                "zoom": 0.42
+                "x": 130,
+                "y": -94,
+                "zoom": 0.48
             },
             "filename": "事件逻辑",
             "version": "v2.1.3"
@@ -675,8 +675,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2039,
-                "y": 749
+                "x": 2017,
+                "y": 674
             }
         }
     },
@@ -918,20 +918,21 @@
         "repeat_delay": 300,
         "label": "关闭剧情链",
         "next": [
-            "离开地点_直接"
+            "离开地点_直接",
+            "战斗场景"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 958,
-                "y": 1539
+                "x": 959,
+                "y": 1526
             }
         }
     },
     "$__mpe_anchor_StoryNode_事件逻辑": {
         "$__mpe_code": {
             "position": {
-                "x": 578,
-                "y": 1710
+                "x": 603,
+                "y": 1687
             }
         }
     }
