@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 1231,
-                "y": 258,
-                "zoom": 0.29
+                "x": 2108,
+                "y": 164,
+                "zoom": 0.5
             },
             "filename": "战斗场景",
             "version": "v2.1.3"
@@ -318,6 +318,7 @@
         "anchor": {
             "SettingsNext": "战斗-设置3"
         },
+        "focus": "遇到粪怪了，退出游戏",
         "next": [
             "战斗-设置2"
         ],
@@ -515,7 +516,6 @@
             "QuickCharmSettings": "设置_快速符饰",
             "ArmringStuck": "铁臂_点击",
             "ArmringStuckNext": "自动战斗",
-            "BattleStart": "自动战斗",
             "BattleChoose": ""
         },
         "timeout": 1200,
@@ -527,8 +527,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2905,
-                "y": 619
+                "x": -2965,
+                "y": 633
             }
         }
     },
@@ -624,7 +624,7 @@
                 ]
             }
         },
-        "focus": "遇到粪怪了，退出游戏",
+        "focus": "",
         "next": [
             "开启选择项",
             "战斗-设置"
@@ -1030,8 +1030,8 @@
     "$__mpe_anchor_BattleStart_战斗场景": {
         "$__mpe_code": {
             "position": {
-                "x": -1687,
-                "y": 895
+                "x": -1677,
+                "y": 874
             }
         }
     },

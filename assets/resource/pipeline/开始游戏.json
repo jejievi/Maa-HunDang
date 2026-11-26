@@ -4,8 +4,8 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 435,
-                "y": 487,
+                "x": 296,
+                "y": 398,
                 "zoom": 0.55
             },
             "filename": "开始游戏",
@@ -39,8 +39,8 @@
     "$__mpe_external_离开地点2_开始游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 1701,
-                "y": -88
+                "x": 1725,
+                "y": -61
             }
         }
     },
@@ -219,8 +219,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 463,
-                "y": -24
+                "x": 430,
+                "y": -55
             }
         }
     },
@@ -420,7 +420,8 @@
     "滑动难度": {
         "anchor": {
             "charmChoose": "护符1",
-            "StoryNode": "StoryEvent"
+            "StoryNode": "StoryEvent",
+            "BattleStart": "自动战斗"
         },
         "repeat": 3,
         "repeat_delay": 300,

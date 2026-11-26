@@ -4,15 +4,15 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -1153,
-                "y": 266,
-                "zoom": 0.86
+                "x": -1719,
+                "y": 207,
+                "zoom": 1.27
             },
             "filename": "退出游戏",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
-    "新建节点55": {
+    "检测4": {
         "action": {
             "type": "Swipe",
             "param": {
@@ -77,16 +77,16 @@
             }
         },
         "next": [
-            "新建节点52"
+            "检测1"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 1603,
-                "y": 173
+                "y": 176
             }
         }
     },
-    "新建节点52": {
+    "检测1": {
         "action": {
             "type": "Swipe",
             "param": {
@@ -107,7 +107,7 @@
             }
         },
         "next": [
-            "新建节点53"
+            "检测2"
         ],
         "$__mpe_code": {
             "position": {
@@ -116,7 +116,7 @@
             }
         }
     },
-    "新建节点53": {
+    "检测2": {
         "action": {
             "type": "Swipe",
             "param": {
@@ -137,7 +137,7 @@
             }
         },
         "next": [
-            "新建节点54"
+            "检测3"
         ],
         "$__mpe_code": {
             "position": {
@@ -146,7 +146,7 @@
             }
         }
     },
-    "新建节点54": {
+    "检测3": {
         "action": {
             "type": "Swipe",
             "param": {
@@ -167,7 +167,7 @@
             }
         },
         "next": [
-            "新建节点55"
+            "检测4"
         ],
         "$__mpe_code": {
             "position": {
