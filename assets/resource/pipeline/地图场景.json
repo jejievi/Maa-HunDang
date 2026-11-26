@@ -3,32 +3,28 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795618812993,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\地图场景.json",
             "savedViewport": {
-                "x": 1220,
-                "y": 152,
-                "zoom": 0.57
+                "x": 1151,
+                "y": 227,
+                "zoom": 0.4
             },
             "filename": "地图场景",
-            "version": "v2.1.0"
+            "version": "v2.1.3"
         }
     },
     "$__mpe_external_统合_地图场景": {
         "$__mpe_code": {
             "position": {
-                "x": -264,
-                "y": 469
+                "x": -34,
+                "y": 545
             }
         }
     },
     "$__mpe_external_继续_地图场景": {
         "$__mpe_code": {
             "position": {
-                "x": -216,
-                "y": 1080
+                "x": -104,
+                "y": 789
             }
         }
     },
@@ -50,8 +46,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -459,
-                "y": 1042
+                "x": -622,
+                "y": 737
             }
         }
     },
@@ -94,8 +90,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1065,
-                "y": 312
+                "x": -2000,
+                "y": 247
             }
         }
     },
@@ -146,8 +142,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -772,
-                "y": 689
+                "x": -1468,
+                "y": 539
             }
         }
     },
@@ -181,17 +177,17 @@
         "post_delay": 300,
         "timeout": 3000,
         "rate_limit": 0,
-        "next": [
-            "识别关卡副"
-        ],
         "on_error": [
             "地图场景二次检测",
             "统合"
         ],
+        "next": [
+            "识别关卡副"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": -1437,
-                "y": 302
+                "x": -2039,
+                "y": -201
             }
         }
     },
@@ -218,8 +214,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -457,
-                "y": 1039
+                "x": -389,
+                "y": 750
             }
         }
     },
@@ -272,10 +268,10 @@
             "type": "Click",
             "param": {
                 "target_offset": [
-                    76,
-                    -48,
-                    -179,
-                    -10
+                    87,
+                    -59,
+                    -200,
+                    -18
                 ]
             }
         },
@@ -286,12 +282,13 @@
             "统合"
         ],
         "on_error": [
+            "识别关卡副",
             "地图_退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -582,
-                "y": 136
+                "x": -815,
+                "y": 223
             }
         }
     },
@@ -344,10 +341,10 @@
             "type": "Click",
             "param": {
                 "target_offset": [
-                    76,
-                    -48,
-                    -179,
-                    -10
+                    83,
+                    -47,
+                    -177,
+                    -18
                 ]
             }
         },
@@ -358,12 +355,13 @@
             "统合"
         ],
         "on_error": [
+            "识别关卡",
             "地图_退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -561,
-                "y": -184
+                "x": -812,
+                "y": -190
             }
         }
     }
