@@ -19,7 +19,8 @@
       "name": "开始游戏",
       "entry": "===开始===",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -42,8 +43,12 @@
       "group": [
         "百战方案"
       ],
-      "option": []
-    },
+      "option": [],
+      "controller": [
+        "安卓端",
+        "PC端"
+      ]
+    }
   ],
   "option": {
     "保持该难度": {
@@ -80,6 +85,10 @@
             }
           }
         }
+      ],
+      "controller": [
+        "安卓端",
+        "PC端"
       ]
     },
     "永久VIP": {
@@ -115,7 +124,8 @@
       "default_case": "No",
       "type": "switch",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -143,7 +153,8 @@
       "label": "无畏斧(火斧)",
       "default_case": "No",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -201,9 +212,7 @@
           ]
         }
       ],
-      "controller": [
-        "安卓端"
-      ],
+      "controller": [],
       "resource": [
         "官服"
       ],
@@ -248,9 +257,7 @@
         }
       ],
       "default_case": "No",
-      "controller": [
-        "安卓端"
-      ],
+      "controller": [],
       "resource": [
         "官服"
       ],
@@ -351,9 +358,7 @@
         }
       ],
       "description": "针对凌晨签到中断任务、耗能优化考虑、非时间段任务可选择不开启",
-      "controller": [
-        "安卓端"
-      ],
+      "controller": [],
       "resource": [
         "官服"
       ],
@@ -399,9 +404,7 @@
       "min_count": 0,
       "max_count": 2,
       "description": "增加识别事件",
-      "controller": [
-        "安卓端"
-      ]
+      "controller": []
     },
     "和平模式": {
       "type": "switch",
@@ -432,9 +435,7 @@
         }
       ],
       "label": "和平模式",
-      "controller": [
-        "安卓端"
-      ],
+      "controller": [],
       "resource": [
         "官服"
       ],

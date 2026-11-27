@@ -4,7 +4,8 @@
       "name": "每日奖励",
       "entry": "==每日奖励==",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -30,6 +31,13 @@
       "default_check": false,
       "option": [
         "消耗宝石等级"
+      ],
+      "controller": [
+        "安卓端",
+        "PC端"
+      ],
+      "resource": [
+        "官服"
       ]
     },
     {
@@ -37,6 +45,13 @@
       "entry": "==密闻抽卡==",
       "group": [
         "每日大厅"
+      ],
+      "controller": [
+        "安卓端",
+        "PC端"
+      ],
+      "resource": [
+        "官服"
       ]
     }
   ],
@@ -61,7 +76,8 @@
       ],
       "default_case": "No",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -88,7 +104,8 @@
       "label": "VIP每日异界赠礼",
       "default_case": "No",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -117,7 +134,8 @@
         "官服"
       ],
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ]
     },
     "消耗宝石等级": {
@@ -274,7 +292,8 @@
       "label": "消耗宝石等级",
       "default_case": "二级宝石",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -427,7 +446,8 @@
         }
       ],
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"
@@ -451,7 +471,11 @@
           "name": "No"
         }
       ],
-      "default_case": "Yes"
+      "default_case": "Yes",
+      "controller": [
+        "安卓端",
+        "PC端"
+      ]
     },
     "邮件奖励": {
       "type": "switch",
@@ -472,7 +496,8 @@
       ],
       "default_case": "No",
       "controller": [
-        "安卓端"
+        "安卓端",
+        "PC端"
       ],
       "resource": [
         "官服"

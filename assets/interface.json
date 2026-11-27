@@ -17,7 +17,20 @@
         {
             "name": "安卓端",
             "type": "Adb",
-            "display_short_side": 720 
+            "display_short_side": 720
+        },
+        {
+            "name": "PC端",
+            "type": "Win32",
+            "description": "一定要用管理员身份运行!!!不然连不上窗口",
+            "win32": {
+                "class_regex": "UnityWndClass",
+                "window_regex": "魂坠深境",
+                "screencap": "PrintWindow",
+                "mouse": "PostMessageWithCursorPos",
+                "keyboard": "PostMessageWithCursorPos"
+            },
+            "option": []
         }
     ],
     "resource": [
@@ -27,7 +40,8 @@
                 "./resource"
             ],
             "controller": [
-                "安卓端"
+                "安卓端",
+                "PC端"
             ]
         }
     ],

@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795617462749,
-            "isModifiedExternally": true,
+            "lastSyncTime": 1795787981223,
+            "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "C:\\Users\\18111\\Desktop\\maah\\MAA-hunDang\\assets\\resource\\pipeline\\每日奖励.json",
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\Maa-HunDang\\assets\\resource\\pipeline\\每日奖励.json",
             "savedViewport": {
-                "x": -277,
-                "y": -577,
-                "zoom": 0.52
+                "x": -2542,
+                "y": -356,
+                "zoom": 0.73
             },
             "filename": "每日奖励",
             "version": "v2.1.0"
@@ -349,6 +349,35 @@
             }
         }
     },
+    "前往大厅4": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1125,
+                    536,
+                    126,
+                    97
+                ],
+                "template": [
+                    "主仪式间/前往主仪式间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "on_error": [
+            "每日奖励事件结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 773,
+                "y": 1638
+            }
+        }
+    },
     "前往领取任务": {
         "recognition": {
             "type": "TemplateMatch",
@@ -377,6 +406,36 @@
             "position": {
                 "x": 1232,
                 "y": 272
+            }
+        }
+    },
+    "升旅_点击任意空白关闭": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    498,
+                    663,
+                    294,
+                    55
+                ],
+                "expected": [
+                    "点击任意空白处关闭"
+                ]
+            }
+        },
+        "pre_delay": 400,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "升格之旅_退出",
+            "升旅_点击任意空白关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3990,
+                "y": 962
             }
         }
     },
@@ -415,8 +474,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3648,
-                "y": 932
+                "x": 3653,
+                "y": 910
             }
         }
     },
@@ -796,8 +855,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3446,
-                "y": 1276
+                "x": 3409,
+                "y": 1358
             }
         }
     },
@@ -1020,126 +1079,6 @@
             }
         }
     },
-    "领取": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    319,
-                    578,
-                    151,
-                    53
-                ],
-                "expected": [
-                    "领取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "深境商店_点击任意空白关闭"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2207,
-                "y": 611
-            }
-        }
-    },
-    "领取任务": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    239,
-                    497,
-                    799,
-                    67
-                ],
-                "expected": [
-                    "领取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "timeout": 4000,
-        "next": [
-            "领取任务",
-            "每日任务_点空白处关闭"
-        ],
-        "on_error": [
-            "离开任务_副本1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1580,
-                "y": 229
-            }
-        }
-    },
-    "升旅_点击任意空白关闭": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    498,
-                    663,
-                    294,
-                    55
-                ],
-                "expected": [
-                    "点击任意空白处关闭"
-                ]
-            }
-        },
-        "pre_delay": 400,
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "升格之旅_退出"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3974,
-                "y": 930
-            }
-        }
-    },
-    "前往大厅4": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1125,
-                    536,
-                    126,
-                    97
-                ],
-                "template": [
-                    "主仪式间/前往主仪式间.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "timeout": 5000,
-        "on_error": [
-            "每日奖励事件结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 773,
-                "y": 1638
-            }
-        }
-    },
     "邮件": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1172,48 +1111,64 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1314,
-                "y": 1656
+                "x": 1267,
+                "y": 1683
             }
         }
     },
-    "领取邮件": {
+    "邮箱_退出": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    278,
-                    48,
-                    226,
-                    632
+                    41,
+                    9,
+                    86,
+                    54
                 ],
                 "template": [
-                    "每日奖励/邮件_存在奖励.png"
+                    "每日奖励/邮箱_退出.png"
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -140,
-                    36,
-                    -11,
-                    -7
-                ]
-            }
+            "type": "Click"
         },
-        "timeout": 3000,
         "next": [
-            "领取_点击"
-        ],
-        "on_error": [
-            "邮箱_退出"
+            "每日奖励事件结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1633,
-                "y": 1726
+                "x": 1865,
+                "y": 2131
+            }
+        }
+    },
+    "领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    319,
+                    578,
+                    151,
+                    53
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "深境商店_点击任意空白关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2207,
+                "y": 611
             }
         }
     },
@@ -1281,31 +1236,77 @@
             }
         }
     },
-    "邮箱_退出": {
+    "领取任务": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
                 "roi": [
-                    41,
-                    9,
-                    86,
-                    54
+                    239,
+                    497,
+                    799,
+                    67
                 ],
-                "template": [
-                    "每日奖励/邮箱_退出.png"
+                "expected": [
+                    "领取"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
+        "timeout": 4000,
         "next": [
-            "每日奖励事件结束"
+            "领取任务",
+            "每日任务_点空白处关闭"
+        ],
+        "on_error": [
+            "离开任务_副本1"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1865,
-                "y": 2131
+                "x": 1580,
+                "y": 229
+            }
+        }
+    },
+    "领取邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    278,
+                    48,
+                    226,
+                    632
+                ],
+                "template": [
+                    "每日奖励/邮件_存在奖励.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -140,
+                    36,
+                    -11,
+                    -7
+                ]
+            }
+        },
+        "timeout": 3000,
+        "next": [
+            "领取_点击"
+        ],
+        "on_error": [
+            "邮箱_退出"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1633,
+                "y": 1726
             }
         }
     }
