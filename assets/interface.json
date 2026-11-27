@@ -30,7 +30,9 @@
                 "mouse": "PostMessageWithCursorPos",
                 "keyboard": "PostMessageWithCursorPos"
             },
-            "option": []
+            "option": [
+                "邮件奖励"
+            ]
         }
     ],
     "resource": [
@@ -50,5 +52,37 @@
         "tasks/fightTask.json",
         "tasks/DailyTask.json",
         "tasks/OtherTask.json"
-    ]
+    ],
+    "group": [
+        {
+            "name": "PC端"
+        }
+    ],
+    "task": [
+        {
+            "name": "1",
+            "entry": "返回锻造间大厅",
+            "option": [
+                "2"
+            ],
+            "controller": [
+                "安卓端",
+                "PC端"
+            ],
+            "resource": [
+                "官服"
+            ],
+            "group": []
+        }
+    ],
+    "option": {
+        "2": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "默认"
+                }
+            ]
+        }
+    }
 }
