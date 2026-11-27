@@ -112,6 +112,14 @@ def install_resource():
         working_dir / "assets" / "interface.json",
         install_path,
     )
+    # interface.json 里的 import 路径（如 "tasks/fightTask.json"）是相对 interface.json
+    # 所在目录解析的；interface.json 被拷到 install 根目录后，tasks 目录也必须一起拷过去，
+    # 否则导入失败会导致任务列表为空、资源不完整（截图/识别全部失败）。
+    shutil.copytree(
+        working_dir / "assets" / "tasks",
+        install_path / "tasks",
+        dirs_exist_ok=True,
+    )
 
     with open(install_path / "interface.json", "r", encoding="utf-8") as f:
         interface = jsonc.load(f)
