@@ -10,6 +10,16 @@
       "controller": [
         "安卓端"
       ]
+    },
+    {
+      "name": "PC分辨率",
+      "entry": "PC端区域检测",
+      "controller": [
+        "PC端"
+      ],
+      "resource": [
+        "官服"
+      ]
     }
   ],
   "option": {},

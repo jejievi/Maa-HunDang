@@ -3,56 +3,27 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795789751806,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "C:\\Users\\18111\\Desktop\\maah\\Maa-HunDang\\assets\\resource\\pipeline\\退出游戏.json",
             "savedViewport": {
-                "x": -1719,
-                "y": 207,
-                "zoom": 1.27
+                "x": -955,
+                "y": 54,
+                "zoom": 0.67
             },
             "filename": "退出游戏",
-            "version": "v2.1.3"
+            "version": "v2.1.0"
         }
     },
-    "检测4": {
+    "PC端区域检测_完成": {
         "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    3,
-                    708,
-                    10,
-                    11
-                ],
-                "end": [
-                    [
-                        4,
-                        0,
-                        8,
-                        5
-                    ]
-                ]
-            }
-        },
-        "next": [
-            "==检测边境=="
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2526,
-                "y": 181
-            }
-        }
-    },
-    "==退出游戏==": {
-        "action": {
-            "type": "StopApp",
-            "param": {
-                "package": "com.chillyroom.containerofsoul.yw"
-            }
+            "type": "StopTask"
         },
         "$__mpe_code": {
             "position": {
-                "x": 1599,
-                "y": -8
+                "x": 2403,
+                "y": 472
             }
         }
     },
@@ -83,6 +54,20 @@
             "position": {
                 "x": 1603,
                 "y": 176
+            }
+        }
+    },
+    "==退出游戏==": {
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.chillyroom.containerofsoul.yw"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1599,
+                "y": -8
             }
         }
     },
@@ -173,6 +158,117 @@
             "position": {
                 "x": 2296,
                 "y": 175
+            }
+        }
+    },
+    "检测4": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    3,
+                    708,
+                    10,
+                    11
+                ],
+                "end": [
+                    [
+                        4,
+                        0,
+                        8,
+                        5
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "==检测边境=="
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2526,
+                "y": 181
+            }
+        }
+    },
+    "PC端区域检测": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1154,
+                    246,
+                    75,
+                    22
+                ],
+                "expected": [
+                    "观星室"
+                ]
+            }
+        },
+        "timeout": -1,
+        "focus": "观星室",
+        "next": [
+            "PC端区域检测2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 450
+            }
+        }
+    },
+    "PC端区域检测2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1157,
+                    363,
+                    68,
+                    24
+                ],
+                "expected": [
+                    "神像间"
+                ]
+            }
+        },
+        "timeout": -1,
+        "focus": "神像间",
+        "next": [
+            "PC端区域检测3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1872,
+                "y": 450
+            }
+        }
+    },
+    "PC端区域检测3": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1156,
+                    481,
+                    70,
+                    29
+                ],
+                "expected": [
+                    "档案馆"
+                ]
+            }
+        },
+        "timeout": -1,
+        "focus": "档案馆",
+        "next": [
+            "PC端区域检测_完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2135,
+                "y": 459
             }
         }
     }
